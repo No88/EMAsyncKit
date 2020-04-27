@@ -22,7 +22,7 @@ pod 'EMAsyncKit'
 
 ## Author
 
-刘豪, hao1iu@qq.com
+Kevin, 49121974@qq.com
 
 ## License
 
