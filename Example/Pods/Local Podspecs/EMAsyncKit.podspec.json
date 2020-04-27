@@ -3,16 +3,16 @@
   "version": "0.1.0",
   "summary": "A short description of EMAsyncKit.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/刘豪/EMAsyncKit",
+  "homepage": "https://github.com/No88/EMAsyncKit.git",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "刘豪": "hao1iu@qq.com"
+    "No88": "49121974@qq.com"
   },
   "source": {
-    "git": "https://github.com/刘豪/EMAsyncKit.git",
+    "git": "https://github.com/No88/EMAsyncKit.git",
     "tag": "0.1.0"
   },
   "platforms": {

@@ -7,6 +7,7 @@
 //
 
 #import "EMViewController.h"
+#import <EMAsyncHeader.h>
 
 @interface EMViewController ()
 
@@ -17,7 +18,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    EMAsyncDisplayViewController *v = EMAsyncDisplayViewController.new;
+    [v setValue:@"https://www.baidu.com" forKey:@"webViewURL"];
+    [self addChildViewController:v];
+    [self.view addSubview:v.view];
 }
 
 - (void)didReceiveMemoryWarning
