@@ -91,7 +91,7 @@
     NSArray *btnIcons = @[@"EMAsync_cc",@"EMAsync_bb",@"EMAsync_qq",@"EMAsync_ee",@"EMAsync_gg"];
     NSArray *btnNames = @[@"首页",@"后退",@"前进",@"刷新",@"退出"];
     UIButton *lastBtn = nil;
-    NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"EMAsyncResource" ofType:@"bundle"]];
+    NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"EMAsyncKit.bundle" ofType:nil]];
     for (int i = 0, l = (int)btnIcons.count; i < l; ++i) {
         EMAsyncTabButton *btn = [EMAsyncTabButton buttonWithType:UIButtonTypeCustom];
         [btn addTarget:self action:@selector(goingBT:) forControlEvents:UIControlEventTouchUpInside];
