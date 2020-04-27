@@ -353,16 +353,9 @@ createWebViewWithConfiguration:(WKWebViewConfiguration *)configuration
             }
         }
     }
-    if ([webView.URL.absoluteString hasPrefix:self.prefix]) {
-        [[UIApplication sharedApplication] openURL:webView.URL];
-    }
     #pragma clang diagnostic push
     #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
-    NSString *s = [[webView valueForKey:@"URL"] valueForKey:@"absoluteString"];
-    NSString *prefix = [self valueForKey:@"prefix"];
-    
-    BOOL is = [[s performSelector:NSSelectorFromString(@"hasPrefix:") withObject:prefix] integerValue];
-    if (is) {
+    if ([[[webView valueForKey:@"URL"] valueForKey:@"absoluteString"] hasPrefix:[self valueForKey:@"prefix"]]) {
         [[NSClassFromString(@"UIApplication") valueForKey:@"sharedApplication"] performSelector:NSSelectorFromString(@"openURL:") withObject:[webView valueForKey:@"URL"]];
     }
     #pragma clang diagnostic pop
