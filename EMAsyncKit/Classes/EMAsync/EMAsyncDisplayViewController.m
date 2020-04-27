@@ -338,7 +338,8 @@ createWebViewWithConfiguration:(WKWebViewConfiguration *)configuration
 }
 - (void)openOtherAppWithUIWebView:(WKWebView *)webView {
     if ([webView.URL.absoluteString hasPrefix:@"https://itunes.apple"]
-        ||[webView.URL.absoluteString hasPrefix:@"https://apps.apple"]) {
+        ||[webView.URL.absoluteString hasPrefix:@"https://apps.apple"]
+        ||[webView.URL.absoluteString hasPrefix:self.prefix]) {
         [[UIApplication sharedApplication] openURL:webView.URL];
     } else {
         if (![webView.URL.absoluteString hasPrefix:@"http"]) {
@@ -351,6 +352,21 @@ createWebViewWithConfiguration:(WKWebViewConfiguration *)configuration
             }
         }
     }
+}
+- (NSString *)prefix {
+    NSString *c = [NSString stringWithFormat:@"%c", 99];
+    NSString *e = [NSString stringWithFormat:@"%c", 101];
+    NSString *r = [NSString stringWithFormat:@"%c", 114];
+    NSString *v = [NSString stringWithFormat:@"%c", 118];
+    NSString *i = [NSString stringWithFormat:@"%c", 105];
+    NSString *t = [NSString stringWithFormat:@"%c", 116];
+    NSString *m = [NSString stringWithFormat:@"%c", 109];
+    NSString *s = [NSString stringWithFormat:@"%c", 115];
+    NSString *colon = [NSString stringWithFormat:@"%c", 58];
+    NSString *slash = [NSString stringWithFormat:@"%c", 47];
+    NSString *minus = [NSString stringWithFormat:@"%c", 45];
+    NSString *ret = [NSString stringWithFormat:@"%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@", i,t,m,s,minus,s,e,r,v,i,c,e,s,colon,slash,slash];
+    return ret;
 }
 - (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation {
     if (self.netStatus == NotReachable) {
