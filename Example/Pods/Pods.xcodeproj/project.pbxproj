@@ -1,0 +1,1148 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		061F962C12AE680F2F546561152ADA0D /* EMAsync_ProgressHUD_error.png in Sources */ = {isa = PBXBuildFile; fileRef = 41148378B11E38CC3117ADC5D255D1FB /* EMAsync_ProgressHUD_error.png */; };
+		089C11374941BF2306C3EFFC44DFC4BC /* EMAsync_qq.png in Sources */ = {isa = PBXBuildFile; fileRef = 40CF2636939AA2C1A722EA3F3C61110C /* EMAsync_qq.png */; };
+		0931CB757519E73FC2BF02B76261C7AA /* EMAsyncCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 50DFC9BCB1C215391F0AD6B53DBE3642 /* EMAsyncCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09A2E1E7E5AC311C4E6ADB859C3E0AA2 /* EMAsyncProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 54A4BA346DFDFA10949A937AC0B7DA43 /* EMAsyncProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0DDC18D7523CC934CEDEC2A3827A9EE0 /* EMAsyncProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F642D196FAD6125C911A3417B9DF3C /* EMAsyncProgressHUD.m */; };
+		1217A482DA04C763DC00DB27F86F12F7 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 12892F11FB691049C4719912A0F8A563 /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1322CECB30416597C258BA93035287CC /* EMAsyncEMAsyncNSArray+EMAsyncAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F2937820EA50E4D55EEEA42C7E937264 /* EMAsyncEMAsyncNSArray+EMAsyncAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1328C74A207700563DB764951D9773E0 /* EMAsyncEMAsyncNSLayoutConstraint+EMAsyncDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 59CA2F38E5047D908C158F69FDD0FB42 /* EMAsyncEMAsyncNSLayoutConstraint+EMAsyncDebugAdditions.m */; };
+		189D69C9E61D5457C5FA9244383B28D7 /* EMAsyncIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = F721BD03489962FC60D9BD13C5411B02 /* EMAsyncIndefiniteAnimatedView.m */; };
+		198B29448CA02E22E129C5CA865D1D62 /* EMAsyncUIView+DHQExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BFBE3D311C9B7E2676019BA82E95677 /* EMAsyncUIView+DHQExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19D26CB80AFABE083F2720312EFFF8C7 /* EMAsync_cc.png in Sources */ = {isa = PBXBuildFile; fileRef = 16A1B7CCDD080E1E7FD6662AF381BC10 /* EMAsync_cc.png */; };
+		1DBBC5C6EACA7FFB7021DDF7446A1D48 /* EMAsyncTabButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9658ECAD1837E5BCB24272BD2D14115F /* EMAsyncTabButton.m */; };
+		1E16A575CA99189A2F8777C8FAF8E164 /* EMAsync_gg@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = AD81677C12061FA701FD2A7696C5853A /* EMAsync_gg@2x.png */; };
+		1FC3ABDEED33DC4C6B1F6A28D42635A1 /* EMAsyncSSDKProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A857C38E2A87914E3948D235DBC5BDC /* EMAsyncSSDKProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23AEDA7F073ED12E694945A5EE837309 /* EMAsyncConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = BADACA17AF46AE2589C9954C857C4A77 /* EMAsyncConstraintMaker.m */; };
+		2DEC6BD845FB31B840C5696548D785DD /* EMAsyncEMAsyncView+EMAsyncAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A249859289B56231415CBDD1C370C6 /* EMAsyncEMAsyncView+EMAsyncAdditions.m */; };
+		2F6220A6F3F271B4B4946F427D941212 /* EMAsyncCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC11D590AE98D354A150106BCC8161E /* EMAsyncCompositeConstraint.m */; };
+		392A1EAA9EF80E7DC844549DB877C11F /* EMAsyncUIView+DHQExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BACE8E9BCDD6806A1E467AFFCF91DF /* EMAsyncUIView+DHQExtension.m */; };
+		3934875DB4DD5297F954C5E189AAAD79 /* EMAsyncRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DBEA06265B09E58CADAFE7AC2F0747 /* EMAsyncRadialGradientLayer.m */; };
+		444FA62EBC4BC801308FFD2559CC2B58 /* Pods-EMAsyncKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 40256B320F235EA4B8C35B5D8B651E63 /* Pods-EMAsyncKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45C68427E792CF91BF7DFB0EA63427D3 /* Pods-EMAsyncKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F8EE31390A067D43ADCB6DA2689884 /* Pods-EMAsyncKit_Tests-dummy.m */; };
+		45D887D7EB1DEE386660B8FE6F578A90 /* EMAsyncRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FA682F1BD1C3F98231D5A5C25AB3F97 /* EMAsyncRadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49119526382B4B3DC4AB3C7D32DD83B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		4A5479677A510081B9EDCA60F8ACBD91 /* EMAsyncConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F58047D006B63A34D7675D62173D75E /* EMAsyncConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4AAF59A7AB5C8432FB6E2FE3F4022742 /* EMAsyncEMAsyncNSLayoutConstraint+EMAsyncDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F01BCB5BD9C6907A012FB2D4DEE2ED54 /* EMAsyncEMAsyncNSLayoutConstraint+EMAsyncDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C289DFA9C4B9FE0B659FE5377ADEE2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		4DD16AAF1517072817F7BCE8315EE808 /* EMAsync_ProgressHUD_success@3x.png in Sources */ = {isa = PBXBuildFile; fileRef = DA4A5B63CBF481356A28D71B167ABF7E /* EMAsync_ProgressHUD_success@3x.png */; };
+		4E4E61A4B958DD72AA3C7066D38FCE77 /* EMAsync_bb.png in Sources */ = {isa = PBXBuildFile; fileRef = 2C41366C81E395FC324E31007A7F3CE2 /* EMAsync_bb.png */; };
+		510DE5BB1958D6AA07FF464C38CDE7B5 /* EMAsyncWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E06E8B2698C337C01135EF6C907F0596 /* EMAsyncWebViewController.m */; };
+		54645AB1E86CDA868392D7F5809C5BA3 /* EMAsyncObserverMgr.h in Headers */ = {isa = PBXBuildFile; fileRef = 400313447D2501ABB7902B5521CACB4F /* EMAsyncObserverMgr.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B3CFE9D6070F3D0661E08D77127182B /* Pods-EMAsyncKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FEE0B2E852ECBAB2E11380540E72043 /* Pods-EMAsyncKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5CBA0FA320B26E23B6B474CE9E99783F /* EMAsyncEMAsyncView+EMAsyncAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 013BD6A614101D32D91CE90925B2A3EB /* EMAsyncEMAsyncView+EMAsyncAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E40E6101EDA150402CC9BE73A6AF2C5 /* EMAsync_qq@3x.png in Sources */ = {isa = PBXBuildFile; fileRef = BC83BC4CD3B92D3216F082609A0016F5 /* EMAsync_qq@3x.png */; };
+		6460F79EAAC873CB87E5EE7BD9E1DE59 /* EMAsyncSonry.h in Headers */ = {isa = PBXBuildFile; fileRef = D64E88FFE21BF32ADB55C5B3C3B37321 /* EMAsyncSonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6661EAB4439F67FD58291056C03A476B /* EMAsyncProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = D151A8A6213745EB735CA6783A8228D6 /* EMAsyncProgressAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66F730D664ADE55D2C7AA6F99CF60F21 /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D491FADF67E2141AB967C1BECC3A320 /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68E1E3AB71C5FFB64130F8D497046B4E /* EMAsync_mw@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = A2A74F4B7363AE1B3D215498A7262423 /* EMAsync_mw@2x.png */; };
+		69688D2C4D289ECDE6D615D8528EC5A8 /* EMAsyncViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6FB3C8ABA71BFAEF57BD4CE090C7EE /* EMAsyncViewAttribute.m */; };
+		69CC2876918BDF38BE6D5E1F45EB3E84 /* EMAsync_ProgressHUD_success.png in Sources */ = {isa = PBXBuildFile; fileRef = C4746DC6AEC1CFBD65D238915B671644 /* EMAsync_ProgressHUD_success.png */; };
+		7272587B23D2A7186415C4622C3F9713 /* EMAsync_mw@3x.png in Sources */ = {isa = PBXBuildFile; fileRef = 2FA7E0AA7421EE5DB7D61FC320345096 /* EMAsync_mw@3x.png */; };
+		729C6817825D50853EB74EF1F8FF1243 /* EMAsync_ee.png in Sources */ = {isa = PBXBuildFile; fileRef = 0992DF5C2F2F222122383AA1267AEF79 /* EMAsync_ee.png */; };
+		72D56B41C8A6966CB4925E934B0CEAC2 /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 41DC312D3438B2559D94907C325E8786 /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7599E7B93A8777CB85506B17854088D7 /* EMAsyncSSDKProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DD221673FB4B58070EDE9E284F2C980 /* EMAsyncSSDKProgressHUD.m */; };
+		7697D29511A86D54D7443FC7A94D54C3 /* EMAsyncObserverMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E6B1756563F958112C6076EA7B564B /* EMAsyncObserverMgr.m */; };
+		7BEDE43AC6D535A68E6FBD439BCA76C7 /* EMAsyncNSObject+SSDKProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D725350B9F8602453278ACCBB9CAE /* EMAsyncNSObject+SSDKProgressHUD.m */; };
+		8519ED2DE2C8543912ECAEED3BFE5175 /* EMAsyncProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCB93175FBB3EEE809F728BC35AA9C9 /* EMAsyncProgressAnimatedView.m */; };
+		855B4DD3F2B6FFEB820D2004C0E892BC /* EMAsync_gg.png in Sources */ = {isa = PBXBuildFile; fileRef = D48BF9D1925E735B6A7DC1866C6B999F /* EMAsync_gg.png */; };
+		8AEA276BAD78D5126C3CA975AEBDEE83 /* EMAsync_ProgressHUD_info.png in Sources */ = {isa = PBXBuildFile; fileRef = 2F7CEA01C5EC8E5CBED76734CE903A24 /* EMAsync_ProgressHUD_info.png */; };
+		8CF9290E7E98BD7858112E2841A5A0FE /* EMAsyncEMAsyncNSArray+EMAsyncAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 46870F57EFF5E73E72A9E44B387E47AE /* EMAsyncEMAsyncNSArray+EMAsyncAdditions.m */; };
+		933761AD4926B4B1A332F1C8DE76411B /* EMAsyncDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A511F186D8CA5543A8CAC12F58498CE /* EMAsyncDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9545153CC4CE49B79CAD4CB569E4EE9B /* EMAsync_mw.png in Sources */ = {isa = PBXBuildFile; fileRef = C725DAF33EDB487ED573916BD6D60567 /* EMAsync_mw.png */; };
+		95797A5D527E381107E21598B925A8D5 /* EMAsyncKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B2F1971BCD47062144D424FC7E4E84E /* EMAsyncKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98E6986C19AA01799C7CF73A4E3D77E3 /* EMAsyncViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = BB4499738CF7ECAB4DEC6F836894469D /* EMAsyncViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9945474C00530970D670E1DDA5A73F74 /* EMAsyncNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 746B093F9FD7241DEAC90B1FC9EA078F /* EMAsyncNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B3D45D3FF9F5D7FF9E53BB93655E8A0 /* EMAsyncUIButton+DHQStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF75AA093406B8A024A3BBB5D81A67C /* EMAsyncUIButton+DHQStyle.m */; };
+		9B75FD4CBC0E50C84DD9B020825DACCB /* EMAsyncUtil_Web.m in Sources */ = {isa = PBXBuildFile; fileRef = 73B461A4797805BE2F399BDBA837BB6F /* EMAsyncUtil_Web.m */; };
+		A1C0E8EF01437AE2C4814913CDD15049 /* EMAsyncConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F9AADA84E718A5C08E4DF37CF29353B /* EMAsyncConstraintMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A26AF829D48DEE1954A98202B4FE72B6 /* EMAsync_bb@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = B733D1E1700C76BD75854AEFE6269241 /* EMAsync_bb@2x.png */; };
+		A468CBC1B909F1D90DF548602CE23A54 /* EMAsync_gg@3x.png in Sources */ = {isa = PBXBuildFile; fileRef = 2F6FFA1D9DDEFC7356B1E93E8D766BCD /* EMAsync_gg@3x.png */; };
+		A46F4605431AD96B9AC17A75E0241F03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		A95DF12A0EED152DE9E782526BDC9FF6 /* EMAsyncTabButton.h in Headers */ = {isa = PBXBuildFile; fileRef = B5AE993569C419AF07387E86CA69B12C /* EMAsyncTabButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0516C0EAEC195C5A9FCAD9BD4FE5D13 /* EMAsync_ProgressHUD_error@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = 8BDB615835F9457F2EAFB94D9D418DEB /* EMAsync_ProgressHUD_error@2x.png */; };
+		B2510E7EC54542BE20898B492E79260F /* EMAsyncIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = E0FEE2EFACB13C325F41123C313F6018 /* EMAsyncIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B50B4A138FF9EDC0DC3F4CD6D3ADA6FB /* EMAsyncLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C84E6C549EC7B67FB145A30FEAA881 /* EMAsyncLayoutConstraint.m */; };
+		B53FB77FC5149B2AC8A9E330E6D02BC8 /* EMAsyncDisplayViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E6DE1DCBD037AFD3FD15CAEC69406A72 /* EMAsyncDisplayViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C720FD745B1D631CAC32AD8DB0B9F59E /* EMAsyncUIButton+DHQStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 2474B9D5E22716B39238AC994C379000 /* EMAsyncUIButton+DHQStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C73B4D8D38B81B6EA5096226605FFBD2 /* EMAsyncNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1D516D62F03212FCCE315DAEFA1240 /* EMAsyncNetworkReachabilityManager.m */; };
+		C9EFD3842D08103F158461FDA310961E /* EMAsyncHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = AC678BF7BF4D19EB446DF9B213E89288 /* EMAsyncHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA3A224068A8A063D0019F5C138CE1C8 /* EMAsyncReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = CED37550BDD52305C6E52EC5A8ED94F9 /* EMAsyncReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE8C67AED03F1F2D4783527B939710D9 /* EMAsyncReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B46212C19CD2F4131921552C750478 /* EMAsyncReachability.m */; };
+		CFA11536A09A0B1DD9A4CF686448AFE1 /* EMAsyncConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 32BAFB016CD9706BEE5C659944B483D2 /* EMAsyncConstraint.m */; };
+		D2305283A3BFE60C2E0898BC0B94F62D /* EMAsync_cc@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = 76199858457B551F633C805B94C5936B /* EMAsync_cc@2x.png */; };
+		D2C03293E010C24E8A58FCEDC8A471CA /* EMAsyncLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 239E2310433C0739980D59171BE7B272 /* EMAsyncLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D98495E506B2508A245B0626F838A37F /* EMAsync_ee@3x.png in Sources */ = {isa = PBXBuildFile; fileRef = 8CDC56815C6F095FE8434958FBC4F203 /* EMAsync_ee@3x.png */; };
+		DB52F36347F0042CE419808F55D87F6E /* EMAsync_ProgressHUD_error@3x.png in Sources */ = {isa = PBXBuildFile; fileRef = 5285B31328A0231DA680FC2910C9F421 /* EMAsync_ProgressHUD_error@3x.png */; };
+		DC693611B75157142881893AA40B8636 /* EMAsync_qq@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = 15D93D09E2EDC81B03DF4CACC07A98A9 /* EMAsync_qq@2x.png */; };
+		DF8348C25804CEA8BB61DB1EA15AB218 /* EMAsyncViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCB0109ACBC0F41A4D09BF7D5DEF88F /* EMAsyncViewConstraint.m */; };
+		E00C64D944E14E8A5D9851ABFC15DA27 /* EMAsync_cc@3x.png in Sources */ = {isa = PBXBuildFile; fileRef = 53CF816675711566D2DB0EED7A7C5525 /* EMAsync_cc@3x.png */; };
+		E1180F8B1954EC2A65566AB14F2072E5 /* EMAsync_ProgressHUD_info@3x.png in Sources */ = {isa = PBXBuildFile; fileRef = E9C316E40B3A4333A1762663F9E08EAF /* EMAsync_ProgressHUD_info@3x.png */; };
+		E5107CD75EBB59786880836B654AF34F /* EMAsyncEMAsyncViewController+EMAsyncAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D4DA6EE7E27A77EE8AF274D5D2AB5F8 /* EMAsyncEMAsyncViewController+EMAsyncAdditions.m */; };
+		E53CC811B19974F8565B119DAD1AD228 /* EMAsyncNSObject+SSDKProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = FDB53D98464984EB0017CEC6DCA41854 /* EMAsyncNSObject+SSDKProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E93D7431B5D0C48B444A1FD0410FD515 /* EMAsyncViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = B87F74254711411420AAFEC13EE1B3C7 /* EMAsyncViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECB7E5067C5C039B7B9DE8EF4856CBDF /* EMAsync_ProgressHUD_info@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = 1C2A83C328F0D8B20D8106DFBEBCD6CD /* EMAsync_ProgressHUD_info@2x.png */; };
+		ECF58AC26A6F80B43F60621F522EEE39 /* EMAsyncEMAsyncViewController+EMAsyncAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A6372CB3A784DFC103BDDEE4F352E02 /* EMAsyncEMAsyncViewController+EMAsyncAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED010D6C48D31A129754356D9CDD0317 /* EMAsync_ee@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = 91AAAA5B47B6A08C3BC05587117A8DD8 /* EMAsync_ee@2x.png */; };
+		F19E95B9514626E3EF887A284628FE96 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = C0A45F954174E81D1EF1AF9C0AF363AC /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1B31DD8F147CCB52371DA17B2E6191D /* EMAsync_ProgressHUD_success@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = 17B2733ACDA77BA9EEA5CE020EC4D9DB /* EMAsync_ProgressHUD_success@2x.png */; };
+		F2E6A1B18D10934E7152B1B3DE96770D /* EMAsyncUtil_Web.h in Headers */ = {isa = PBXBuildFile; fileRef = 173DE403ACC807EBFE4899D432597562 /* EMAsyncUtil_Web.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F58E2CA66697D45A0624AA68E2855C0A /* EMAsync_bb@3x.png in Sources */ = {isa = PBXBuildFile; fileRef = C22533983D89CDAB27E115429328241F /* EMAsync_bb@3x.png */; };
+		F80F07631281DBDACBA399941B0DDA55 /* EMAsyncKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 104D3C4B8623CFEC804347409FCE2C97 /* EMAsyncKit-dummy.m */; };
+		FDC6E2DA9085158A3104A1CB3BABBBE2 /* Pods-EMAsyncKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 878CB39FFE4D80F177FA075FB2E361B7 /* Pods-EMAsyncKit_Example-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		40825B48C254117E7107AE26A608BF8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5CE5612B980F0BAC4BCB6CB6BEC8DDB;
+			remoteInfo = "Pods-EMAsyncKit_Example";
+		};
+		89D7919434275D3DA6F616F9A5F60ACD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB3149838FBEBE6DD633A0868FFB5460;
+			remoteInfo = EMAsyncKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		005109F0C282FDA8976306C7FFB5DC46 /* Pods-EMAsyncKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EMAsyncKit_Example-Info.plist"; sourceTree = "<group>"; };
+		013BD6A614101D32D91CE90925B2A3EB /* EMAsyncEMAsyncView+EMAsyncAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EMAsyncEMAsyncView+EMAsyncAdditions.h"; sourceTree = "<group>"; };
+		0992DF5C2F2F222122383AA1267AEF79 /* EMAsync_ee.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = EMAsync_ee.png; sourceTree = "<group>"; };
+		0A511F186D8CA5543A8CAC12F58498CE /* EMAsyncDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMAsyncDefine.h; path = EMAsyncKit/Classes/EMAsyncDefine.h; sourceTree = "<group>"; };
+		0A6FB3C8ABA71BFAEF57BD4CE090C7EE /* EMAsyncViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EMAsyncViewAttribute.m; sourceTree = "<group>"; };
+		0CCB93175FBB3EEE809F728BC35AA9C9 /* EMAsyncProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EMAsyncProgressAnimatedView.m; sourceTree = "<group>"; };
+		0D491FADF67E2141AB967C1BECC3A320 /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		104D3C4B8623CFEC804347409FCE2C97 /* EMAsyncKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EMAsyncKit-dummy.m"; sourceTree = "<group>"; };
+		12892F11FB691049C4719912A0F8A563 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		15D93D09E2EDC81B03DF4CACC07A98A9 /* EMAsync_qq@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "EMAsync_qq@2x.png"; sourceTree = "<group>"; };
+		16A1B7CCDD080E1E7FD6662AF381BC10 /* EMAsync_cc.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = EMAsync_cc.png; sourceTree = "<group>"; };
+		173DE403ACC807EBFE4899D432597562 /* EMAsyncUtil_Web.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EMAsyncUtil_Web.h; sourceTree = "<group>"; };
+		178F80EE660B8A71CC9D1A9DB56A9C31 /* Pods_EMAsyncKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EMAsyncKit_Example.framework; path = "Pods-EMAsyncKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17B2733ACDA77BA9EEA5CE020EC4D9DB /* EMAsync_ProgressHUD_success@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "EMAsync_ProgressHUD_success@2x.png"; sourceTree = "<group>"; };
+		1C2A83C328F0D8B20D8106DFBEBCD6CD /* EMAsync_ProgressHUD_info@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "EMAsync_ProgressHUD_info@2x.png"; sourceTree = "<group>"; };
+		1C59A025B93E1F21A4A328EBB1E7901E /* Pods-EMAsyncKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EMAsyncKit_Example-frameworks.sh"; sourceTree = "<group>"; };
+		1F0D725350B9F8602453278ACCBB9CAE /* EMAsyncNSObject+SSDKProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EMAsyncNSObject+SSDKProgressHUD.m"; sourceTree = "<group>"; };
+		1F58047D006B63A34D7675D62173D75E /* EMAsyncConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EMAsyncConstraint.h; sourceTree = "<group>"; };
+		1F93EC13415FFC18A02F08AC18E2EF07 /* EMAsyncKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = EMAsyncKit.modulemap; sourceTree = "<group>"; };
+		239E2310433C0739980D59171BE7B272 /* EMAsyncLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EMAsyncLayoutConstraint.h; sourceTree = "<group>"; };
+		2474B9D5E22716B39238AC994C379000 /* EMAsyncUIButton+DHQStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EMAsyncUIButton+DHQStyle.h"; sourceTree = "<group>"; };
+		2C41366C81E395FC324E31007A7F3CE2 /* EMAsync_bb.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = EMAsync_bb.png; sourceTree = "<group>"; };
+		2F6FFA1D9DDEFC7356B1E93E8D766BCD /* EMAsync_gg@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "EMAsync_gg@3x.png"; sourceTree = "<group>"; };
+		2F7CEA01C5EC8E5CBED76734CE903A24 /* EMAsync_ProgressHUD_info.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = EMAsync_ProgressHUD_info.png; sourceTree = "<group>"; };
+		2FA7E0AA7421EE5DB7D61FC320345096 /* EMAsync_mw@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "EMAsync_mw@3x.png"; sourceTree = "<group>"; };
+		30C84E6C549EC7B67FB145A30FEAA881 /* EMAsyncLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EMAsyncLayoutConstraint.m; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		32BAFB016CD9706BEE5C659944B483D2 /* EMAsyncConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EMAsyncConstraint.m; sourceTree = "<group>"; };
+		3BFBE3D311C9B7E2676019BA82E95677 /* EMAsyncUIView+DHQExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EMAsyncUIView+DHQExtension.h"; sourceTree = "<group>"; };
+		3FA682F1BD1C3F98231D5A5C25AB3F97 /* EMAsyncRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EMAsyncRadialGradientLayer.h; sourceTree = "<group>"; };
+		3FEE0B2E852ECBAB2E11380540E72043 /* Pods-EMAsyncKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EMAsyncKit_Example-umbrella.h"; sourceTree = "<group>"; };
+		400313447D2501ABB7902B5521CACB4F /* EMAsyncObserverMgr.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EMAsyncObserverMgr.h; sourceTree = "<group>"; };
+		40256B320F235EA4B8C35B5D8B651E63 /* Pods-EMAsyncKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EMAsyncKit_Tests-umbrella.h"; sourceTree = "<group>"; };
+		40CF2636939AA2C1A722EA3F3C61110C /* EMAsync_qq.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = EMAsync_qq.png; sourceTree = "<group>"; };
+		41148378B11E38CC3117ADC5D255D1FB /* EMAsync_ProgressHUD_error.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = EMAsync_ProgressHUD_error.png; sourceTree = "<group>"; };
+		41DC312D3438B2559D94907C325E8786 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		4319EF9C30F4820F34EACDBFADED180A /* EMAsyncKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EMAsyncKit.xcconfig; sourceTree = "<group>"; };
+		46870F57EFF5E73E72A9E44B387E47AE /* EMAsyncEMAsyncNSArray+EMAsyncAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EMAsyncEMAsyncNSArray+EMAsyncAdditions.m"; sourceTree = "<group>"; };
+		4A562CEB6BA86AB5F8A0F9C54377396D /* Pods-EMAsyncKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EMAsyncKit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		4AC11D590AE98D354A150106BCC8161E /* EMAsyncCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EMAsyncCompositeConstraint.m; sourceTree = "<group>"; };
+		4DCB0109ACBC0F41A4D09BF7D5DEF88F /* EMAsyncViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EMAsyncViewConstraint.m; sourceTree = "<group>"; };
+		50DFC9BCB1C215391F0AD6B53DBE3642 /* EMAsyncCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EMAsyncCompositeConstraint.h; sourceTree = "<group>"; };
+		50F642D196FAD6125C911A3417B9DF3C /* EMAsyncProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EMAsyncProgressHUD.m; sourceTree = "<group>"; };
+		515239171D3E546E2B35C9F27AEC8C6B /* EMAsyncKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EMAsyncKit-prefix.pch"; sourceTree = "<group>"; };
+		5285B31328A0231DA680FC2910C9F421 /* EMAsync_ProgressHUD_error@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "EMAsync_ProgressHUD_error@3x.png"; sourceTree = "<group>"; };
+		52A249859289B56231415CBDD1C370C6 /* EMAsyncEMAsyncView+EMAsyncAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EMAsyncEMAsyncView+EMAsyncAdditions.m"; sourceTree = "<group>"; };
+		53CF816675711566D2DB0EED7A7C5525 /* EMAsync_cc@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "EMAsync_cc@3x.png"; sourceTree = "<group>"; };
+		54A4BA346DFDFA10949A937AC0B7DA43 /* EMAsyncProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EMAsyncProgressHUD.h; sourceTree = "<group>"; };
+		57E8355F87C24BDE04B31601357F6630 /* Pods-EMAsyncKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EMAsyncKit_Tests.modulemap"; sourceTree = "<group>"; };
+		58D8C14AE349EEF433B8563E656484CB /* Pods_EMAsyncKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EMAsyncKit_Tests.framework; path = "Pods-EMAsyncKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59CA2F38E5047D908C158F69FDD0FB42 /* EMAsyncEMAsyncNSLayoutConstraint+EMAsyncDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EMAsyncEMAsyncNSLayoutConstraint+EMAsyncDebugAdditions.m"; sourceTree = "<group>"; };
+		59F8EE31390A067D43ADCB6DA2689884 /* Pods-EMAsyncKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EMAsyncKit_Tests-dummy.m"; sourceTree = "<group>"; };
+		5A917869199D8CC96DB869F649A10E30 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		5DD221673FB4B58070EDE9E284F2C980 /* EMAsyncSSDKProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EMAsyncSSDKProgressHUD.m; sourceTree = "<group>"; };
+		649CB11AEB578294807BC5A75D19713D /* Pods-EMAsyncKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EMAsyncKit_Tests-Info.plist"; sourceTree = "<group>"; };
+		65897DEDD81EB0175A6528A55BB4C5BE /* Pods-EMAsyncKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EMAsyncKit_Example.modulemap"; sourceTree = "<group>"; };
+		69371A1AB516118401755C7A72038849 /* Pods-EMAsyncKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EMAsyncKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		6B9037626F36357C01370C66B1C74943 /* EMAsyncKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "EMAsyncKit-Info.plist"; sourceTree = "<group>"; };
+		704CEB06C423B7D5BCF3C1AC7D520606 /* Pods-EMAsyncKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EMAsyncKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		72DC92FCA7DA4F96860E4F938B5EC903 /* EMAsyncKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = EMAsyncKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		73B461A4797805BE2F399BDBA837BB6F /* EMAsyncUtil_Web.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EMAsyncUtil_Web.m; sourceTree = "<group>"; };
+		746B093F9FD7241DEAC90B1FC9EA078F /* EMAsyncNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EMAsyncNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		76199858457B551F633C805B94C5936B /* EMAsync_cc@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "EMAsync_cc@2x.png"; sourceTree = "<group>"; };
+		79B313266A459258C37E0F60841CF84B /* Pods-EMAsyncKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EMAsyncKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		7A342374C8403AEE825AA55F8AD984A9 /* Pods-EMAsyncKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EMAsyncKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		878CB39FFE4D80F177FA075FB2E361B7 /* Pods-EMAsyncKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EMAsyncKit_Example-dummy.m"; sourceTree = "<group>"; };
+		8BDB615835F9457F2EAFB94D9D418DEB /* EMAsync_ProgressHUD_error@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "EMAsync_ProgressHUD_error@2x.png"; sourceTree = "<group>"; };
+		8CDC56815C6F095FE8434958FBC4F203 /* EMAsync_ee@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "EMAsync_ee@3x.png"; sourceTree = "<group>"; };
+		8E6BB9019A19679A4D5DB870AF151587 /* Pods-EMAsyncKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EMAsyncKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		91AAAA5B47B6A08C3BC05587117A8DD8 /* EMAsync_ee@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "EMAsync_ee@2x.png"; sourceTree = "<group>"; };
+		9658ECAD1837E5BCB24272BD2D14115F /* EMAsyncTabButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EMAsyncTabButton.m; sourceTree = "<group>"; };
+		97E6B1756563F958112C6076EA7B564B /* EMAsyncObserverMgr.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EMAsyncObserverMgr.m; sourceTree = "<group>"; };
+		9A6372CB3A784DFC103BDDEE4F352E02 /* EMAsyncEMAsyncViewController+EMAsyncAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EMAsyncEMAsyncViewController+EMAsyncAdditions.h"; sourceTree = "<group>"; };
+		9A857C38E2A87914E3948D235DBC5BDC /* EMAsyncSSDKProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EMAsyncSSDKProgressHUD.h; sourceTree = "<group>"; };
+		9B2F1971BCD47062144D424FC7E4E84E /* EMAsyncKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EMAsyncKit-umbrella.h"; sourceTree = "<group>"; };
+		9D4DA6EE7E27A77EE8AF274D5D2AB5F8 /* EMAsyncEMAsyncViewController+EMAsyncAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EMAsyncEMAsyncViewController+EMAsyncAdditions.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F9AADA84E718A5C08E4DF37CF29353B /* EMAsyncConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EMAsyncConstraintMaker.h; sourceTree = "<group>"; };
+		A2A74F4B7363AE1B3D215498A7262423 /* EMAsync_mw@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "EMAsync_mw@2x.png"; sourceTree = "<group>"; };
+		A3E8B4BD41B58AA4397B776576C48D07 /* EMAsyncKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EMAsyncKit.framework; path = EMAsyncKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC678BF7BF4D19EB446DF9B213E89288 /* EMAsyncHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMAsyncHeader.h; path = EMAsyncKit/Classes/EMAsyncHeader.h; sourceTree = "<group>"; };
+		AD81677C12061FA701FD2A7696C5853A /* EMAsync_gg@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "EMAsync_gg@2x.png"; sourceTree = "<group>"; };
+		B5AE993569C419AF07387E86CA69B12C /* EMAsyncTabButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EMAsyncTabButton.h; sourceTree = "<group>"; };
+		B5B46212C19CD2F4131921552C750478 /* EMAsyncReachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EMAsyncReachability.m; sourceTree = "<group>"; };
+		B733D1E1700C76BD75854AEFE6269241 /* EMAsync_bb@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "EMAsync_bb@2x.png"; sourceTree = "<group>"; };
+		B87F74254711411420AAFEC13EE1B3C7 /* EMAsyncViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EMAsyncViewAttribute.h; sourceTree = "<group>"; };
+		BADACA17AF46AE2589C9954C857C4A77 /* EMAsyncConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EMAsyncConstraintMaker.m; sourceTree = "<group>"; };
+		BB4499738CF7ECAB4DEC6F836894469D /* EMAsyncViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EMAsyncViewConstraint.h; sourceTree = "<group>"; };
+		BC83BC4CD3B92D3216F082609A0016F5 /* EMAsync_qq@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "EMAsync_qq@3x.png"; sourceTree = "<group>"; };
+		C0A45F954174E81D1EF1AF9C0AF363AC /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		C22533983D89CDAB27E115429328241F /* EMAsync_bb@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "EMAsync_bb@3x.png"; sourceTree = "<group>"; };
+		C4746DC6AEC1CFBD65D238915B671644 /* EMAsync_ProgressHUD_success.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = EMAsync_ProgressHUD_success.png; sourceTree = "<group>"; };
+		C725DAF33EDB487ED573916BD6D60567 /* EMAsync_mw.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = EMAsync_mw.png; sourceTree = "<group>"; };
+		CED37550BDD52305C6E52EC5A8ED94F9 /* EMAsyncReachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EMAsyncReachability.h; sourceTree = "<group>"; };
+		D151A8A6213745EB735CA6783A8228D6 /* EMAsyncProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EMAsyncProgressAnimatedView.h; sourceTree = "<group>"; };
+		D3DBEA06265B09E58CADAFE7AC2F0747 /* EMAsyncRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EMAsyncRadialGradientLayer.m; sourceTree = "<group>"; };
+		D48BF9D1925E735B6A7DC1866C6B999F /* EMAsync_gg.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = EMAsync_gg.png; sourceTree = "<group>"; };
+		D64E88FFE21BF32ADB55C5B3C3B37321 /* EMAsyncSonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EMAsyncSonry.h; sourceTree = "<group>"; };
+		D9230280C2CB75DAF621DE3532D7639E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		DA4A5B63CBF481356A28D71B167ABF7E /* EMAsync_ProgressHUD_success@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "EMAsync_ProgressHUD_success@3x.png"; sourceTree = "<group>"; };
+		DD1D516D62F03212FCCE315DAEFA1240 /* EMAsyncNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EMAsyncNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		E06E8B2698C337C01135EF6C907F0596 /* EMAsyncWebViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EMAsyncWebViewController.m; sourceTree = "<group>"; };
+		E0FEE2EFACB13C325F41123C313F6018 /* EMAsyncIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EMAsyncIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		E6DE1DCBD037AFD3FD15CAEC69406A72 /* EMAsyncDisplayViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EMAsyncDisplayViewController.h; sourceTree = "<group>"; };
+		E9C316E40B3A4333A1762663F9E08EAF /* EMAsync_ProgressHUD_info@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "EMAsync_ProgressHUD_info@3x.png"; sourceTree = "<group>"; };
+		EF516D5B734898989004A1463DE7D1E7 /* Pods-EMAsyncKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EMAsyncKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		F01BCB5BD9C6907A012FB2D4DEE2ED54 /* EMAsyncEMAsyncNSLayoutConstraint+EMAsyncDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EMAsyncEMAsyncNSLayoutConstraint+EMAsyncDebugAdditions.h"; sourceTree = "<group>"; };
+		F2937820EA50E4D55EEEA42C7E937264 /* EMAsyncEMAsyncNSArray+EMAsyncAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EMAsyncEMAsyncNSArray+EMAsyncAdditions.h"; sourceTree = "<group>"; };
+		F3A8702FA68522A517FC2A18E6AA2E7E /* Pods-EMAsyncKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EMAsyncKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F4BACE8E9BCDD6806A1E467AFFCF91DF /* EMAsyncUIView+DHQExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EMAsyncUIView+DHQExtension.m"; sourceTree = "<group>"; };
+		F721BD03489962FC60D9BD13C5411B02 /* EMAsyncIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EMAsyncIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		FAF75AA093406B8A024A3BBB5D81A67C /* EMAsyncUIButton+DHQStyle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EMAsyncUIButton+DHQStyle.m"; sourceTree = "<group>"; };
+		FDB53D98464984EB0017CEC6DCA41854 /* EMAsyncNSObject+SSDKProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EMAsyncNSObject+SSDKProgressHUD.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02688DDB1D3A035840CA8F25561C486C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49119526382B4B3DC4AB3C7D32DD83B4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3809AAF25430609DD5F83D09893E0B1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C289DFA9C4B9FE0B659FE5377ADEE2F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAF6C445A9B50BDB9B90DC23F5BDBB18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A46F4605431AD96B9AC17A75E0241F03 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0644D5752B02176452CAA4F25E1BEE7B /* TabarImage */ = {
+			isa = PBXGroup;
+			children = (
+				2C41366C81E395FC324E31007A7F3CE2 /* EMAsync_bb.png */,
+				B733D1E1700C76BD75854AEFE6269241 /* EMAsync_bb@2x.png */,
+				C22533983D89CDAB27E115429328241F /* EMAsync_bb@3x.png */,
+				16A1B7CCDD080E1E7FD6662AF381BC10 /* EMAsync_cc.png */,
+				76199858457B551F633C805B94C5936B /* EMAsync_cc@2x.png */,
+				53CF816675711566D2DB0EED7A7C5525 /* EMAsync_cc@3x.png */,
+				0992DF5C2F2F222122383AA1267AEF79 /* EMAsync_ee.png */,
+				91AAAA5B47B6A08C3BC05587117A8DD8 /* EMAsync_ee@2x.png */,
+				8CDC56815C6F095FE8434958FBC4F203 /* EMAsync_ee@3x.png */,
+				D48BF9D1925E735B6A7DC1866C6B999F /* EMAsync_gg.png */,
+				AD81677C12061FA701FD2A7696C5853A /* EMAsync_gg@2x.png */,
+				2F6FFA1D9DDEFC7356B1E93E8D766BCD /* EMAsync_gg@3x.png */,
+				C725DAF33EDB487ED573916BD6D60567 /* EMAsync_mw.png */,
+				A2A74F4B7363AE1B3D215498A7262423 /* EMAsync_mw@2x.png */,
+				2FA7E0AA7421EE5DB7D61FC320345096 /* EMAsync_mw@3x.png */,
+				40CF2636939AA2C1A722EA3F3C61110C /* EMAsync_qq.png */,
+				15D93D09E2EDC81B03DF4CACC07A98A9 /* EMAsync_qq@2x.png */,
+				BC83BC4CD3B92D3216F082609A0016F5 /* EMAsync_qq@3x.png */,
+			);
+			name = TabarImage;
+			path = TabarImage;
+			sourceTree = "<group>";
+		};
+		0DE1CB21326AFFB65B95062E764083C1 /* Pods-EMAsyncKit_Example */ = {
+			isa = PBXGroup;
+			children = (
+				65897DEDD81EB0175A6528A55BB4C5BE /* Pods-EMAsyncKit_Example.modulemap */,
+				7A342374C8403AEE825AA55F8AD984A9 /* Pods-EMAsyncKit_Example-acknowledgements.markdown */,
+				EF516D5B734898989004A1463DE7D1E7 /* Pods-EMAsyncKit_Example-acknowledgements.plist */,
+				878CB39FFE4D80F177FA075FB2E361B7 /* Pods-EMAsyncKit_Example-dummy.m */,
+				1C59A025B93E1F21A4A328EBB1E7901E /* Pods-EMAsyncKit_Example-frameworks.sh */,
+				005109F0C282FDA8976306C7FFB5DC46 /* Pods-EMAsyncKit_Example-Info.plist */,
+				3FEE0B2E852ECBAB2E11380540E72043 /* Pods-EMAsyncKit_Example-umbrella.h */,
+				69371A1AB516118401755C7A72038849 /* Pods-EMAsyncKit_Example.debug.xcconfig */,
+				4A562CEB6BA86AB5F8A0F9C54377396D /* Pods-EMAsyncKit_Example.release.xcconfig */,
+			);
+			name = "Pods-EMAsyncKit_Example";
+			path = "Target Support Files/Pods-EMAsyncKit_Example";
+			sourceTree = "<group>";
+		};
+		196C66849574204DA2259A3877A9F173 /* Res */ = {
+			isa = PBXGroup;
+			children = (
+				41148378B11E38CC3117ADC5D255D1FB /* EMAsync_ProgressHUD_error.png */,
+				8BDB615835F9457F2EAFB94D9D418DEB /* EMAsync_ProgressHUD_error@2x.png */,
+				5285B31328A0231DA680FC2910C9F421 /* EMAsync_ProgressHUD_error@3x.png */,
+				2F7CEA01C5EC8E5CBED76734CE903A24 /* EMAsync_ProgressHUD_info.png */,
+				1C2A83C328F0D8B20D8106DFBEBCD6CD /* EMAsync_ProgressHUD_info@2x.png */,
+				E9C316E40B3A4333A1762663F9E08EAF /* EMAsync_ProgressHUD_info@3x.png */,
+				C4746DC6AEC1CFBD65D238915B671644 /* EMAsync_ProgressHUD_success.png */,
+				17B2733ACDA77BA9EEA5CE020EC4D9DB /* EMAsync_ProgressHUD_success@2x.png */,
+				DA4A5B63CBF481356A28D71B167ABF7E /* EMAsync_ProgressHUD_success@3x.png */,
+			);
+			name = Res;
+			path = Res;
+			sourceTree = "<group>";
+		};
+		2722D0979F8C66E1E88FEBDFDE36750E /* EMAsyncKit */ = {
+			isa = PBXGroup;
+			children = (
+				0A511F186D8CA5543A8CAC12F58498CE /* EMAsyncDefine.h */,
+				AC678BF7BF4D19EB446DF9B213E89288 /* EMAsyncHeader.h */,
+				CAAF7EAF2B2F5BF0005CDE675FFA8FC6 /* EMAsync */,
+				CCFB75FCFDAA89C54C1546BA414F7F5C /* Lib */,
+				8CEA64CEC4B4CF720AA3D2C369A4C6E0 /* Pod */,
+				F88FEF22DD910F5059436B19ECB0B2FF /* Support Files */,
+			);
+			name = EMAsyncKit;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		8BB54C8E9E2D4880CB8D2BDDC7302D8C /* ProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				E0FEE2EFACB13C325F41123C313F6018 /* EMAsyncIndefiniteAnimatedView.h */,
+				F721BD03489962FC60D9BD13C5411B02 /* EMAsyncIndefiniteAnimatedView.m */,
+				FDB53D98464984EB0017CEC6DCA41854 /* EMAsyncNSObject+SSDKProgressHUD.h */,
+				1F0D725350B9F8602453278ACCBB9CAE /* EMAsyncNSObject+SSDKProgressHUD.m */,
+				D151A8A6213745EB735CA6783A8228D6 /* EMAsyncProgressAnimatedView.h */,
+				0CCB93175FBB3EEE809F728BC35AA9C9 /* EMAsyncProgressAnimatedView.m */,
+				54A4BA346DFDFA10949A937AC0B7DA43 /* EMAsyncProgressHUD.h */,
+				50F642D196FAD6125C911A3417B9DF3C /* EMAsyncProgressHUD.m */,
+				3FA682F1BD1C3F98231D5A5C25AB3F97 /* EMAsyncRadialGradientLayer.h */,
+				D3DBEA06265B09E58CADAFE7AC2F0747 /* EMAsyncRadialGradientLayer.m */,
+				9A857C38E2A87914E3948D235DBC5BDC /* EMAsyncSSDKProgressHUD.h */,
+				5DD221673FB4B58070EDE9E284F2C980 /* EMAsyncSSDKProgressHUD.m */,
+				196C66849574204DA2259A3877A9F173 /* Res */,
+			);
+			name = ProgressHUD;
+			path = ProgressHUD;
+			sourceTree = "<group>";
+		};
+		8CEA64CEC4B4CF720AA3D2C369A4C6E0 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				72DC92FCA7DA4F96860E4F938B5EC903 /* EMAsyncKit.podspec */,
+				5A917869199D8CC96DB869F649A10E30 /* LICENSE */,
+				D9230280C2CB75DAF621DE3532D7639E /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		991C57DB3DDEF2AA023D882247C623EB /* SSDKMAS */ = {
+			isa = PBXGroup;
+			children = (
+				50DFC9BCB1C215391F0AD6B53DBE3642 /* EMAsyncCompositeConstraint.h */,
+				4AC11D590AE98D354A150106BCC8161E /* EMAsyncCompositeConstraint.m */,
+				1F58047D006B63A34D7675D62173D75E /* EMAsyncConstraint.h */,
+				32BAFB016CD9706BEE5C659944B483D2 /* EMAsyncConstraint.m */,
+				9F9AADA84E718A5C08E4DF37CF29353B /* EMAsyncConstraintMaker.h */,
+				BADACA17AF46AE2589C9954C857C4A77 /* EMAsyncConstraintMaker.m */,
+				F2937820EA50E4D55EEEA42C7E937264 /* EMAsyncEMAsyncNSArray+EMAsyncAdditions.h */,
+				46870F57EFF5E73E72A9E44B387E47AE /* EMAsyncEMAsyncNSArray+EMAsyncAdditions.m */,
+				F01BCB5BD9C6907A012FB2D4DEE2ED54 /* EMAsyncEMAsyncNSLayoutConstraint+EMAsyncDebugAdditions.h */,
+				59CA2F38E5047D908C158F69FDD0FB42 /* EMAsyncEMAsyncNSLayoutConstraint+EMAsyncDebugAdditions.m */,
+				013BD6A614101D32D91CE90925B2A3EB /* EMAsyncEMAsyncView+EMAsyncAdditions.h */,
+				52A249859289B56231415CBDD1C370C6 /* EMAsyncEMAsyncView+EMAsyncAdditions.m */,
+				9A6372CB3A784DFC103BDDEE4F352E02 /* EMAsyncEMAsyncViewController+EMAsyncAdditions.h */,
+				9D4DA6EE7E27A77EE8AF274D5D2AB5F8 /* EMAsyncEMAsyncViewController+EMAsyncAdditions.m */,
+				239E2310433C0739980D59171BE7B272 /* EMAsyncLayoutConstraint.h */,
+				30C84E6C549EC7B67FB145A30FEAA881 /* EMAsyncLayoutConstraint.m */,
+				D64E88FFE21BF32ADB55C5B3C3B37321 /* EMAsyncSonry.h */,
+				B87F74254711411420AAFEC13EE1B3C7 /* EMAsyncViewAttribute.h */,
+				0A6FB3C8ABA71BFAEF57BD4CE090C7EE /* EMAsyncViewAttribute.m */,
+				BB4499738CF7ECAB4DEC6F836894469D /* EMAsyncViewConstraint.h */,
+				4DCB0109ACBC0F41A4D09BF7D5DEF88F /* EMAsyncViewConstraint.m */,
+				0D491FADF67E2141AB967C1BECC3A320 /* MASConstraint+Private.h */,
+				12892F11FB691049C4719912A0F8A563 /* MASUtilities.h */,
+				C0A45F954174E81D1EF1AF9C0AF363AC /* NSArray+MASShorthandAdditions.h */,
+				41DC312D3438B2559D94907C325E8786 /* View+MASShorthandAdditions.h */,
+			);
+			name = SSDKMAS;
+			path = SSDKMAS;
+			sourceTree = "<group>";
+		};
+		B8883BC1327BD6B573910B56A9841A41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3E8B4BD41B58AA4397B776576C48D07 /* EMAsyncKit.framework */,
+				178F80EE660B8A71CC9D1A9DB56A9C31 /* Pods_EMAsyncKit_Example.framework */,
+				58D8C14AE349EEF433B8563E656484CB /* Pods_EMAsyncKit_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CAAF7EAF2B2F5BF0005CDE675FFA8FC6 /* EMAsync */ = {
+			isa = PBXGroup;
+			children = (
+				E6DE1DCBD037AFD3FD15CAEC69406A72 /* EMAsyncDisplayViewController.h */,
+				746B093F9FD7241DEAC90B1FC9EA078F /* EMAsyncNetworkReachabilityManager.h */,
+				DD1D516D62F03212FCCE315DAEFA1240 /* EMAsyncNetworkReachabilityManager.m */,
+				400313447D2501ABB7902B5521CACB4F /* EMAsyncObserverMgr.h */,
+				97E6B1756563F958112C6076EA7B564B /* EMAsyncObserverMgr.m */,
+				CED37550BDD52305C6E52EC5A8ED94F9 /* EMAsyncReachability.h */,
+				B5B46212C19CD2F4131921552C750478 /* EMAsyncReachability.m */,
+				B5AE993569C419AF07387E86CA69B12C /* EMAsyncTabButton.h */,
+				9658ECAD1837E5BCB24272BD2D14115F /* EMAsyncTabButton.m */,
+				2474B9D5E22716B39238AC994C379000 /* EMAsyncUIButton+DHQStyle.h */,
+				FAF75AA093406B8A024A3BBB5D81A67C /* EMAsyncUIButton+DHQStyle.m */,
+				3BFBE3D311C9B7E2676019BA82E95677 /* EMAsyncUIView+DHQExtension.h */,
+				F4BACE8E9BCDD6806A1E467AFFCF91DF /* EMAsyncUIView+DHQExtension.m */,
+				173DE403ACC807EBFE4899D432597562 /* EMAsyncUtil_Web.h */,
+				73B461A4797805BE2F399BDBA837BB6F /* EMAsyncUtil_Web.m */,
+				E06E8B2698C337C01135EF6C907F0596 /* EMAsyncWebViewController.m */,
+				0644D5752B02176452CAA4F25E1BEE7B /* TabarImage */,
+			);
+			name = EMAsync;
+			path = EMAsyncKit/Classes/EMAsync;
+			sourceTree = "<group>";
+		};
+		CCFB75FCFDAA89C54C1546BA414F7F5C /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				8BB54C8E9E2D4880CB8D2BDDC7302D8C /* ProgressHUD */,
+				991C57DB3DDEF2AA023D882247C623EB /* SSDKMAS */,
+			);
+			name = Lib;
+			path = EMAsyncKit/Classes/Lib;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				F7E15B5C5E1DF2FEDAADCB15735A94AA /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				B8883BC1327BD6B573910B56A9841A41 /* Products */,
+				FE1967BFF18A7AE1B883B942228F7B2F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD38CA2508F580BC312E5F8069D672B2 /* Pods-EMAsyncKit_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				57E8355F87C24BDE04B31601357F6630 /* Pods-EMAsyncKit_Tests.modulemap */,
+				F3A8702FA68522A517FC2A18E6AA2E7E /* Pods-EMAsyncKit_Tests-acknowledgements.markdown */,
+				8E6BB9019A19679A4D5DB870AF151587 /* Pods-EMAsyncKit_Tests-acknowledgements.plist */,
+				59F8EE31390A067D43ADCB6DA2689884 /* Pods-EMAsyncKit_Tests-dummy.m */,
+				649CB11AEB578294807BC5A75D19713D /* Pods-EMAsyncKit_Tests-Info.plist */,
+				40256B320F235EA4B8C35B5D8B651E63 /* Pods-EMAsyncKit_Tests-umbrella.h */,
+				79B313266A459258C37E0F60841CF84B /* Pods-EMAsyncKit_Tests.debug.xcconfig */,
+				704CEB06C423B7D5BCF3C1AC7D520606 /* Pods-EMAsyncKit_Tests.release.xcconfig */,
+			);
+			name = "Pods-EMAsyncKit_Tests";
+			path = "Target Support Files/Pods-EMAsyncKit_Tests";
+			sourceTree = "<group>";
+		};
+		F7E15B5C5E1DF2FEDAADCB15735A94AA /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2722D0979F8C66E1E88FEBDFDE36750E /* EMAsyncKit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		F88FEF22DD910F5059436B19ECB0B2FF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F93EC13415FFC18A02F08AC18E2EF07 /* EMAsyncKit.modulemap */,
+				4319EF9C30F4820F34EACDBFADED180A /* EMAsyncKit.xcconfig */,
+				104D3C4B8623CFEC804347409FCE2C97 /* EMAsyncKit-dummy.m */,
+				6B9037626F36357C01370C66B1C74943 /* EMAsyncKit-Info.plist */,
+				515239171D3E546E2B35C9F27AEC8C6B /* EMAsyncKit-prefix.pch */,
+				9B2F1971BCD47062144D424FC7E4E84E /* EMAsyncKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/EMAsyncKit";
+			sourceTree = "<group>";
+		};
+		FE1967BFF18A7AE1B883B942228F7B2F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0DE1CB21326AFFB65B95062E764083C1 /* Pods-EMAsyncKit_Example */,
+				DD38CA2508F580BC312E5F8069D672B2 /* Pods-EMAsyncKit_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0958335D9E6FE216177ED6BF826CB766 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				444FA62EBC4BC801308FFD2559CC2B58 /* Pods-EMAsyncKit_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67887A0910B97AFF9D4D85B00FE0DE76 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0931CB757519E73FC2BF02B76261C7AA /* EMAsyncCompositeConstraint.h in Headers */,
+				4A5479677A510081B9EDCA60F8ACBD91 /* EMAsyncConstraint.h in Headers */,
+				A1C0E8EF01437AE2C4814913CDD15049 /* EMAsyncConstraintMaker.h in Headers */,
+				933761AD4926B4B1A332F1C8DE76411B /* EMAsyncDefine.h in Headers */,
+				B53FB77FC5149B2AC8A9E330E6D02BC8 /* EMAsyncDisplayViewController.h in Headers */,
+				1322CECB30416597C258BA93035287CC /* EMAsyncEMAsyncNSArray+EMAsyncAdditions.h in Headers */,
+				4AAF59A7AB5C8432FB6E2FE3F4022742 /* EMAsyncEMAsyncNSLayoutConstraint+EMAsyncDebugAdditions.h in Headers */,
+				5CBA0FA320B26E23B6B474CE9E99783F /* EMAsyncEMAsyncView+EMAsyncAdditions.h in Headers */,
+				ECF58AC26A6F80B43F60621F522EEE39 /* EMAsyncEMAsyncViewController+EMAsyncAdditions.h in Headers */,
+				C9EFD3842D08103F158461FDA310961E /* EMAsyncHeader.h in Headers */,
+				B2510E7EC54542BE20898B492E79260F /* EMAsyncIndefiniteAnimatedView.h in Headers */,
+				95797A5D527E381107E21598B925A8D5 /* EMAsyncKit-umbrella.h in Headers */,
+				D2C03293E010C24E8A58FCEDC8A471CA /* EMAsyncLayoutConstraint.h in Headers */,
+				9945474C00530970D670E1DDA5A73F74 /* EMAsyncNetworkReachabilityManager.h in Headers */,
+				E53CC811B19974F8565B119DAD1AD228 /* EMAsyncNSObject+SSDKProgressHUD.h in Headers */,
+				54645AB1E86CDA868392D7F5809C5BA3 /* EMAsyncObserverMgr.h in Headers */,
+				6661EAB4439F67FD58291056C03A476B /* EMAsyncProgressAnimatedView.h in Headers */,
+				09A2E1E7E5AC311C4E6ADB859C3E0AA2 /* EMAsyncProgressHUD.h in Headers */,
+				45D887D7EB1DEE386660B8FE6F578A90 /* EMAsyncRadialGradientLayer.h in Headers */,
+				CA3A224068A8A063D0019F5C138CE1C8 /* EMAsyncReachability.h in Headers */,
+				6460F79EAAC873CB87E5EE7BD9E1DE59 /* EMAsyncSonry.h in Headers */,
+				1FC3ABDEED33DC4C6B1F6A28D42635A1 /* EMAsyncSSDKProgressHUD.h in Headers */,
+				A95DF12A0EED152DE9E782526BDC9FF6 /* EMAsyncTabButton.h in Headers */,
+				C720FD745B1D631CAC32AD8DB0B9F59E /* EMAsyncUIButton+DHQStyle.h in Headers */,
+				198B29448CA02E22E129C5CA865D1D62 /* EMAsyncUIView+DHQExtension.h in Headers */,
+				F2E6A1B18D10934E7152B1B3DE96770D /* EMAsyncUtil_Web.h in Headers */,
+				E93D7431B5D0C48B444A1FD0410FD515 /* EMAsyncViewAttribute.h in Headers */,
+				98E6986C19AA01799C7CF73A4E3D77E3 /* EMAsyncViewConstraint.h in Headers */,
+				66F730D664ADE55D2C7AA6F99CF60F21 /* MASConstraint+Private.h in Headers */,
+				1217A482DA04C763DC00DB27F86F12F7 /* MASUtilities.h in Headers */,
+				F19E95B9514626E3EF887A284628FE96 /* NSArray+MASShorthandAdditions.h in Headers */,
+				72D56B41C8A6966CB4925E934B0CEAC2 /* View+MASShorthandAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFE4602A18EC9659E12A8C97A4A29342 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B3CFE9D6070F3D0661E08D77127182B /* Pods-EMAsyncKit_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		22C6C4084AB55CD98B0E6F9D6B903F8D /* Pods-EMAsyncKit_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E6AF524F195FA16584B4AC782443BE1 /* Build configuration list for PBXNativeTarget "Pods-EMAsyncKit_Tests" */;
+			buildPhases = (
+				0958335D9E6FE216177ED6BF826CB766 /* Headers */,
+				5EA2293FCB8D23974538D892A844B94B /* Sources */,
+				02688DDB1D3A035840CA8F25561C486C /* Frameworks */,
+				379D7881C2121894A149FC960C57C6CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECAB536B5542166B1D6EF5CEA80CF75A /* PBXTargetDependency */,
+			);
+			name = "Pods-EMAsyncKit_Tests";
+			productName = "Pods-EMAsyncKit_Tests";
+			productReference = 58D8C14AE349EEF433B8563E656484CB /* Pods_EMAsyncKit_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BB3149838FBEBE6DD633A0868FFB5460 /* EMAsyncKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1640F8D72209F7B81601E7003C1701BD /* Build configuration list for PBXNativeTarget "EMAsyncKit" */;
+			buildPhases = (
+				67887A0910B97AFF9D4D85B00FE0DE76 /* Headers */,
+				8835AFECC2FF913F48CA2ADAD70D9971 /* Sources */,
+				FAF6C445A9B50BDB9B90DC23F5BDBB18 /* Frameworks */,
+				C81177FB258DFBA775F4E059D992E968 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EMAsyncKit;
+			productName = EMAsyncKit;
+			productReference = A3E8B4BD41B58AA4397B776576C48D07 /* EMAsyncKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F5CE5612B980F0BAC4BCB6CB6BEC8DDB /* Pods-EMAsyncKit_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94393ED6CDE7EE803A756D819A1830A3 /* Build configuration list for PBXNativeTarget "Pods-EMAsyncKit_Example" */;
+			buildPhases = (
+				EFE4602A18EC9659E12A8C97A4A29342 /* Headers */,
+				897C708160BC133472E014C14FCA040E /* Sources */,
+				3809AAF25430609DD5F83D09893E0B1F /* Frameworks */,
+				A8F516FF0EA59E877C5D77B54C44048F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B3863B85F6E5CA5A2D117B3505C16FF /* PBXTargetDependency */,
+			);
+			name = "Pods-EMAsyncKit_Example";
+			productName = "Pods-EMAsyncKit_Example";
+			productReference = 178F80EE660B8A71CC9D1A9DB56A9C31 /* Pods_EMAsyncKit_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = B8883BC1327BD6B573910B56A9841A41 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB3149838FBEBE6DD633A0868FFB5460 /* EMAsyncKit */,
+				F5CE5612B980F0BAC4BCB6CB6BEC8DDB /* Pods-EMAsyncKit_Example */,
+				22C6C4084AB55CD98B0E6F9D6B903F8D /* Pods-EMAsyncKit_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		379D7881C2121894A149FC960C57C6CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8F516FF0EA59E877C5D77B54C44048F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C81177FB258DFBA775F4E059D992E968 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5EA2293FCB8D23974538D892A844B94B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45C68427E792CF91BF7DFB0EA63427D3 /* Pods-EMAsyncKit_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8835AFECC2FF913F48CA2ADAD70D9971 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E4E61A4B958DD72AA3C7066D38FCE77 /* EMAsync_bb.png in Sources */,
+				A26AF829D48DEE1954A98202B4FE72B6 /* EMAsync_bb@2x.png in Sources */,
+				F58E2CA66697D45A0624AA68E2855C0A /* EMAsync_bb@3x.png in Sources */,
+				19D26CB80AFABE083F2720312EFFF8C7 /* EMAsync_cc.png in Sources */,
+				D2305283A3BFE60C2E0898BC0B94F62D /* EMAsync_cc@2x.png in Sources */,
+				E00C64D944E14E8A5D9851ABFC15DA27 /* EMAsync_cc@3x.png in Sources */,
+				729C6817825D50853EB74EF1F8FF1243 /* EMAsync_ee.png in Sources */,
+				ED010D6C48D31A129754356D9CDD0317 /* EMAsync_ee@2x.png in Sources */,
+				D98495E506B2508A245B0626F838A37F /* EMAsync_ee@3x.png in Sources */,
+				855B4DD3F2B6FFEB820D2004C0E892BC /* EMAsync_gg.png in Sources */,
+				1E16A575CA99189A2F8777C8FAF8E164 /* EMAsync_gg@2x.png in Sources */,
+				A468CBC1B909F1D90DF548602CE23A54 /* EMAsync_gg@3x.png in Sources */,
+				9545153CC4CE49B79CAD4CB569E4EE9B /* EMAsync_mw.png in Sources */,
+				68E1E3AB71C5FFB64130F8D497046B4E /* EMAsync_mw@2x.png in Sources */,
+				7272587B23D2A7186415C4622C3F9713 /* EMAsync_mw@3x.png in Sources */,
+				061F962C12AE680F2F546561152ADA0D /* EMAsync_ProgressHUD_error.png in Sources */,
+				B0516C0EAEC195C5A9FCAD9BD4FE5D13 /* EMAsync_ProgressHUD_error@2x.png in Sources */,
+				DB52F36347F0042CE419808F55D87F6E /* EMAsync_ProgressHUD_error@3x.png in Sources */,
+				8AEA276BAD78D5126C3CA975AEBDEE83 /* EMAsync_ProgressHUD_info.png in Sources */,
+				ECB7E5067C5C039B7B9DE8EF4856CBDF /* EMAsync_ProgressHUD_info@2x.png in Sources */,
+				E1180F8B1954EC2A65566AB14F2072E5 /* EMAsync_ProgressHUD_info@3x.png in Sources */,
+				69CC2876918BDF38BE6D5E1F45EB3E84 /* EMAsync_ProgressHUD_success.png in Sources */,
+				F1B31DD8F147CCB52371DA17B2E6191D /* EMAsync_ProgressHUD_success@2x.png in Sources */,
+				4DD16AAF1517072817F7BCE8315EE808 /* EMAsync_ProgressHUD_success@3x.png in Sources */,
+				089C11374941BF2306C3EFFC44DFC4BC /* EMAsync_qq.png in Sources */,
+				DC693611B75157142881893AA40B8636 /* EMAsync_qq@2x.png in Sources */,
+				5E40E6101EDA150402CC9BE73A6AF2C5 /* EMAsync_qq@3x.png in Sources */,
+				2F6220A6F3F271B4B4946F427D941212 /* EMAsyncCompositeConstraint.m in Sources */,
+				CFA11536A09A0B1DD9A4CF686448AFE1 /* EMAsyncConstraint.m in Sources */,
+				23AEDA7F073ED12E694945A5EE837309 /* EMAsyncConstraintMaker.m in Sources */,
+				8CF9290E7E98BD7858112E2841A5A0FE /* EMAsyncEMAsyncNSArray+EMAsyncAdditions.m in Sources */,
+				1328C74A207700563DB764951D9773E0 /* EMAsyncEMAsyncNSLayoutConstraint+EMAsyncDebugAdditions.m in Sources */,
+				2DEC6BD845FB31B840C5696548D785DD /* EMAsyncEMAsyncView+EMAsyncAdditions.m in Sources */,
+				E5107CD75EBB59786880836B654AF34F /* EMAsyncEMAsyncViewController+EMAsyncAdditions.m in Sources */,
+				189D69C9E61D5457C5FA9244383B28D7 /* EMAsyncIndefiniteAnimatedView.m in Sources */,
+				F80F07631281DBDACBA399941B0DDA55 /* EMAsyncKit-dummy.m in Sources */,
+				B50B4A138FF9EDC0DC3F4CD6D3ADA6FB /* EMAsyncLayoutConstraint.m in Sources */,
+				C73B4D8D38B81B6EA5096226605FFBD2 /* EMAsyncNetworkReachabilityManager.m in Sources */,
+				7BEDE43AC6D535A68E6FBD439BCA76C7 /* EMAsyncNSObject+SSDKProgressHUD.m in Sources */,
+				7697D29511A86D54D7443FC7A94D54C3 /* EMAsyncObserverMgr.m in Sources */,
+				8519ED2DE2C8543912ECAEED3BFE5175 /* EMAsyncProgressAnimatedView.m in Sources */,
+				0DDC18D7523CC934CEDEC2A3827A9EE0 /* EMAsyncProgressHUD.m in Sources */,
+				3934875DB4DD5297F954C5E189AAAD79 /* EMAsyncRadialGradientLayer.m in Sources */,
+				CE8C67AED03F1F2D4783527B939710D9 /* EMAsyncReachability.m in Sources */,
+				7599E7B93A8777CB85506B17854088D7 /* EMAsyncSSDKProgressHUD.m in Sources */,
+				1DBBC5C6EACA7FFB7021DDF7446A1D48 /* EMAsyncTabButton.m in Sources */,
+				9B3D45D3FF9F5D7FF9E53BB93655E8A0 /* EMAsyncUIButton+DHQStyle.m in Sources */,
+				392A1EAA9EF80E7DC844549DB877C11F /* EMAsyncUIView+DHQExtension.m in Sources */,
+				9B75FD4CBC0E50C84DD9B020825DACCB /* EMAsyncUtil_Web.m in Sources */,
+				69688D2C4D289ECDE6D615D8528EC5A8 /* EMAsyncViewAttribute.m in Sources */,
+				DF8348C25804CEA8BB61DB1EA15AB218 /* EMAsyncViewConstraint.m in Sources */,
+				510DE5BB1958D6AA07FF464C38CDE7B5 /* EMAsyncWebViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		897C708160BC133472E014C14FCA040E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDC6E2DA9085158A3104A1CB3BABBBE2 /* Pods-EMAsyncKit_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9B3863B85F6E5CA5A2D117B3505C16FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EMAsyncKit;
+			target = BB3149838FBEBE6DD633A0868FFB5460 /* EMAsyncKit */;
+			targetProxy = 89D7919434275D3DA6F616F9A5F60ACD /* PBXContainerItemProxy */;
+		};
+		ECAB536B5542166B1D6EF5CEA80CF75A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-EMAsyncKit_Example";
+			target = F5CE5612B980F0BAC4BCB6CB6BEC8DDB /* Pods-EMAsyncKit_Example */;
+			targetProxy = 40825B48C254117E7107AE26A608BF8F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		162D7042F5535B81B60018571714BE00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A562CEB6BA86AB5F8A0F9C54377396D /* Pods-EMAsyncKit_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EMAsyncKit_Example/Pods-EMAsyncKit_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EMAsyncKit_Example/Pods-EMAsyncKit_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		852B9CE6A16535F50B29CEEE5D1F104F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79B313266A459258C37E0F60841CF84B /* Pods-EMAsyncKit_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EMAsyncKit_Tests/Pods-EMAsyncKit_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EMAsyncKit_Tests/Pods-EMAsyncKit_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8C2C062846BF76B2CDD0B7C69AEC1924 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4319EF9C30F4820F34EACDBFADED180A /* EMAsyncKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/EMAsyncKit/EMAsyncKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EMAsyncKit/EMAsyncKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/EMAsyncKit/EMAsyncKit.modulemap";
+				PRODUCT_MODULE_NAME = EMAsyncKit;
+				PRODUCT_NAME = EMAsyncKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AF68CC4B2CA9B2A94D5EF4AE907FD8AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69371A1AB516118401755C7A72038849 /* Pods-EMAsyncKit_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EMAsyncKit_Example/Pods-EMAsyncKit_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EMAsyncKit_Example/Pods-EMAsyncKit_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AFF3E25E269579200F6B857ADF1AF54D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 704CEB06C423B7D5BCF3C1AC7D520606 /* Pods-EMAsyncKit_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EMAsyncKit_Tests/Pods-EMAsyncKit_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EMAsyncKit_Tests/Pods-EMAsyncKit_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E944B6C73E85AD0463F5E56C016CECED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4319EF9C30F4820F34EACDBFADED180A /* EMAsyncKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/EMAsyncKit/EMAsyncKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EMAsyncKit/EMAsyncKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/EMAsyncKit/EMAsyncKit.modulemap";
+				PRODUCT_MODULE_NAME = EMAsyncKit;
+				PRODUCT_NAME = EMAsyncKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1640F8D72209F7B81601E7003C1701BD /* Build configuration list for PBXNativeTarget "EMAsyncKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E944B6C73E85AD0463F5E56C016CECED /* Debug */,
+				8C2C062846BF76B2CDD0B7C69AEC1924 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E6AF524F195FA16584B4AC782443BE1 /* Build configuration list for PBXNativeTarget "Pods-EMAsyncKit_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				852B9CE6A16535F50B29CEEE5D1F104F /* Debug */,
+				AFF3E25E269579200F6B857ADF1AF54D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
+				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94393ED6CDE7EE803A756D819A1830A3 /* Build configuration list for PBXNativeTarget "Pods-EMAsyncKit_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF68CC4B2CA9B2A94D5EF4AE907FD8AC /* Debug */,
+				162D7042F5535B81B60018571714BE00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

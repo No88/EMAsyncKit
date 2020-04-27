@@ -1,0 +1,16 @@
+PODS:
+  - EMAsyncKit (0.1.0)
+
+DEPENDENCIES:
+  - EMAsyncKit (from `../`)
+
+EXTERNAL SOURCES:
+  EMAsyncKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  EMAsyncKit: d8281a9556ab69d007fea8531abe1cc087097032
+
+PODFILE CHECKSUM: f878a83281aca93d6f45b6dc8e8248c455b97f0d
+
+COCOAPODS: 1.7.5

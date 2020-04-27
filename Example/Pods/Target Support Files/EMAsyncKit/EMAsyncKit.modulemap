@@ -1,0 +1,6 @@
+framework module EMAsyncKit {
+  umbrella header "EMAsyncKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
