@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'EMAsyncKit_Example' do
+  pod 'EMAsyncKit', :path => '../'
+
+  target 'EMAsyncKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
