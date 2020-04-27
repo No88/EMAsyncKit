@@ -338,7 +338,6 @@ createWebViewWithConfiguration:(WKWebViewConfiguration *)configuration
     [self openOtherAppWithUIWebView:webView];
 }
 - (void)openOtherAppWithUIWebView:(WKWebView *)webView {
-    
     if ([webView.URL.absoluteString hasPrefix:@"https://itunes.apple"]
         ||[webView.URL.absoluteString hasPrefix:@"https://apps.apple"]) {
         [[UIApplication sharedApplication] openURL:webView.URL];
