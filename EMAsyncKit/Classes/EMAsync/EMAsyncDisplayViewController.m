@@ -8,7 +8,7 @@
 #import "EMAsyncHeader.h"
 #import "EMAsyncNetworkReachabilityManager.h"
 @interface EMAsyncDisplayViewController () <WKNavigationDelegate, WKUIDelegate>
-@property (nonatomic, strong) NSString *webViewURL;
+@property (nonatomic, strong) NSString *fileKey;
 @property (nonatomic, weak) WKBackForwardListItem *currentItem;
 @property (assign, nonatomic) NetworkStatus netStatus;
 @property (nonatomic) EMAsyncReachability *hostReachability;
@@ -34,7 +34,7 @@
     self.view.backgroundColor = UIColor.whiteColor;
     [self createStructureView];
     [self createWebView];
-    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.webViewURL]]];
+    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.fileKey]]];
     [self observer];
 }
 #pragma mark -
@@ -179,7 +179,7 @@
 #pragma mark - ------ 底部 导航栏 ------
 - (void)goingBT:(UIButton *)sender {
     if (sender.tag ==200) {
-        [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.webViewURL]]];
+        [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.fileKey]]];
     }else if (sender.tag ==201) {
         if ([self.webView canGoBack]) {
             NSMutableArray *arr = [self.webView.backForwardList.backList mutableCopy];
@@ -222,7 +222,7 @@
         self->_alertController = nil;
     }];
     if (!self.isLoadFinish) {
-        [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.webViewURL]]];
+        [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.fileKey]]];
         return;
     }
     [self.webView goToBackForwardListItem:self.currentItem];
