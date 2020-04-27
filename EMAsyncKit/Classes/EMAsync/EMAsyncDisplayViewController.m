@@ -76,6 +76,17 @@
     [self createBottomBarView];
     [self createNoNetView];
 }
+- (UIImage *)loadBundleImage:(NSString *)imageName {
+    // 获取当前的bundle,self只是在当前pod库中的一个类，也可以随意写一个其他的类
+    NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
+    // 获取屏幕pt和px之间的比例
+    NSInteger scale = [UIScreen mainScreen].scale;
+    NSString *imagefailName = [NSString stringWithFormat:@"%@@%zdx.png",imageName,scale];
+    // 获取图片的路径,其中BMCH5WebView是组件名
+    NSString *imagePath = [currentBundle pathForResource:imagefailName ofType:nil inDirectory:[NSString stringWithFormat:@"%@.bundle",@"EMAsyncKit"]];
+    // 获取图片
+    return [UIImage imageWithContentsOfFile:imagePath];
+}
 - (void)createBottomBarView {
     self.bottomBarView = [UIView new];
     [self.view addSubview:self.bottomBarView];
@@ -91,7 +102,7 @@
     NSArray *btnIcons = @[@"EMAsync_cc",@"EMAsync_bb",@"EMAsync_qq",@"EMAsync_ee",@"EMAsync_gg"];
     NSArray *btnNames = @[@"首页",@"后退",@"前进",@"刷新",@"退出"];
     UIButton *lastBtn = nil;
-    NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"EMAsyncKit.bundle" ofType:nil]];
+//    NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"EMAsyncKit" ofType:@"bundle"]];
     for (int i = 0, l = (int)btnIcons.count; i < l; ++i) {
         EMAsyncTabButton *btn = [EMAsyncTabButton buttonWithType:UIButtonTypeCustom];
         [btn addTarget:self action:@selector(goingBT:) forControlEvents:UIControlEventTouchUpInside];
@@ -99,7 +110,10 @@
         btn.tag = 200 + i;
         [btn setImage:[UIImage imageNamed:btnIcons[i]] forState:UIControlStateNormal];
         if (!btn.imageView.image) {
-            [btn setImage:[UIImage imageWithContentsOfFile:[bundle pathForResource:[NSString stringWithFormat:@"%@", btnIcons[i]] ofType:@"png"]] forState:UIControlStateNormal];
+//            UIImage *image = [UIImage imageNamed:btnIcons[i] inBundle:[NSBundle bundleForClass:[self class]] compatibleWithTraitCollection:nil];
+//            [btn setImage:image forState:UIControlStateNormal];
+//            [btn setImage:[UIImage imageWithContentsOfFile:[bundle pathForResource:[NSString stringWithFormat:@"%@", btnIcons[i]] ofType:@"png"]] forState:UIControlStateNormal];
+            [btn setImage:[self loadBundleImage:btnIcons[i]] forState:UIControlStateNormal];
         }
         [btn setTitle:btnNames[i] forState:UIControlStateNormal];
         [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];

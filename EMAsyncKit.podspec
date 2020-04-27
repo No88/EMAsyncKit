@@ -33,7 +33,7 @@ TODO: Add long description of the pod here.
   s.source_files = 'EMAsyncKit/Classes/**/*'
   
   s.resource_bundles = {
-    'EMAsyncKit' => ['EMAsyncKit/Assets/EMAsyncKit.bundle/*.png']
+    'EMAsyncKit' => ['EMAsyncKit/Assets/*']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

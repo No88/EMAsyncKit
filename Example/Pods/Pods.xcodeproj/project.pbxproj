@@ -7,31 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0057B338D01F76D647BFE448573504AA /* EMAsync_ProgressHUD_success.png in Resources */ = {isa = PBXBuildFile; fileRef = 51FABC5859B4EEEAE91B00B8F7A00B7F /* EMAsync_ProgressHUD_success.png */; };
+		01AE8FA6EC35228693C8D6024B5DD006 /* EMAsync_bb@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9FEFF0EC3771CD08E49A4845E7CBC71 /* EMAsync_bb@3x.png */; };
 		01F7AC76897E7D3F0202D20DD58FEE92 /* EMAsyncObserverMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4FB66508E9B57254D86B05094BEBF2 /* EMAsyncObserverMgr.m */; };
 		037A1E6C7A8ED2AEDF8FF2ED34715BCA /* EMAsyncTabButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CC25A3D49FEF9082E75E9C5091DD925 /* EMAsyncTabButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		042C19E2DFE11E71299CCAC69224942E /* EMAsyncUtil_Web.h in Headers */ = {isa = PBXBuildFile; fileRef = 83D8FBB25F46F329A98515D9ED2698BF /* EMAsyncUtil_Web.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		04D534A3D1238562223F79D1202C4267 /* EMAsync_qq@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 72091FA8FD90488EF9C58CD009F8F658 /* EMAsync_qq@2x.png */; };
 		05E7EDCEA1F88C62E38449E74ED88B63 /* EMAsyncProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ECFC58FD0B1965ABC0A0664846CE788 /* EMAsyncProgressAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0762AAD8476CF6DFCEBA7F26CA70C14C /* EMAsyncConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = C34FAE6349FA1AC1D73232D6B15D1167 /* EMAsyncConstraintMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		07F70E953B0D7F26B32083CE2A28259B /* EMAsyncUtil_Web.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C81E8B91D65A0304E609F8948BEB2CA /* EMAsyncUtil_Web.m */; };
-		0C4AAB5FCD64BA3191AA7FB0E844B9D0 /* EMAsync_ProgressHUD_error@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6088F91549DB23D7D8EAB98DD7B76137 /* EMAsync_ProgressHUD_error@2x.png */; };
 		16E3CA39ECEA895731E0DB94A633DE99 /* EMAsyncKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6C718D632D68534EFF8677937D645496 /* EMAsyncKit.bundle */; };
 		1747F9D74BC634B43214E64DA23F6FE9 /* EMAsyncUIView+DHQExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 562DDF772AABE523BADF4FADAD6AD3F5 /* EMAsyncUIView+DHQExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		187971E6CC019B3C8344F563AF72E16D /* EMAsyncEMAsyncView+EMAsyncAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 98511A48DD851BEDF1779C8A574A7BCF /* EMAsyncEMAsyncView+EMAsyncAdditions.m */; };
-		1AAC4AB76A27A63BF76FEB073CA205FF /* EMAsync_mw@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D8FEE0C14CF94AAC4A307E6D0C1550CF /* EMAsync_mw@3x.png */; };
 		1D1DFFABB4C37347E13E2F1FC22935D1 /* EMAsyncRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 384924E1917C3C708A96730B3FCD980A /* EMAsyncRadialGradientLayer.m */; };
-		1E8B55ED0A148D69C0F5F3BF9524B3CF /* EMAsync_ee@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E5ACDFB51B52727BD580DF114ECB3A7 /* EMAsync_ee@3x.png */; };
 		24ABD0BDEFFB27F622964D173B40F721 /* EMAsyncProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D686DAC686A4E0FCBEB0CC304C24107 /* EMAsyncProgressAnimatedView.m */; };
+		25D3C67E30DF375F4926673505A994F2 /* EMAsync_cc.png in Resources */ = {isa = PBXBuildFile; fileRef = 0748C50A7094FABE664E20AADD4CA45E /* EMAsync_cc.png */; };
 		2617E7CD41E521949D3DB4521A495A3E /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = BCC4D999402FE672C6E0F33478A353DF /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		264F9116CCA7D636D468AC460FF5C71C /* EMAsync_ee@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C018D3FFE86941EEB5E631B6F54909DB /* EMAsync_ee@2x.png */; };
+		29197EB4FFA4800E4893B5065F08E5C6 /* EMAsync_ee.png in Resources */ = {isa = PBXBuildFile; fileRef = 91E5C2E389CCE04745A5BA71F959A45F /* EMAsync_ee.png */; };
+		2AD806DB76DD7FEE3EE3CFD80E27D50A /* EMAsync_gg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40301584E0245BF4F9002DADC62DCEEB /* EMAsync_gg@2x.png */; };
 		2DD02C1603FAC5D5F4F826774DFB8189 /* EMAsyncUIButton+DHQStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = A641C30B17358B0589978075C8D1E34D /* EMAsyncUIButton+DHQStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E910300CA5A85FB14528ACA93C8E921 /* EMAsync_cc@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 907AE79CD46A98E83627609B9E8CC1C1 /* EMAsync_cc@2x.png */; };
+		2F4361F91542FE3AC9A818664CB6F8EA /* EMAsync_ProgressHUD_success.png in Resources */ = {isa = PBXBuildFile; fileRef = FF21B3091E6D5E14B4868A515DC0D923 /* EMAsync_ProgressHUD_success.png */; };
 		3103EEEC14C2F137F963326A05294A39 /* EMAsyncObserverMgr.h in Headers */ = {isa = PBXBuildFile; fileRef = 416C59A853F08B29B055A669E31DDDF9 /* EMAsyncObserverMgr.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		333F65B611B419B43C1BCBA1693C1959 /* EMAsync_cc@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD7EF7E4382F0F374231380B8E855F0C /* EMAsync_cc@2x.png */; };
+		324C2DF2F15C4E5A6CC68B9072954F08 /* EMAsync_qq@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2FFC5A6FC65C26129EF3F6609DD2CC9 /* EMAsync_qq@2x.png */; };
+		346ED9748B3B75C7727DF8434CD60FA1 /* EMAsync_ProgressHUD_info.png in Resources */ = {isa = PBXBuildFile; fileRef = B3AE1A19B4503CAE696B2CC1AA763CFF /* EMAsync_ProgressHUD_info.png */; };
 		35D9B23AB39D9313328BBEAD27C2E75D /* EMAsyncKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DD7A06FF038498B3081165E1A682F9EE /* EMAsyncKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		378ABCFA2219241569CCAEBB9F4B0C1F /* EMAsync_mw.png in Resources */ = {isa = PBXBuildFile; fileRef = 381099766E447562CB84758B86CFE0FE /* EMAsync_mw.png */; };
 		381B8547F0DA5796546AEE902BD75376 /* EMAsyncNSObject+SSDKProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 7123BBC15213606889DB59E43438FE34 /* EMAsyncNSObject+SSDKProgressHUD.m */; };
 		3A842F0F9EC2ACDF5D4383364C75CABE /* EMAsyncEMAsyncViewController+EMAsyncAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 57DA8F9AC7EC3E493A64F14074C0C9FC /* EMAsyncEMAsyncViewController+EMAsyncAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3C5D26D3F2FC6B8D95F7984B5846E5C7 /* EMAsyncProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F294F032616F1858CCEB60D4ACB7F0FC /* EMAsyncProgressHUD.m */; };
+		3E68E15ED7DF039FC87BD31C007DB6A4 /* EMAsync_ProgressHUD_info@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C2ED6CA79567C77892B6D10E2C487A1 /* EMAsync_ProgressHUD_info@3x.png */; };
+		3EBB90E1351BECEC68668ED60910FBC2 /* EMAsync_ProgressHUD_error@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DC7F8314A845F2FF5C33641348ECCA7 /* EMAsync_ProgressHUD_error@3x.png */; };
 		41CD3C30F832998249ED32B8517ECE7B /* EMAsyncLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FCB6E8B655FB9A293717A7E27A5DB85 /* EMAsyncLayoutConstraint.m */; };
 		444FA62EBC4BC801308FFD2559CC2B58 /* Pods-EMAsyncKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 40256B320F235EA4B8C35B5D8B651E63 /* Pods-EMAsyncKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4526A9DA6EA5C7005779F415B68D488A /* EMAsyncReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D6DC5F3B4A825F910B9D44132D8920E0 /* EMAsyncReachability.m */; };
@@ -42,63 +46,59 @@
 		4C16786B580CDB04947A37BEEB6B814A /* EMAsyncViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 5477ABE979A63CDBA7E7E1A707E3074F /* EMAsyncViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C289DFA9C4B9FE0B659FE5377ADEE2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		4E38CD36D24FD943D7FE6CB9E9A66D59 /* EMAsyncViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 21180EE3FDF9767602176159B496B183 /* EMAsyncViewConstraint.m */; };
-		503788FE359AC75E97304F966F5A48ED /* EMAsync_ProgressHUD_success@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D7279380BB34E504B911FD2BC3E0F037 /* EMAsync_ProgressHUD_success@3x.png */; };
 		5B3CFE9D6070F3D0661E08D77127182B /* Pods-EMAsyncKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FEE0B2E852ECBAB2E11380540E72043 /* Pods-EMAsyncKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		607D2D199AE70D1891B05489F963D532 /* EMAsyncCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 93651B408CFE6BED261BD9CEBD40C1CB /* EMAsyncCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6232934EDDF2A82A9F8F796C27A80216 /* EMAsyncNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A892773A4EF415F82F97079C47A08D /* EMAsyncNetworkReachabilityManager.m */; };
 		64B121A4D46E914A96C7D665F8721392 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = DE30C3396861AAFB17C3868A806CDAC8 /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65398C1E65B8EEC25B14C30D0235319A /* EMAsync_bb.png in Resources */ = {isa = PBXBuildFile; fileRef = 40053AABD7225100F468B6EFA0F786C0 /* EMAsync_bb.png */; };
 		689C5CBBEE96AE92AC19B062FA2F7AD6 /* EMAsyncKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E199FF6C80F5470953974898C27EA58E /* EMAsyncKit-dummy.m */; };
+		6B4FFB9620839A09863B817797E92C48 /* EMAsync_qq@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BACE33C40C607E1C5B6A9F7099661463 /* EMAsync_qq@3x.png */; };
 		7298F922E0C509605853831FA251F1A1 /* EMAsyncEMAsyncView+EMAsyncAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C45F0047C6F5341C48AB5979DF3F0EC /* EMAsyncEMAsyncView+EMAsyncAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		770F79E9A052D21F44CF2F3FBD2B9BD1 /* EMAsync_bb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62533F31D4CA3DEC90F91A7859FE18AA /* EMAsync_bb@2x.png */; };
 		7725692383A6482C01F8857877294C01 /* EMAsyncUIView+DHQExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB42F90962ED007FD4AA9AE253E11CA /* EMAsyncUIView+DHQExtension.m */; };
-		7E2F9A3378994B0FD68853956EAF8DBE /* EMAsync_qq@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD6B392D016E98A2645949CDDC7BD172 /* EMAsync_qq@3x.png */; };
 		8054F9C2ADE5B2E72AE293D3CFF21046 /* EMAsyncProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 771CC408BC5E8B7A3026482EA1E3D5C6 /* EMAsyncProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		806557494CCC799FF213700B3C8C1F7E /* EMAsync_ProgressHUD_success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 148E754D16326AE9926D0649500A4EAF /* EMAsync_ProgressHUD_success@2x.png */; };
 		878695C1BA557FCF02990C13684C65F5 /* EMAsyncDisplayViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 32C84F005EB9F6F77477DC30DE8C6297 /* EMAsyncDisplayViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		87DF66B228A89E56C40F960197954ED7 /* EMAsync_bb.png in Resources */ = {isa = PBXBuildFile; fileRef = C50240BAF59E4CEC4E6106FABEA63151 /* EMAsync_bb.png */; };
+		883FD6987CDDF412333449B839821B36 /* EMAsync_cc@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A9D39146287F9C6EB9209A66D4424832 /* EMAsync_cc@3x.png */; };
 		8ABFB2B32AD823D79D793DF7A563C015 /* EMAsyncEMAsyncNSLayoutConstraint+EMAsyncDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C155989C3C54A91B3BC5C5B994F26AB /* EMAsyncEMAsyncNSLayoutConstraint+EMAsyncDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8E7FA3027C82668108A3B0CE8277A376 /* EMAsync_bb@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ED8F78B8E6A841D66FB2A3716F7BFC9 /* EMAsync_bb@3x.png */; };
 		8F9F207901FC6A7570CA5EAD2720E017 /* EMAsyncConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D3BC968881147E6800C5DFB393AF93 /* EMAsyncConstraintMaker.m */; };
-		94F53B37DC630F194CA5EF37B3F55749 /* EMAsync_ee@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFF5B9DB3EE4E95B6D1962668C776370 /* EMAsync_ee@2x.png */; };
 		95F45221BCB542261E38E8525E710515 /* EMAsyncDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = F0FCA39401CA899F16D0368687159D71 /* EMAsyncDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AF4DCF607AC2C7FB00ECDC86DCE13C2 /* EMAsync_ee@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62F4DDDDFC85CCE7CD767934AA15F095 /* EMAsync_ee@3x.png */; };
 		9E15591428F5E220B6EF624604F3525A /* EMAsyncEMAsyncNSLayoutConstraint+EMAsyncDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D07BE0E665BD1DA6E5C02280E141BBF /* EMAsyncEMAsyncNSLayoutConstraint+EMAsyncDebugAdditions.m */; };
-		9F4180A92554A3B33B6749C86554F9F9 /* EMAsync_qq.png in Resources */ = {isa = PBXBuildFile; fileRef = 7D2B80466D8F489EA9CD96A49613CF1E /* EMAsync_qq.png */; };
-		A02A3675527DF58C2A8E5151274212C0 /* EMAsync_ProgressHUD_info.png in Resources */ = {isa = PBXBuildFile; fileRef = A89750821E65934BD6EEA9F42FBC6B10 /* EMAsync_ProgressHUD_info.png */; };
+		9E1E54019B50701050EFA0CE82F62324 /* EMAsync_mw@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA693863D501FC15F1C6F7794DD2553C /* EMAsync_mw@3x.png */; };
+		9F28A5ABE8E0D23361E49951FF419EAA /* EMAsync_ProgressHUD_info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B4FDF33A72A0794D7190B5068F659EE5 /* EMAsync_ProgressHUD_info@2x.png */; };
+		A002D3FEC687E44DDBE6D4BC6AF83EAE /* EMAsync_ProgressHUD_success@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED9FDB511C6BA0CC520487DDE0356885 /* EMAsync_ProgressHUD_success@3x.png */; };
+		A1FB4757D0F1E8AEB9E3DF8D6B921DCF /* EMAsync_gg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 99D2B8F96C9477FF731E13CF5DB47B83 /* EMAsync_gg@3x.png */; };
 		A3D4967DDE7C78EA31E8208D802AC786 /* EMAsyncLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = DEECECD83CD2BA27EEAF536340CB2146 /* EMAsyncLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A5ACD157F1DE6DD0263CA8A8BE6AF677 /* EMAsync_cc@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5392A48F96B0119317AAC7F080D2A4D2 /* EMAsync_cc@3x.png */; };
-		A90667F1049390E479484F3FAB2B3705 /* EMAsync_ProgressHUD_error.png in Resources */ = {isa = PBXBuildFile; fileRef = 144683A257A69A937661B60F9C1B86EE /* EMAsync_ProgressHUD_error.png */; };
 		AA1D95EA46B7D5A104FA4C99489FA089 /* EMAsyncEMAsyncNSArray+EMAsyncAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D0081C20F85E747609C7A03E30BDEA75 /* EMAsyncEMAsyncNSArray+EMAsyncAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B1D48796D8CB31537D3A1196F89EB6F5 /* EMAsync_cc.png in Resources */ = {isa = PBXBuildFile; fileRef = 298F41C1B00B0A3FC39F71429ED33A00 /* EMAsync_cc.png */; };
-		B351939FC8CE49A73B30C9755EE193C3 /* EMAsync_ProgressHUD_error@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 065CF20FE8180AAC23C309A57D84DF78 /* EMAsync_ProgressHUD_error@3x.png */; };
 		B52387AD4A07C90612B348FA4969038C /* EMAsyncConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 68692D350F90BAEFFA9D5466F4C467BA /* EMAsyncConstraint.m */; };
-		B64D0DD203D7D5C055EB9D94A9297862 /* EMAsync_gg.png in Resources */ = {isa = PBXBuildFile; fileRef = 10D677FFC20484BD570E63C0B96AE472 /* EMAsync_gg.png */; };
 		B7B99FD84BA6FAFB3FA4041ECDCACB75 /* EMAsyncEMAsyncNSArray+EMAsyncAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B346C60C0FBFECFFC315E104111371F /* EMAsyncEMAsyncNSArray+EMAsyncAdditions.m */; };
 		BA9045A4A79883531EE755B2FBBE8B58 /* EMAsyncConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DDCFD77954D903DA0CC2745295BFA45 /* EMAsyncConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BB60938398D904EC353D35E59AB32EA9 /* EMAsyncReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E8F2B0B1ECEE37F0DAA67EBAD526233 /* EMAsyncReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC293CE161864AAEC0DA2AE4C5741CB3 /* EMAsyncHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 27DF3967713F5887592A979AC34AEB38 /* EMAsyncHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C29C5091DF62564151E23C512A98BE19 /* EMAsync_mw@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC07E185BEA9334A5EE51352633A7973 /* EMAsync_mw@2x.png */; };
 		C2C11A271AF74A29C438B6308AC7ACA9 /* EMAsyncSSDKProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 176DC9407499FEF70924E4DFD1A42B7E /* EMAsyncSSDKProgressHUD.m */; };
-		C3328E5A68FC6C92B5FACF54531EC069 /* EMAsync_ProgressHUD_info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4031413E6D74EBDF20E4624D3E2E12DF /* EMAsync_ProgressHUD_info@2x.png */; };
 		C549212AE13621EC68D73FC5BA5AD896 /* EMAsyncViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 94193FC8B1AF212C68ADC8EC5A5845EC /* EMAsyncViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CA91486D79971413A5659FB0C56B0CF3 /* EMAsync_gg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D97537DD8C6BEC4061FDC41C88564F7 /* EMAsync_gg@2x.png */; };
+		C93EE4CB719CD9C308F10014973E5C0C /* EMAsync_ProgressHUD_success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 086F44086C5BD5740E5BF260032BDDBC /* EMAsync_ProgressHUD_success@2x.png */; };
 		CACE10A1F2EEA2A7ACD0C2D33A2AB997 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D096ABCD074167454DF85CC31E1EE37 /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC81950D03F3A63BE38BF3EB3FB434FD /* EMAsync_gg.png in Resources */ = {isa = PBXBuildFile; fileRef = F3AD0D9F332A6A031A5C88994788BF7B /* EMAsync_gg.png */; };
 		CD279BB7096906692ACECBD51412E17B /* EMAsyncIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE9DF7E88FB137FC8ACA6762710320E /* EMAsyncIndefiniteAnimatedView.m */; };
 		CE25DE15A954F0FA66C62F70C4F3A642 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		CEB2C934651C2EE4F501D164748DD105 /* EMAsync_ProgressHUD_info@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C1E4E0ECAA06991D998BFB09D86F696 /* EMAsync_ProgressHUD_info@3x.png */; };
+		CE2CDAF283AEB5AE503C8E79800C35AA /* EMAsync_bb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 58F1F2FBCAA9840ABACF583DBE36D9F5 /* EMAsync_bb@2x.png */; };
 		D144C8A17D18ABC30B1D54E861C6BE23 /* EMAsyncTabButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E15B0452174166AFE4BA49DDC92822C /* EMAsyncTabButton.m */; };
 		D79532BC7D6B5FF9D97DCCE06CE9E70B /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = C51419E497BE1835728E7B39C2B81488 /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD92A083B30FE5F82A2DD98E37725973 /* EMAsync_mw@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7349EA6638B8840761E760A997C2C1A8 /* EMAsync_mw@2x.png */; };
 		DEC1D752E2EBB4FF7E19AF920CE4514D /* EMAsyncSonry.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C210470673448BCE3C641903C26E82B /* EMAsyncSonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E0D04ED2C11724C8062F51805874523E /* EMAsyncIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 18FE44F42BCB0263F11159124CA26A8D /* EMAsyncIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E1E11FEF34355A81B41B98DD1DC5C416 /* EMAsyncDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15EF439D962D50DCD948A4EFE6BB650C /* EMAsyncDisplayViewController.m */; };
 		E9C1D9BD3E0470268551E7A2C9F6ABC2 /* EMAsyncSSDKProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 766CA290BEE4AEF9C301DF710E05BE5A /* EMAsyncSSDKProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EA709F27F166A817A8957DCFF7837D53 /* EMAsyncEMAsyncViewController+EMAsyncAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A10893D6913FB47AA7067CF61107A5BD /* EMAsyncEMAsyncViewController+EMAsyncAdditions.m */; };
+		EAE2398EAD8F63A8FFA24E178131FBAA /* EMAsync_ProgressHUD_error@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 05BBF6D19ADA8A0EA198B35B892FDB25 /* EMAsync_ProgressHUD_error@2x.png */; };
 		F0F4D0BC7F8B494C63F987CEA7D15C4E /* EMAsyncNSObject+SSDKProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 64CC660EA18E8FC468C5DB68AF6A2FF5 /* EMAsyncNSObject+SSDKProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F1467F57C804DB572AFF303344116DDD /* EMAsync_gg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B7B1C759F3668D96D8F92E973B0C07B /* EMAsync_gg@3x.png */; };
+		F1D565AEEB25E42AB2FA8CEC468134DF /* EMAsync_ProgressHUD_error.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E324DA965C75E8E9AD14B21AE192A16 /* EMAsync_ProgressHUD_error.png */; };
 		F2B33C91DE0B565513442AE1AC163A6A /* EMAsyncNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EF7B94DAC0ACBCF5910F002EDA9297D /* EMAsyncNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F588415965780397663E0D44DC89C710 /* EMAsyncUIButton+DHQStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C3345779C458001EBFB466A9DB0AA8 /* EMAsyncUIButton+DHQStyle.m */; };
-		F5AB0902AC7F5BDB5562045339FF6D72 /* EMAsync_ee.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F3FC84F179F8F5C82D94ACFAAE9ED32 /* EMAsync_ee.png */; };
 		F75A96BE557606C48CB822A2A3907A80 /* EMAsyncRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0374D990F8EE56485358CD810175E9 /* EMAsyncRadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7A1DED018254E6472BBA2A1BDFE5EC4 /* EMAsync_mw.png in Resources */ = {isa = PBXBuildFile; fileRef = E2979204AB6536F10532E6B0EB1D7437 /* EMAsync_mw.png */; };
 		FDC6E2DA9085158A3104A1CB3BABBBE2 /* Pods-EMAsyncKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 878CB39FFE4D80F177FA075FB2E361B7 /* Pods-EMAsyncKit_Example-dummy.m */; };
+		FF2534376EAE39103B7F9E7EE3057B60 /* EMAsync_qq.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C46FB5E536D31E5EA94368013C35663 /* EMAsync_qq.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,52 +127,45 @@
 
 /* Begin PBXFileReference section */
 		005109F0C282FDA8976306C7FFB5DC46 /* Pods-EMAsyncKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EMAsyncKit_Example-Info.plist"; sourceTree = "<group>"; };
-		065CF20FE8180AAC23C309A57D84DF78 /* EMAsync_ProgressHUD_error@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_ProgressHUD_error@3x.png"; path = "EMAsyncKit/Assets/EMAsyncKit.bundle/EMAsync_ProgressHUD_error@3x.png"; sourceTree = "<group>"; };
-		0E5ACDFB51B52727BD580DF114ECB3A7 /* EMAsync_ee@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_ee@3x.png"; path = "EMAsyncKit/Assets/EMAsyncKit.bundle/EMAsync_ee@3x.png"; sourceTree = "<group>"; };
+		05BBF6D19ADA8A0EA198B35B892FDB25 /* EMAsync_ProgressHUD_error@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_ProgressHUD_error@2x.png"; path = "EMAsyncKit/Assets/EMAsync_ProgressHUD_error@2x.png"; sourceTree = "<group>"; };
+		0748C50A7094FABE664E20AADD4CA45E /* EMAsync_cc.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = EMAsync_cc.png; path = EMAsyncKit/Assets/EMAsync_cc.png; sourceTree = "<group>"; };
+		086F44086C5BD5740E5BF260032BDDBC /* EMAsync_ProgressHUD_success@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_ProgressHUD_success@2x.png"; path = "EMAsyncKit/Assets/EMAsync_ProgressHUD_success@2x.png"; sourceTree = "<group>"; };
 		0F0374D990F8EE56485358CD810175E9 /* EMAsyncRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EMAsyncRadialGradientLayer.h; sourceTree = "<group>"; };
 		0FCB6E8B655FB9A293717A7E27A5DB85 /* EMAsyncLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EMAsyncLayoutConstraint.m; sourceTree = "<group>"; };
-		10D677FFC20484BD570E63C0B96AE472 /* EMAsync_gg.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = EMAsync_gg.png; path = EMAsyncKit/Assets/EMAsyncKit.bundle/EMAsync_gg.png; sourceTree = "<group>"; };
-		144683A257A69A937661B60F9C1B86EE /* EMAsync_ProgressHUD_error.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = EMAsync_ProgressHUD_error.png; path = EMAsyncKit/Assets/EMAsyncKit.bundle/EMAsync_ProgressHUD_error.png; sourceTree = "<group>"; };
-		148E754D16326AE9926D0649500A4EAF /* EMAsync_ProgressHUD_success@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_ProgressHUD_success@2x.png"; path = "EMAsyncKit/Assets/EMAsyncKit.bundle/EMAsync_ProgressHUD_success@2x.png"; sourceTree = "<group>"; };
 		15EF439D962D50DCD948A4EFE6BB650C /* EMAsyncDisplayViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EMAsyncDisplayViewController.m; sourceTree = "<group>"; };
 		176DC9407499FEF70924E4DFD1A42B7E /* EMAsyncSSDKProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EMAsyncSSDKProgressHUD.m; sourceTree = "<group>"; };
 		178F80EE660B8A71CC9D1A9DB56A9C31 /* Pods_EMAsyncKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EMAsyncKit_Example.framework; path = "Pods-EMAsyncKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1852F7B43EA52B2F20A92A241E30A973 /* EMAsyncKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "EMAsyncKit-Info.plist"; sourceTree = "<group>"; };
 		18FE44F42BCB0263F11159124CA26A8D /* EMAsyncIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EMAsyncIndefiniteAnimatedView.h; sourceTree = "<group>"; };
 		1C210470673448BCE3C641903C26E82B /* EMAsyncSonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EMAsyncSonry.h; sourceTree = "<group>"; };
+		1C46FB5E536D31E5EA94368013C35663 /* EMAsync_qq.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = EMAsync_qq.png; path = EMAsyncKit/Assets/EMAsync_qq.png; sourceTree = "<group>"; };
 		1C59A025B93E1F21A4A328EBB1E7901E /* Pods-EMAsyncKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EMAsyncKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		1FB42F90962ED007FD4AA9AE253E11CA /* EMAsyncUIView+DHQExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EMAsyncUIView+DHQExtension.m"; sourceTree = "<group>"; };
 		21180EE3FDF9767602176159B496B183 /* EMAsyncViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EMAsyncViewConstraint.m; sourceTree = "<group>"; };
 		27DF3967713F5887592A979AC34AEB38 /* EMAsyncHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMAsyncHeader.h; path = EMAsyncKit/Classes/EMAsyncHeader.h; sourceTree = "<group>"; };
-		298F41C1B00B0A3FC39F71429ED33A00 /* EMAsync_cc.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = EMAsync_cc.png; path = EMAsyncKit/Assets/EMAsyncKit.bundle/EMAsync_cc.png; sourceTree = "<group>"; };
 		2EF7B94DAC0ACBCF5910F002EDA9297D /* EMAsyncNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EMAsyncNetworkReachabilityManager.h; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		32C84F005EB9F6F77477DC30DE8C6297 /* EMAsyncDisplayViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EMAsyncDisplayViewController.h; sourceTree = "<group>"; };
-		381099766E447562CB84758B86CFE0FE /* EMAsync_mw.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = EMAsync_mw.png; path = EMAsyncKit/Assets/EMAsyncKit.bundle/EMAsync_mw.png; sourceTree = "<group>"; };
 		384924E1917C3C708A96730B3FCD980A /* EMAsyncRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EMAsyncRadialGradientLayer.m; sourceTree = "<group>"; };
 		3C155989C3C54A91B3BC5C5B994F26AB /* EMAsyncEMAsyncNSLayoutConstraint+EMAsyncDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EMAsyncEMAsyncNSLayoutConstraint+EMAsyncDebugAdditions.h"; sourceTree = "<group>"; };
-		3D97537DD8C6BEC4061FDC41C88564F7 /* EMAsync_gg@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_gg@2x.png"; path = "EMAsyncKit/Assets/EMAsyncKit.bundle/EMAsync_gg@2x.png"; sourceTree = "<group>"; };
-		3F3FC84F179F8F5C82D94ACFAAE9ED32 /* EMAsync_ee.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = EMAsync_ee.png; path = EMAsyncKit/Assets/EMAsyncKit.bundle/EMAsync_ee.png; sourceTree = "<group>"; };
+		3DC7F8314A845F2FF5C33641348ECCA7 /* EMAsync_ProgressHUD_error@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_ProgressHUD_error@3x.png"; path = "EMAsyncKit/Assets/EMAsync_ProgressHUD_error@3x.png"; sourceTree = "<group>"; };
 		3FEE0B2E852ECBAB2E11380540E72043 /* Pods-EMAsyncKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EMAsyncKit_Example-umbrella.h"; sourceTree = "<group>"; };
+		40053AABD7225100F468B6EFA0F786C0 /* EMAsync_bb.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = EMAsync_bb.png; path = EMAsyncKit/Assets/EMAsync_bb.png; sourceTree = "<group>"; };
 		40256B320F235EA4B8C35B5D8B651E63 /* Pods-EMAsyncKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EMAsyncKit_Tests-umbrella.h"; sourceTree = "<group>"; };
-		4031413E6D74EBDF20E4624D3E2E12DF /* EMAsync_ProgressHUD_info@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_ProgressHUD_info@2x.png"; path = "EMAsyncKit/Assets/EMAsyncKit.bundle/EMAsync_ProgressHUD_info@2x.png"; sourceTree = "<group>"; };
+		40301584E0245BF4F9002DADC62DCEEB /* EMAsync_gg@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_gg@2x.png"; path = "EMAsyncKit/Assets/EMAsync_gg@2x.png"; sourceTree = "<group>"; };
 		416C59A853F08B29B055A669E31DDDF9 /* EMAsyncObserverMgr.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EMAsyncObserverMgr.h; sourceTree = "<group>"; };
 		4A562CEB6BA86AB5F8A0F9C54377396D /* Pods-EMAsyncKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EMAsyncKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		4B7B1C759F3668D96D8F92E973B0C07B /* EMAsync_gg@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_gg@3x.png"; path = "EMAsyncKit/Assets/EMAsyncKit.bundle/EMAsync_gg@3x.png"; sourceTree = "<group>"; };
-		4C1E4E0ECAA06991D998BFB09D86F696 /* EMAsync_ProgressHUD_info@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_ProgressHUD_info@3x.png"; path = "EMAsyncKit/Assets/EMAsyncKit.bundle/EMAsync_ProgressHUD_info@3x.png"; sourceTree = "<group>"; };
 		4D096ABCD074167454DF85CC31E1EE37 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
-		51FABC5859B4EEEAE91B00B8F7A00B7F /* EMAsync_ProgressHUD_success.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = EMAsync_ProgressHUD_success.png; path = EMAsyncKit/Assets/EMAsyncKit.bundle/EMAsync_ProgressHUD_success.png; sourceTree = "<group>"; };
-		5392A48F96B0119317AAC7F080D2A4D2 /* EMAsync_cc@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_cc@3x.png"; path = "EMAsyncKit/Assets/EMAsyncKit.bundle/EMAsync_cc@3x.png"; sourceTree = "<group>"; };
 		5477ABE979A63CDBA7E7E1A707E3074F /* EMAsyncViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EMAsyncViewConstraint.h; sourceTree = "<group>"; };
 		562DDF772AABE523BADF4FADAD6AD3F5 /* EMAsyncUIView+DHQExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EMAsyncUIView+DHQExtension.h"; sourceTree = "<group>"; };
 		57DA8F9AC7EC3E493A64F14074C0C9FC /* EMAsyncEMAsyncViewController+EMAsyncAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EMAsyncEMAsyncViewController+EMAsyncAdditions.h"; sourceTree = "<group>"; };
 		57E8355F87C24BDE04B31601357F6630 /* Pods-EMAsyncKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EMAsyncKit_Tests.modulemap"; sourceTree = "<group>"; };
 		58D8C14AE349EEF433B8563E656484CB /* Pods_EMAsyncKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EMAsyncKit_Tests.framework; path = "Pods-EMAsyncKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		58F1F2FBCAA9840ABACF583DBE36D9F5 /* EMAsync_bb@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_bb@2x.png"; path = "EMAsyncKit/Assets/EMAsync_bb@2x.png"; sourceTree = "<group>"; };
 		59D7AECE170BA51E79CAC2F09B37FCC6 /* EMAsyncKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = EMAsyncKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		59F8EE31390A067D43ADCB6DA2689884 /* Pods-EMAsyncKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EMAsyncKit_Tests-dummy.m"; sourceTree = "<group>"; };
 		5E15B0452174166AFE4BA49DDC92822C /* EMAsyncTabButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EMAsyncTabButton.m; sourceTree = "<group>"; };
-		6088F91549DB23D7D8EAB98DD7B76137 /* EMAsync_ProgressHUD_error@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_ProgressHUD_error@2x.png"; path = "EMAsyncKit/Assets/EMAsyncKit.bundle/EMAsync_ProgressHUD_error@2x.png"; sourceTree = "<group>"; };
-		62533F31D4CA3DEC90F91A7859FE18AA /* EMAsync_bb@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_bb@2x.png"; path = "EMAsyncKit/Assets/EMAsyncKit.bundle/EMAsync_bb@2x.png"; sourceTree = "<group>"; };
+		62F4DDDDFC85CCE7CD767934AA15F095 /* EMAsync_ee@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_ee@3x.png"; path = "EMAsyncKit/Assets/EMAsync_ee@3x.png"; sourceTree = "<group>"; };
 		649CB11AEB578294807BC5A75D19713D /* Pods-EMAsyncKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EMAsyncKit_Tests-Info.plist"; sourceTree = "<group>"; };
 		64CC660EA18E8FC468C5DB68AF6A2FF5 /* EMAsyncNSObject+SSDKProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EMAsyncNSObject+SSDKProgressHUD.h"; sourceTree = "<group>"; };
 		65897DEDD81EB0175A6528A55BB4C5BE /* Pods-EMAsyncKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EMAsyncKit_Example.modulemap"; sourceTree = "<group>"; };
@@ -185,24 +178,27 @@
 		704CEB06C423B7D5BCF3C1AC7D520606 /* Pods-EMAsyncKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EMAsyncKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		7123BBC15213606889DB59E43438FE34 /* EMAsyncNSObject+SSDKProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EMAsyncNSObject+SSDKProgressHUD.m"; sourceTree = "<group>"; };
 		71A892773A4EF415F82F97079C47A08D /* EMAsyncNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EMAsyncNetworkReachabilityManager.m; sourceTree = "<group>"; };
-		72091FA8FD90488EF9C58CD009F8F658 /* EMAsync_qq@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_qq@2x.png"; path = "EMAsyncKit/Assets/EMAsyncKit.bundle/EMAsync_qq@2x.png"; sourceTree = "<group>"; };
+		7349EA6638B8840761E760A997C2C1A8 /* EMAsync_mw@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_mw@2x.png"; path = "EMAsyncKit/Assets/EMAsync_mw@2x.png"; sourceTree = "<group>"; };
 		766CA290BEE4AEF9C301DF710E05BE5A /* EMAsyncSSDKProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EMAsyncSSDKProgressHUD.h; sourceTree = "<group>"; };
 		771CC408BC5E8B7A3026482EA1E3D5C6 /* EMAsyncProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EMAsyncProgressHUD.h; sourceTree = "<group>"; };
 		79B313266A459258C37E0F60841CF84B /* Pods-EMAsyncKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EMAsyncKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7A342374C8403AEE825AA55F8AD984A9 /* Pods-EMAsyncKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EMAsyncKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7C81E8B91D65A0304E609F8948BEB2CA /* EMAsyncUtil_Web.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EMAsyncUtil_Web.m; sourceTree = "<group>"; };
 		7D07BE0E665BD1DA6E5C02280E141BBF /* EMAsyncEMAsyncNSLayoutConstraint+EMAsyncDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EMAsyncEMAsyncNSLayoutConstraint+EMAsyncDebugAdditions.m"; sourceTree = "<group>"; };
-		7D2B80466D8F489EA9CD96A49613CF1E /* EMAsync_qq.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = EMAsync_qq.png; path = EMAsyncKit/Assets/EMAsyncKit.bundle/EMAsync_qq.png; sourceTree = "<group>"; };
+		7E324DA965C75E8E9AD14B21AE192A16 /* EMAsync_ProgressHUD_error.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = EMAsync_ProgressHUD_error.png; path = EMAsyncKit/Assets/EMAsync_ProgressHUD_error.png; sourceTree = "<group>"; };
 		83D8FBB25F46F329A98515D9ED2698BF /* EMAsyncUtil_Web.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EMAsyncUtil_Web.h; sourceTree = "<group>"; };
 		878CB39FFE4D80F177FA075FB2E361B7 /* Pods-EMAsyncKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EMAsyncKit_Example-dummy.m"; sourceTree = "<group>"; };
 		88F28904D8A02D7D0DBE379B8E863570 /* EMAsyncCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EMAsyncCompositeConstraint.m; sourceTree = "<group>"; };
 		8BDDF5F86522D2403167F28AA29E844B /* EMAsyncKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EMAsyncKit-prefix.pch"; sourceTree = "<group>"; };
+		8C2ED6CA79567C77892B6D10E2C487A1 /* EMAsync_ProgressHUD_info@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_ProgressHUD_info@3x.png"; path = "EMAsyncKit/Assets/EMAsync_ProgressHUD_info@3x.png"; sourceTree = "<group>"; };
 		8E6BB9019A19679A4D5DB870AF151587 /* Pods-EMAsyncKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EMAsyncKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		8ED8F78B8E6A841D66FB2A3716F7BFC9 /* EMAsync_bb@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_bb@3x.png"; path = "EMAsyncKit/Assets/EMAsyncKit.bundle/EMAsync_bb@3x.png"; sourceTree = "<group>"; };
+		907AE79CD46A98E83627609B9E8CC1C1 /* EMAsync_cc@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_cc@2x.png"; path = "EMAsyncKit/Assets/EMAsync_cc@2x.png"; sourceTree = "<group>"; };
+		91E5C2E389CCE04745A5BA71F959A45F /* EMAsync_ee.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = EMAsync_ee.png; path = EMAsyncKit/Assets/EMAsync_ee.png; sourceTree = "<group>"; };
 		92D3BC968881147E6800C5DFB393AF93 /* EMAsyncConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EMAsyncConstraintMaker.m; sourceTree = "<group>"; };
 		93651B408CFE6BED261BD9CEBD40C1CB /* EMAsyncCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EMAsyncCompositeConstraint.h; sourceTree = "<group>"; };
 		94193FC8B1AF212C68ADC8EC5A5845EC /* EMAsyncViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EMAsyncViewAttribute.h; sourceTree = "<group>"; };
 		98511A48DD851BEDF1779C8A574A7BCF /* EMAsyncEMAsyncView+EMAsyncAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EMAsyncEMAsyncView+EMAsyncAdditions.m"; sourceTree = "<group>"; };
+		99D2B8F96C9477FF731E13CF5DB47B83 /* EMAsync_gg@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_gg@3x.png"; path = "EMAsyncKit/Assets/EMAsync_gg@3x.png"; sourceTree = "<group>"; };
 		9C45F0047C6F5341C48AB5979DF3F0EC /* EMAsyncEMAsyncView+EMAsyncAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EMAsyncEMAsyncView+EMAsyncAdditions.h"; sourceTree = "<group>"; };
 		9CC25A3D49FEF9082E75E9C5091DD925 /* EMAsyncTabButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EMAsyncTabButton.h; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -211,36 +207,40 @@
 		A10893D6913FB47AA7067CF61107A5BD /* EMAsyncEMAsyncViewController+EMAsyncAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EMAsyncEMAsyncViewController+EMAsyncAdditions.m"; sourceTree = "<group>"; };
 		A3E8B4BD41B58AA4397B776576C48D07 /* EMAsyncKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EMAsyncKit.framework; path = EMAsyncKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A641C30B17358B0589978075C8D1E34D /* EMAsyncUIButton+DHQStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EMAsyncUIButton+DHQStyle.h"; sourceTree = "<group>"; };
-		A89750821E65934BD6EEA9F42FBC6B10 /* EMAsync_ProgressHUD_info.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = EMAsync_ProgressHUD_info.png; path = EMAsyncKit/Assets/EMAsyncKit.bundle/EMAsync_ProgressHUD_info.png; sourceTree = "<group>"; };
+		A9D39146287F9C6EB9209A66D4424832 /* EMAsync_cc@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_cc@3x.png"; path = "EMAsyncKit/Assets/EMAsync_cc@3x.png"; sourceTree = "<group>"; };
 		ACE4AB57B8ABE2FCBA83568237CC65F4 /* EMAsyncKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EMAsyncKit.xcconfig; sourceTree = "<group>"; };
 		AE4FB66508E9B57254D86B05094BEBF2 /* EMAsyncObserverMgr.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EMAsyncObserverMgr.m; sourceTree = "<group>"; };
+		B3AE1A19B4503CAE696B2CC1AA763CFF /* EMAsync_ProgressHUD_info.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = EMAsync_ProgressHUD_info.png; path = EMAsyncKit/Assets/EMAsync_ProgressHUD_info.png; sourceTree = "<group>"; };
+		B4FDF33A72A0794D7190B5068F659EE5 /* EMAsync_ProgressHUD_info@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_ProgressHUD_info@2x.png"; path = "EMAsyncKit/Assets/EMAsync_ProgressHUD_info@2x.png"; sourceTree = "<group>"; };
 		B6DCBE55B9660130894D995F105BEF94 /* EMAsyncKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = EMAsyncKit.modulemap; sourceTree = "<group>"; };
+		B9FEFF0EC3771CD08E49A4845E7CBC71 /* EMAsync_bb@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_bb@3x.png"; path = "EMAsyncKit/Assets/EMAsync_bb@3x.png"; sourceTree = "<group>"; };
+		BACE33C40C607E1C5B6A9F7099661463 /* EMAsync_qq@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_qq@3x.png"; path = "EMAsyncKit/Assets/EMAsync_qq@3x.png"; sourceTree = "<group>"; };
 		BCC4D999402FE672C6E0F33478A353DF /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		C018D3FFE86941EEB5E631B6F54909DB /* EMAsync_ee@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_ee@2x.png"; path = "EMAsyncKit/Assets/EMAsync_ee@2x.png"; sourceTree = "<group>"; };
 		C1298AB4037BE3EC794DD2865CB31C49 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		C34FAE6349FA1AC1D73232D6B15D1167 /* EMAsyncConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EMAsyncConstraintMaker.h; sourceTree = "<group>"; };
-		C50240BAF59E4CEC4E6106FABEA63151 /* EMAsync_bb.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = EMAsync_bb.png; path = EMAsyncKit/Assets/EMAsyncKit.bundle/EMAsync_bb.png; sourceTree = "<group>"; };
 		C51419E497BE1835728E7B39C2B81488 /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
 		CCF00FC6CDFA28C20BF92AC9F18D3436 /* EMAsyncViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EMAsyncViewAttribute.m; sourceTree = "<group>"; };
-		CD6B392D016E98A2645949CDDC7BD172 /* EMAsync_qq@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_qq@3x.png"; path = "EMAsyncKit/Assets/EMAsyncKit.bundle/EMAsync_qq@3x.png"; sourceTree = "<group>"; };
-		CD7EF7E4382F0F374231380B8E855F0C /* EMAsync_cc@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_cc@2x.png"; path = "EMAsyncKit/Assets/EMAsyncKit.bundle/EMAsync_cc@2x.png"; sourceTree = "<group>"; };
 		D0081C20F85E747609C7A03E30BDEA75 /* EMAsyncEMAsyncNSArray+EMAsyncAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EMAsyncEMAsyncNSArray+EMAsyncAdditions.h"; sourceTree = "<group>"; };
 		D6834C7531F81BEB53B57B852DF64D9D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		D6C3345779C458001EBFB466A9DB0AA8 /* EMAsyncUIButton+DHQStyle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EMAsyncUIButton+DHQStyle.m"; sourceTree = "<group>"; };
 		D6DC5F3B4A825F910B9D44132D8920E0 /* EMAsyncReachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EMAsyncReachability.m; sourceTree = "<group>"; };
-		D7279380BB34E504B911FD2BC3E0F037 /* EMAsync_ProgressHUD_success@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_ProgressHUD_success@3x.png"; path = "EMAsyncKit/Assets/EMAsyncKit.bundle/EMAsync_ProgressHUD_success@3x.png"; sourceTree = "<group>"; };
-		D8FEE0C14CF94AAC4A307E6D0C1550CF /* EMAsync_mw@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_mw@3x.png"; path = "EMAsyncKit/Assets/EMAsyncKit.bundle/EMAsync_mw@3x.png"; sourceTree = "<group>"; };
+		DA693863D501FC15F1C6F7794DD2553C /* EMAsync_mw@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_mw@3x.png"; path = "EMAsyncKit/Assets/EMAsync_mw@3x.png"; sourceTree = "<group>"; };
 		DD7A06FF038498B3081165E1A682F9EE /* EMAsyncKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EMAsyncKit-umbrella.h"; sourceTree = "<group>"; };
 		DE30C3396861AAFB17C3868A806CDAC8 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		DEECECD83CD2BA27EEAF536340CB2146 /* EMAsyncLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EMAsyncLayoutConstraint.h; sourceTree = "<group>"; };
 		E199FF6C80F5470953974898C27EA58E /* EMAsyncKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EMAsyncKit-dummy.m"; sourceTree = "<group>"; };
+		E2979204AB6536F10532E6B0EB1D7437 /* EMAsync_mw.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = EMAsync_mw.png; path = EMAsyncKit/Assets/EMAsync_mw.png; sourceTree = "<group>"; };
 		E341D779EDEDA1D049A576C2DC708A3F /* ResourceBundle-EMAsyncKit-EMAsyncKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-EMAsyncKit-EMAsyncKit-Info.plist"; sourceTree = "<group>"; };
-		EC07E185BEA9334A5EE51352633A7973 /* EMAsync_mw@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_mw@2x.png"; path = "EMAsyncKit/Assets/EMAsyncKit.bundle/EMAsync_mw@2x.png"; sourceTree = "<group>"; };
+		ED9FDB511C6BA0CC520487DDE0356885 /* EMAsync_ProgressHUD_success@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_ProgressHUD_success@3x.png"; path = "EMAsyncKit/Assets/EMAsync_ProgressHUD_success@3x.png"; sourceTree = "<group>"; };
 		EF516D5B734898989004A1463DE7D1E7 /* Pods-EMAsyncKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EMAsyncKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		EFE9DF7E88FB137FC8ACA6762710320E /* EMAsyncIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EMAsyncIndefiniteAnimatedView.m; sourceTree = "<group>"; };
-		EFF5B9DB3EE4E95B6D1962668C776370 /* EMAsync_ee@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_ee@2x.png"; path = "EMAsyncKit/Assets/EMAsyncKit.bundle/EMAsync_ee@2x.png"; sourceTree = "<group>"; };
 		F0FCA39401CA899F16D0368687159D71 /* EMAsyncDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMAsyncDefine.h; path = EMAsyncKit/Classes/EMAsyncDefine.h; sourceTree = "<group>"; };
 		F294F032616F1858CCEB60D4ACB7F0FC /* EMAsyncProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EMAsyncProgressHUD.m; sourceTree = "<group>"; };
+		F2FFC5A6FC65C26129EF3F6609DD2CC9 /* EMAsync_qq@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_qq@2x.png"; path = "EMAsyncKit/Assets/EMAsync_qq@2x.png"; sourceTree = "<group>"; };
 		F3A8702FA68522A517FC2A18E6AA2E7E /* Pods-EMAsyncKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EMAsyncKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F3AD0D9F332A6A031A5C88994788BF7B /* EMAsync_gg.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = EMAsync_gg.png; path = EMAsyncKit/Assets/EMAsync_gg.png; sourceTree = "<group>"; };
+		FF21B3091E6D5E14B4868A515DC0D923 /* EMAsync_ProgressHUD_success.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = EMAsync_ProgressHUD_success.png; path = EMAsyncKit/Assets/EMAsync_ProgressHUD_success.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -318,40 +318,6 @@
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/EMAsyncKit";
-			sourceTree = "<group>";
-		};
-		3F22E7C83ABAA41C8652D51F09FBF747 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				C50240BAF59E4CEC4E6106FABEA63151 /* EMAsync_bb.png */,
-				62533F31D4CA3DEC90F91A7859FE18AA /* EMAsync_bb@2x.png */,
-				8ED8F78B8E6A841D66FB2A3716F7BFC9 /* EMAsync_bb@3x.png */,
-				298F41C1B00B0A3FC39F71429ED33A00 /* EMAsync_cc.png */,
-				CD7EF7E4382F0F374231380B8E855F0C /* EMAsync_cc@2x.png */,
-				5392A48F96B0119317AAC7F080D2A4D2 /* EMAsync_cc@3x.png */,
-				3F3FC84F179F8F5C82D94ACFAAE9ED32 /* EMAsync_ee.png */,
-				EFF5B9DB3EE4E95B6D1962668C776370 /* EMAsync_ee@2x.png */,
-				0E5ACDFB51B52727BD580DF114ECB3A7 /* EMAsync_ee@3x.png */,
-				10D677FFC20484BD570E63C0B96AE472 /* EMAsync_gg.png */,
-				3D97537DD8C6BEC4061FDC41C88564F7 /* EMAsync_gg@2x.png */,
-				4B7B1C759F3668D96D8F92E973B0C07B /* EMAsync_gg@3x.png */,
-				381099766E447562CB84758B86CFE0FE /* EMAsync_mw.png */,
-				EC07E185BEA9334A5EE51352633A7973 /* EMAsync_mw@2x.png */,
-				D8FEE0C14CF94AAC4A307E6D0C1550CF /* EMAsync_mw@3x.png */,
-				144683A257A69A937661B60F9C1B86EE /* EMAsync_ProgressHUD_error.png */,
-				6088F91549DB23D7D8EAB98DD7B76137 /* EMAsync_ProgressHUD_error@2x.png */,
-				065CF20FE8180AAC23C309A57D84DF78 /* EMAsync_ProgressHUD_error@3x.png */,
-				A89750821E65934BD6EEA9F42FBC6B10 /* EMAsync_ProgressHUD_info.png */,
-				4031413E6D74EBDF20E4624D3E2E12DF /* EMAsync_ProgressHUD_info@2x.png */,
-				4C1E4E0ECAA06991D998BFB09D86F696 /* EMAsync_ProgressHUD_info@3x.png */,
-				51FABC5859B4EEEAE91B00B8F7A00B7F /* EMAsync_ProgressHUD_success.png */,
-				148E754D16326AE9926D0649500A4EAF /* EMAsync_ProgressHUD_success@2x.png */,
-				D7279380BB34E504B911FD2BC3E0F037 /* EMAsync_ProgressHUD_success@3x.png */,
-				7D2B80466D8F489EA9CD96A49613CF1E /* EMAsync_qq.png */,
-				72091FA8FD90488EF9C58CD009F8F658 /* EMAsync_qq@2x.png */,
-				CD6B392D016E98A2645949CDDC7BD172 /* EMAsync_qq@3x.png */,
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 		7031B9003F1E12F7329741BC9CD7F96A /* Products */ = {
@@ -435,6 +401,40 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D2282B6EF21C099EC8920740B4414526 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				40053AABD7225100F468B6EFA0F786C0 /* EMAsync_bb.png */,
+				58F1F2FBCAA9840ABACF583DBE36D9F5 /* EMAsync_bb@2x.png */,
+				B9FEFF0EC3771CD08E49A4845E7CBC71 /* EMAsync_bb@3x.png */,
+				0748C50A7094FABE664E20AADD4CA45E /* EMAsync_cc.png */,
+				907AE79CD46A98E83627609B9E8CC1C1 /* EMAsync_cc@2x.png */,
+				A9D39146287F9C6EB9209A66D4424832 /* EMAsync_cc@3x.png */,
+				91E5C2E389CCE04745A5BA71F959A45F /* EMAsync_ee.png */,
+				C018D3FFE86941EEB5E631B6F54909DB /* EMAsync_ee@2x.png */,
+				62F4DDDDFC85CCE7CD767934AA15F095 /* EMAsync_ee@3x.png */,
+				F3AD0D9F332A6A031A5C88994788BF7B /* EMAsync_gg.png */,
+				40301584E0245BF4F9002DADC62DCEEB /* EMAsync_gg@2x.png */,
+				99D2B8F96C9477FF731E13CF5DB47B83 /* EMAsync_gg@3x.png */,
+				E2979204AB6536F10532E6B0EB1D7437 /* EMAsync_mw.png */,
+				7349EA6638B8840761E760A997C2C1A8 /* EMAsync_mw@2x.png */,
+				DA693863D501FC15F1C6F7794DD2553C /* EMAsync_mw@3x.png */,
+				7E324DA965C75E8E9AD14B21AE192A16 /* EMAsync_ProgressHUD_error.png */,
+				05BBF6D19ADA8A0EA198B35B892FDB25 /* EMAsync_ProgressHUD_error@2x.png */,
+				3DC7F8314A845F2FF5C33641348ECCA7 /* EMAsync_ProgressHUD_error@3x.png */,
+				B3AE1A19B4503CAE696B2CC1AA763CFF /* EMAsync_ProgressHUD_info.png */,
+				B4FDF33A72A0794D7190B5068F659EE5 /* EMAsync_ProgressHUD_info@2x.png */,
+				8C2ED6CA79567C77892B6D10E2C487A1 /* EMAsync_ProgressHUD_info@3x.png */,
+				FF21B3091E6D5E14B4868A515DC0D923 /* EMAsync_ProgressHUD_success.png */,
+				086F44086C5BD5740E5BF260032BDDBC /* EMAsync_ProgressHUD_success@2x.png */,
+				ED9FDB511C6BA0CC520487DDE0356885 /* EMAsync_ProgressHUD_success@3x.png */,
+				1C46FB5E536D31E5EA94368013C35663 /* EMAsync_qq.png */,
+				F2FFC5A6FC65C26129EF3F6609DD2CC9 /* EMAsync_qq@2x.png */,
+				BACE33C40C607E1C5B6A9F7099661463 /* EMAsync_qq@3x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		D483AEFD1A0065F8ABC7AAA824E2F5E4 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -451,7 +451,7 @@
 				EAD8C8B7F0C2C22C150C7B951BB0A455 /* EMAsync */,
 				9532D69F49B3E3E05D2D757589F1529C /* Lib */,
 				11347720467F24E772219E492E0F6C16 /* Pod */,
-				3F22E7C83ABAA41C8652D51F09FBF747 /* Resources */,
+				D2282B6EF21C099EC8920740B4414526 /* Resources */,
 				3CF45F771E4967CC2672B8AD3F444638 /* Support Files */,
 			);
 			name = EMAsyncKit;
@@ -712,33 +712,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87DF66B228A89E56C40F960197954ED7 /* EMAsync_bb.png in Resources */,
-				770F79E9A052D21F44CF2F3FBD2B9BD1 /* EMAsync_bb@2x.png in Resources */,
-				8E7FA3027C82668108A3B0CE8277A376 /* EMAsync_bb@3x.png in Resources */,
-				B1D48796D8CB31537D3A1196F89EB6F5 /* EMAsync_cc.png in Resources */,
-				333F65B611B419B43C1BCBA1693C1959 /* EMAsync_cc@2x.png in Resources */,
-				A5ACD157F1DE6DD0263CA8A8BE6AF677 /* EMAsync_cc@3x.png in Resources */,
-				F5AB0902AC7F5BDB5562045339FF6D72 /* EMAsync_ee.png in Resources */,
-				94F53B37DC630F194CA5EF37B3F55749 /* EMAsync_ee@2x.png in Resources */,
-				1E8B55ED0A148D69C0F5F3BF9524B3CF /* EMAsync_ee@3x.png in Resources */,
-				B64D0DD203D7D5C055EB9D94A9297862 /* EMAsync_gg.png in Resources */,
-				CA91486D79971413A5659FB0C56B0CF3 /* EMAsync_gg@2x.png in Resources */,
-				F1467F57C804DB572AFF303344116DDD /* EMAsync_gg@3x.png in Resources */,
-				378ABCFA2219241569CCAEBB9F4B0C1F /* EMAsync_mw.png in Resources */,
-				C29C5091DF62564151E23C512A98BE19 /* EMAsync_mw@2x.png in Resources */,
-				1AAC4AB76A27A63BF76FEB073CA205FF /* EMAsync_mw@3x.png in Resources */,
-				A90667F1049390E479484F3FAB2B3705 /* EMAsync_ProgressHUD_error.png in Resources */,
-				0C4AAB5FCD64BA3191AA7FB0E844B9D0 /* EMAsync_ProgressHUD_error@2x.png in Resources */,
-				B351939FC8CE49A73B30C9755EE193C3 /* EMAsync_ProgressHUD_error@3x.png in Resources */,
-				A02A3675527DF58C2A8E5151274212C0 /* EMAsync_ProgressHUD_info.png in Resources */,
-				C3328E5A68FC6C92B5FACF54531EC069 /* EMAsync_ProgressHUD_info@2x.png in Resources */,
-				CEB2C934651C2EE4F501D164748DD105 /* EMAsync_ProgressHUD_info@3x.png in Resources */,
-				0057B338D01F76D647BFE448573504AA /* EMAsync_ProgressHUD_success.png in Resources */,
-				806557494CCC799FF213700B3C8C1F7E /* EMAsync_ProgressHUD_success@2x.png in Resources */,
-				503788FE359AC75E97304F966F5A48ED /* EMAsync_ProgressHUD_success@3x.png in Resources */,
-				9F4180A92554A3B33B6749C86554F9F9 /* EMAsync_qq.png in Resources */,
-				04D534A3D1238562223F79D1202C4267 /* EMAsync_qq@2x.png in Resources */,
-				7E2F9A3378994B0FD68853956EAF8DBE /* EMAsync_qq@3x.png in Resources */,
+				65398C1E65B8EEC25B14C30D0235319A /* EMAsync_bb.png in Resources */,
+				CE2CDAF283AEB5AE503C8E79800C35AA /* EMAsync_bb@2x.png in Resources */,
+				01AE8FA6EC35228693C8D6024B5DD006 /* EMAsync_bb@3x.png in Resources */,
+				25D3C67E30DF375F4926673505A994F2 /* EMAsync_cc.png in Resources */,
+				2E910300CA5A85FB14528ACA93C8E921 /* EMAsync_cc@2x.png in Resources */,
+				883FD6987CDDF412333449B839821B36 /* EMAsync_cc@3x.png in Resources */,
+				29197EB4FFA4800E4893B5065F08E5C6 /* EMAsync_ee.png in Resources */,
+				264F9116CCA7D636D468AC460FF5C71C /* EMAsync_ee@2x.png in Resources */,
+				9AF4DCF607AC2C7FB00ECDC86DCE13C2 /* EMAsync_ee@3x.png in Resources */,
+				CC81950D03F3A63BE38BF3EB3FB434FD /* EMAsync_gg.png in Resources */,
+				2AD806DB76DD7FEE3EE3CFD80E27D50A /* EMAsync_gg@2x.png in Resources */,
+				A1FB4757D0F1E8AEB9E3DF8D6B921DCF /* EMAsync_gg@3x.png in Resources */,
+				F7A1DED018254E6472BBA2A1BDFE5EC4 /* EMAsync_mw.png in Resources */,
+				DD92A083B30FE5F82A2DD98E37725973 /* EMAsync_mw@2x.png in Resources */,
+				9E1E54019B50701050EFA0CE82F62324 /* EMAsync_mw@3x.png in Resources */,
+				F1D565AEEB25E42AB2FA8CEC468134DF /* EMAsync_ProgressHUD_error.png in Resources */,
+				EAE2398EAD8F63A8FFA24E178131FBAA /* EMAsync_ProgressHUD_error@2x.png in Resources */,
+				3EBB90E1351BECEC68668ED60910FBC2 /* EMAsync_ProgressHUD_error@3x.png in Resources */,
+				346ED9748B3B75C7727DF8434CD60FA1 /* EMAsync_ProgressHUD_info.png in Resources */,
+				9F28A5ABE8E0D23361E49951FF419EAA /* EMAsync_ProgressHUD_info@2x.png in Resources */,
+				3E68E15ED7DF039FC87BD31C007DB6A4 /* EMAsync_ProgressHUD_info@3x.png in Resources */,
+				2F4361F91542FE3AC9A818664CB6F8EA /* EMAsync_ProgressHUD_success.png in Resources */,
+				C93EE4CB719CD9C308F10014973E5C0C /* EMAsync_ProgressHUD_success@2x.png in Resources */,
+				A002D3FEC687E44DDBE6D4BC6AF83EAE /* EMAsync_ProgressHUD_success@3x.png in Resources */,
+				FF2534376EAE39103B7F9E7EE3057B60 /* EMAsync_qq.png in Resources */,
+				324C2DF2F15C4E5A6CC68B9072954F08 /* EMAsync_qq@2x.png in Resources */,
+				6B4FFB9620839A09863B817797E92C48 /* EMAsync_qq@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

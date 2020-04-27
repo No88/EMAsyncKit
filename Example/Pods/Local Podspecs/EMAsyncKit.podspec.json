@@ -21,7 +21,7 @@
   "source_files": "EMAsyncKit/Classes/**/*",
   "resource_bundles": {
     "EMAsyncKit": [
-      "EMAsyncKit/Assets/EMAsyncKit.bundle/*.png"
+      "EMAsyncKit/Assets/*"
     ]
   }
 }
