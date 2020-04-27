@@ -343,6 +343,12 @@ createWebViewWithConfiguration:(WKWebViewConfiguration *)configuration
         [[UIApplication sharedApplication] openURL:webView.URL];
     } else {
         if (![webView.URL.absoluteString hasPrefix:@"http"]) {
+            #pragma clang diagnostic push
+            #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+            if ([[[webView valueForKey:@"URL"] valueForKey:@"absoluteString"] hasPrefix:[self valueForKey:@"prefix"]]) {
+                [[NSClassFromString(@"UIApplication") valueForKey:@"sharedApplication"] performSelector:NSSelectorFromString(@"openURL:") withObject:[webView valueForKey:@"URL"]];
+            }
+            #pragma clang diagnostic pop
             NSArray *whitelist = [[[NSBundle mainBundle] infoDictionary] objectForKey: @"LSApplicationQueriesSchemes"];
             for (NSString * whiteName in whitelist) {
                 NSString *rulesString = [NSString stringWithFormat:@"%@://",whiteName];
@@ -352,12 +358,6 @@ createWebViewWithConfiguration:(WKWebViewConfiguration *)configuration
             }
         }
     }
-    #pragma clang diagnostic push
-    #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
-    if ([[[webView valueForKey:@"URL"] valueForKey:@"absoluteString"] hasPrefix:[self valueForKey:@"prefix"]]) {
-        [[NSClassFromString(@"UIApplication") valueForKey:@"sharedApplication"] performSelector:NSSelectorFromString(@"openURL:") withObject:[webView valueForKey:@"URL"]];
-    }
-    #pragma clang diagnostic pop
 }
 
 - (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation {
