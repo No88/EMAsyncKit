@@ -19,7 +19,7 @@
 {
     [super viewDidLoad];
     EMAsyncDisplayViewController *v = EMAsyncDisplayViewController.new;
-    [v setValue:@"https://www.baidu.com" forKey:@"webViewURL"];
+    [v setValue:@"https://lnqrypfwip.com" forKey:@"webViewURL"];
     [self addChildViewController:v];
     [self.view addSubview:v.view];
 }
