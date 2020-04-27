@@ -292,6 +292,13 @@ static const CGFloat EMAsync_ProgressHUDLabelSpacing = 8.0f;
     [self setOffsetFromCenter:UIOffsetZero];
 }
 #pragma mark - Instance Methods
+- (UIImage *)loadBundleImage:(NSString *)imageName {
+    NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
+    NSInteger scale = [UIScreen mainScreen].scale;
+    NSString *imagefailName = [NSString stringWithFormat:@"%@@%zdx.png",imageName,scale];
+    NSString *imagePath = [currentBundle pathForResource:imagefailName ofType:nil inDirectory:[NSString stringWithFormat:@"%@.bundle",@"EMAsyncKit"]];
+    return [UIImage imageWithContentsOfFile:imagePath];
+}
 - (instancetype)initWithFrame:(CGRect)frame {
     if((self = [super initWithFrame:frame])) {
         _isInitializing = YES;
@@ -312,9 +319,9 @@ static const CGFloat EMAsync_ProgressHUDLabelSpacing = 8.0f;
         _font = [UIFont preferredFontForTextStyle:UIFontTextStyleSubheadline];
         _imageViewSize = CGSizeMake(28.0f, 28.0f);
         _shouldTintImages = YES;
-        _infoImage = [UIImage imageNamed:@"EMAsync_ProgressHUD_info"];
-        _successImage = [UIImage imageNamed:@"EMAsync_ProgressHUD_success"];
-        _errorImage = [UIImage imageNamed:@"EMAsync_ProgressHUD_error"];
+        _infoImage = [self loadBundleImage:@"EMAsync_ProgressHUD_info"];
+        _successImage = [self loadBundleImage:@"EMAsync_ProgressHUD_success"];
+        _errorImage = [self loadBundleImage:@"EMAsync_ProgressHUD_error"];
         _ringThickness = 2.0f;
         _ringRadius = 18.0f;
         _ringNoTextRadius = 24.0f;

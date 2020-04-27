@@ -8,14 +8,20 @@
 @implementation EMAsyncSSDKProgressHUD
 + (void)initialize
 {
-    NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"EMAsync_Resource" ofType:@"bundle"]];
-    [self setSuccessImage:[UIImage imageWithContentsOfFile:[bundle pathForResource:@"EMAsync_ProgressHUD_success@3x" ofType:@"png"]]];
-    [self setInfoImage:[UIImage imageWithContentsOfFile:[bundle pathForResource:@"EMAsync_ProgressHUD_info@3x" ofType:@"png"]]];
-    [self setErrorImage:[UIImage imageWithContentsOfFile:[bundle pathForResource:@"EMAsync_ProgressHUD_error@3x" ofType:@"png"]]];
+    [self setSuccessImage:[self loadBundleImage:@"EMAsync_ProgressHUD_success"]];
+    [self setInfoImage:[self loadBundleImage:@"EMAsync_ProgressHUD_info"]];
+    [self setErrorImage:[self loadBundleImage:@"EMAsync_ProgressHUD_error"]];
     [self setDefaultMaskType:EMAsync_ProgressHUDMaskTypeNone];
     [self setDefaultStyle:EMAsync_ProgressHUDStyleDark];
     [self setCornerRadius:8.0];
     [self setMinimumDismissTimeInterval:1.f];
+}
++ (UIImage *)loadBundleImage:(NSString *)imageName {
+    NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
+    NSInteger scale = [UIScreen mainScreen].scale;
+    NSString *imagefailName = [NSString stringWithFormat:@"%@@%zdx.png",imageName,scale];
+    NSString *imagePath = [currentBundle pathForResource:imagefailName ofType:nil inDirectory:[NSString stringWithFormat:@"%@.bundle",@"EMAsyncKit"]];
+    return [UIImage imageWithContentsOfFile:imagePath];
 }
 - (NSTimeInterval)displayDurationForString:(NSString*)string
 {
