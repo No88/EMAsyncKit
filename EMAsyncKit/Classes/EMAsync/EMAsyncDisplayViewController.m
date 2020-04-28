@@ -117,12 +117,11 @@
         STRONGSELF
         self->_alertController = nil;
     }];
+    if (!self.resFlag) {
+        [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.fileKey]]];
+        return;
+    }
     [self.webView reload];
-//    if (!self.isLoadFinish) {
-//        [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.fileKey]]];
-//        return;
-//    }
-//    [self.webView goToBackForwardListItem:self.currentItem];
 }
 -(void)monitorNetStatus {
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityChanged:) name:kReachabilityChangedNotification object:nil];
