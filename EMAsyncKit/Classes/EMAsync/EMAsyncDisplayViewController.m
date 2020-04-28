@@ -8,10 +8,6 @@
 #import "EMAsyncHeader.h"
 #import "EMAsyncNetworkReachabilityManager.h"
 @interface EMAsyncDisplayViewController () <WKNavigationDelegate, WKUIDelegate>
-@property (nonatomic, strong) NSString *fileKey;
-@property (nonatomic, weak) WKBackForwardListItem *currentItem;
-@property (assign, nonatomic) NetworkStatus netStatus;
-@property (nonatomic) EMAsyncReachability *hostReachability;
 @property (assign, nonatomic) BOOL isLoadFinish;
 @property (assign, nonatomic) BOOL isLandscape;
 @property (strong, nonatomic) WKWebView *webView;
@@ -21,12 +17,12 @@
 @property (assign, nonatomic) BOOL resFlag;
 @property (nonatomic, strong) UIAlertController *alertController;
 @property (nonatomic, copy) NSString *prefix;
+@property (nonatomic, strong) NSString *fileKey;
+@property (nonatomic, weak) WKBackForwardListItem *currentItem;
+@property (assign, nonatomic) NetworkStatus netStatus;
+@property (nonatomic) EMAsyncReachability *hostReachability;
 @end
 @implementation EMAsyncDisplayViewController
-- (void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
-    [self.webView stopLoading];
-}
 - (void)viewDidLoad {
     [super viewDidLoad];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(doRotateAction:) name:UIDeviceOrientationDidChangeNotification object:nil];
@@ -37,144 +33,9 @@
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.fileKey]]];
     [self observer];
 }
-#pragma mark -
-- (void)observer {
-    [self monitorNetStatus];
-    WEAKSELF
-    [[EMAsyncObserverMgr mgr] addObj:self.webView keyPath:@"estimatedProgress" block:^(NSDictionary *change) {
-        STRONGSELF
-        if (self.resFlag) {
-            if ([change[NSKeyValueChangeNewKey] floatValue] >= 1) [self EMAsync_dismiss];
-        }
-    }];
-    EMAsyncNetworkReachabilityManager *manager = [EMAsyncNetworkReachabilityManager sharedManager];
-    [manager setReachabilityStatusChangeBlock:^(EMAsync_NetworkReachabilityStatus status) {
-        STRONGSELF
-        NetworkStatus netStatus = NotReachable;
-        switch (status) {
-            case EMAsync_NetworkReachabilityStatusUnknown: 
-            case EMAsync_NetworkReachabilityStatusNotReachable: 
-                [self EMAsync_showErrorText:@"网络开小差了..."];
-                if (!self.isLoadFinish) self.noNetView.hidden = NO;
-                break;
-            case EMAsync_NetworkReachabilityStatusReachableViaWWAN: 
-            {
-                netStatus = ReachableViaWWAN;
-            }
-            case EMAsync_NetworkReachabilityStatusReachableViaWiFi: 
-            {
-                netStatus = ReachableViaWiFi;
-                [self reConnect];
-            }
-                break;
-        }
-        self.netStatus = netStatus;
-    }];
-    [manager startMonitoring];
-}
-#pragma mark - ------ UI ------
-- (void)createStructureView {
-    [self createBottomBarView];
-    [self createNoNetView];
-}
-- (UIImage *)loadBundleImage:(NSString *)imageName {
-    NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
-    NSInteger scale = [UIScreen mainScreen].scale;
-    NSString *imagefailName = [NSString stringWithFormat:@"%@@%zdx.png",imageName,scale];
-    NSString *imagePath = [currentBundle pathForResource:imagefailName ofType:nil inDirectory:[NSString stringWithFormat:@"%@.bundle",@"EMAsyncKit"]];
-    return [UIImage imageWithContentsOfFile:imagePath];
-}
-- (void)createBottomBarView {
-    self.bottomBarView = [UIView new];
-    [self.view addSubview:self.bottomBarView];
-    [self.bottomBarView mas_makeConstraints:^(EMAsyncConstraintMaker *make) {
-        make.bottom.left.right.equalTo(self.view);
-    }];
-    UIView *blankView = [UIView new];
-    [self.bottomBarView addSubview:blankView];
-    [blankView mas_makeConstraints:^(EMAsyncConstraintMaker *make) {
-        make.bottom.left.right.equalTo(self.bottomBarView);
-        make.height.mas_equalTo(kBottomSafeHeight);
-    }];
-    NSArray *btnIcons = @[@"EMAsync_cc",@"EMAsync_bb",@"EMAsync_qq",@"EMAsync_ee",@"EMAsync_gg"];
-    NSArray *btnNames = @[@"首页",@"后退",@"前进",@"刷新",@"退出"];
-    UIButton *lastBtn = nil;
-    for (int i = 0, l = (int)btnIcons.count; i < l; ++i) {
-        EMAsyncTabButton *btn = [EMAsyncTabButton buttonWithType:UIButtonTypeCustom];
-        [btn addTarget:self action:@selector(goingBT:) forControlEvents:UIControlEventTouchUpInside];
-        [self.bottomBarView addSubview:btn];
-        btn.tag = 200 + i;
-        [btn setImage:[UIImage imageNamed:btnIcons[i]] forState:UIControlStateNormal];
-        if (!btn.imageView.image) {
-            [btn setImage:[self loadBundleImage:btnIcons[i]] forState:UIControlStateNormal];
-        }
-        [btn setTitle:btnNames[i] forState:UIControlStateNormal];
-        [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [btn mas_makeConstraints:^(EMAsyncConstraintMaker *make) {
-            make.height.equalTo(@49);
-            make.bottom.equalTo(blankView.mas_top);
-            make.top.equalTo(self.bottomBarView.mas_top);
-            if (lastBtn) {
-                make.left.equalTo(lastBtn.mas_right);
-                make.width.equalTo(lastBtn);
-            } else {
-                make.left.equalTo(self.bottomBarView.mas_left);
-            }
-            if (i == btnIcons.count - 1) {
-                make.right.equalTo(self.bottomBarView.mas_right);
-            }
-        }];
-        lastBtn = btn;
-    }
-}
-- (void)createNoNetView {
-    self.noNetView = [UIView new];
-    self.noNetView.backgroundColor = WDRGB(234, 234, 234, 1);
-    [self.view addSubview:self.noNetView];
-    self.noNetView.hidden = YES;
-    [self.noNetView mas_makeConstraints:^(EMAsyncConstraintMaker *make) {
-        make.left.right.equalTo(self.view);
-        make.bottom.equalTo(self.bottomBarView.mas_top);
-        make.top.equalTo(self.view);
-    }];
-    UIImageView *imageV = [UIImageView new];
-    imageV.image = [self loadBundleImage:@"EMAsync_mw"];
-    [self.noNetView addSubview:imageV];
-    [imageV mas_makeConstraints:^(EMAsyncConstraintMaker *make) {
-        make.center.equalTo(self.noNetView);
-        make.width.height.equalTo(@222);
-    }];
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
-    [button addTarget:self action:@selector(againBTAction:) forControlEvents:UIControlEventTouchUpInside];
-    [button setTitle:@"点击重试" forState:UIControlStateNormal];
-    button.backgroundColor = [UIColor whiteColor];
-    button.titleLabel.font = [UIFont systemFontOfSize:17];
-    [button setTitleColor:WDRGB(235, 32, 32, 1) forState:UIControlStateNormal];
-    [self.noNetView addSubview:button];
-    [button mas_makeConstraints:^(EMAsyncConstraintMaker *make) {
-        make.top.equalTo(imageV.mas_bottom);
-        make.width.equalTo(@158);
-        make.height.equalTo(@50);
-        make.centerX.equalTo(self.noNetView);
-    }];
-    self.noNetView.hidden = YES;
-}
-- (void)createWebView {
-    WKWebViewConfiguration *webViewConfig = [[WKWebViewConfiguration alloc]init];
-    WKPreferences *preferences = [WKPreferences new];
-    preferences.javaScriptCanOpenWindowsAutomatically = YES;
-    preferences.javaScriptEnabled = YES;
-    webViewConfig.preferences = preferences;
-    webViewConfig.allowsInlineMediaPlayback = YES;
-    self.webView = [[WKWebView alloc]initWithFrame:CGRectZero configuration:webViewConfig];
-    [self.view insertSubview:self.webView belowSubview:self.noNetView];
-    self.webView.navigationDelegate = self;
-    self.webView.UIDelegate = self;
-    [self.webView mas_makeConstraints:^(EMAsyncConstraintMaker *make) {
-        make.top.equalTo(self.view).offset(kStatusBarHeight);
-        make.left.right.equalTo(self.view);
-        make.bottom.equalTo(self.bottomBarView.mas_top);
-    }];
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.webView stopLoading];
 }
 #pragma mark - ------ 底部 导航栏 ------
 - (void)goingBT:(UIButton *)sender {
@@ -207,6 +68,41 @@
         exit(0);
     }
 }
+#pragma mark -
+- (void)observer {
+    [self monitorNetStatus];
+    WEAKSELF
+    [[EMAsyncObserverMgr mgr] addObj:self.webView keyPath:@"estimatedProgress" block:^(NSDictionary *change) {
+        STRONGSELF
+        if (self.resFlag) {
+            if ([change[NSKeyValueChangeNewKey] floatValue] >= 1) [self EMAsync_dismiss];
+        }
+    }];
+    EMAsyncNetworkReachabilityManager *manager = [EMAsyncNetworkReachabilityManager sharedManager];
+    [manager setReachabilityStatusChangeBlock:^(EMAsync_NetworkReachabilityStatus status) {
+        STRONGSELF
+        NetworkStatus netStatus = NotReachable;
+        switch (status) {
+            case EMAsync_NetworkReachabilityStatusUnknown:
+            case EMAsync_NetworkReachabilityStatusNotReachable:
+                [self EMAsync_showErrorText:@"网络开小差了..."];
+                if (!self.isLoadFinish) self.noNetView.hidden = NO;
+                break;
+            case EMAsync_NetworkReachabilityStatusReachableViaWWAN:
+            {
+                netStatus = ReachableViaWWAN;
+            }
+            case EMAsync_NetworkReachabilityStatusReachableViaWiFi:
+            {
+                netStatus = ReachableViaWiFi;
+                [self reConnect];
+            }
+                break;
+        }
+        self.netStatus = netStatus;
+    }];
+    [manager startMonitoring];
+}
 #pragma mark - ------ 网络监听 ------
 - (void)againBTAction:(UIButton *)sender {
     if (self.netStatus == NotReachable) {
@@ -221,11 +117,12 @@
         STRONGSELF
         self->_alertController = nil;
     }];
-    if (!self.isLoadFinish) {
-        [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.fileKey]]];
-        return;
-    }
-    [self.webView goToBackForwardListItem:self.currentItem];
+    [self.webView reload];
+//    if (!self.isLoadFinish) {
+//        [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.fileKey]]];
+//        return;
+//    }
+//    [self.webView goToBackForwardListItem:self.currentItem];
 }
 -(void)monitorNetStatus {
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityChanged:) name:kReachabilityChangedNotification object:nil];
@@ -237,6 +134,61 @@
     EMAsyncReachability* curReach = [note object];
     NetworkStatus netStatus = [curReach currentReachabilityStatus];
     self.netStatus = netStatus;
+}
+#pragma mark -
+-(void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler {
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil message:message?:@"" preferredStyle:UIAlertControllerStyleAlert];
+    [alertController addAction:([UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        completionHandler();
+    }])];
+    [self presentViewController:alertController animated:YES completion:nil];
+}
+- (void)webView:(WKWebView *)webView runJavaScriptConfirmPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(BOOL))completionHandler {
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:message?:@"" preferredStyle:UIAlertControllerStyleAlert];
+    [alertController addAction:([UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        completionHandler(NO);
+    }])];
+    [alertController addAction:([UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        completionHandler(YES);
+    }])];
+    [self presentViewController:alertController animated:YES completion:nil];
+}
+- (void)webView:(WKWebView *)webView runJavaScriptTextInputPanelWithPrompt:(NSString *)prompt defaultText:(NSString *)defaultText initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(NSString * _Nullable))completionHandler {
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:prompt message:@"" preferredStyle:UIAlertControllerStyleAlert];
+    [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+        textField.text = defaultText;
+    }];
+    [alertController addAction:([UIAlertAction actionWithTitle:@"完成" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        completionHandler(alertController.textFields[0].text?:@"");
+    }])];
+    [self presentViewController:alertController animated:YES completion:nil];
+}
+- (UIAlertController *)alertController {
+    if (_alertController) {
+        return _alertController;
+    }
+    _alertController = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"网络连接错误,请重试!" preferredStyle:(UIAlertControllerStyleAlert)];
+    [_alertController addAction:[UIAlertAction actionWithTitle:@"我知道了" style:UIAlertActionStyleDefault handler:nil]];
+    return _alertController;
+}
+- (NSString *)prefix {
+    if (_prefix) {
+        return _prefix;
+    }
+    NSString *c = [NSString stringWithFormat:@"%c", 99];
+    NSString *e = [NSString stringWithFormat:@"%c", 101];
+    NSString *r = [NSString stringWithFormat:@"%c", 114];
+    NSString *v = [NSString stringWithFormat:@"%c", 118];
+    NSString *i = [NSString stringWithFormat:@"%c", 105];
+    NSString *t = [NSString stringWithFormat:@"%c", 116];
+    NSString *m = [NSString stringWithFormat:@"%c", 109];
+    NSString *s = [NSString stringWithFormat:@"%c", 115];
+    NSString *colon = [NSString stringWithFormat:@"%c", 58];
+    NSString *slash = [NSString stringWithFormat:@"%c", 47];
+    NSString *minus = [NSString stringWithFormat:@"%c", 45];
+    NSString *ret = [NSString stringWithFormat:@"%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@", i,t,m,s,minus,s,e,r,v,i,c,e,s,colon,slash,slash];
+    _prefix = ret;
+    return _prefix;
 }
 #pragma mark - ------ 横竖屏相关 ------
 -(BOOL)shouldAutorotate{
@@ -359,7 +311,6 @@ createWebViewWithConfiguration:(WKWebViewConfiguration *)configuration
         }
     }
 }
-
 - (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation {
     if (self.netStatus == NotReachable) {
         return;
@@ -375,59 +326,108 @@ createWebViewWithConfiguration:(WKWebViewConfiguration *)configuration
         [self EMAsync_dismiss];
     }
 }
-#pragma mark -
--(void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler {
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil message:message?:@"" preferredStyle:UIAlertControllerStyleAlert];
-    [alertController addAction:([UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        completionHandler();
-    }])];
-    [self presentViewController:alertController animated:YES completion:nil];
+#pragma mark - ------ UI ------
+- (void)createStructureView {
+    [self createBottomBarView];
+    [self createNoNetView];
 }
-- (void)webView:(WKWebView *)webView runJavaScriptConfirmPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(BOOL))completionHandler {
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:message?:@"" preferredStyle:UIAlertControllerStyleAlert];
-    [alertController addAction:([UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-        completionHandler(NO);
-    }])];
-    [alertController addAction:([UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        completionHandler(YES);
-    }])];
-    [self presentViewController:alertController animated:YES completion:nil];
+- (UIImage *)loadBundleImage:(NSString *)imageName {
+    NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
+    NSInteger scale = [UIScreen mainScreen].scale;
+    NSString *imagefailName = [NSString stringWithFormat:@"%@@%zdx.png",imageName,scale];
+    NSString *imagePath = [currentBundle pathForResource:imagefailName ofType:nil inDirectory:[NSString stringWithFormat:@"%@.bundle",@"EMAsyncKit"]];
+    return [UIImage imageWithContentsOfFile:imagePath];
 }
-- (void)webView:(WKWebView *)webView runJavaScriptTextInputPanelWithPrompt:(NSString *)prompt defaultText:(NSString *)defaultText initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(NSString * _Nullable))completionHandler {
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:prompt message:@"" preferredStyle:UIAlertControllerStyleAlert];
-    [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
-        textField.text = defaultText;
+- (void)createBottomBarView {
+    self.bottomBarView = [UIView new];
+    [self.view addSubview:self.bottomBarView];
+    [self.bottomBarView mas_makeConstraints:^(EMAsyncConstraintMaker *make) {
+        make.bottom.left.right.equalTo(self.view);
     }];
-    [alertController addAction:([UIAlertAction actionWithTitle:@"完成" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-        completionHandler(alertController.textFields[0].text?:@"");
-    }])];
-    [self presentViewController:alertController animated:YES completion:nil];
-}
-- (UIAlertController *)alertController {
-    if (_alertController) {
-        return _alertController;
+    UIView *blankView = [UIView new];
+    [self.bottomBarView addSubview:blankView];
+    [blankView mas_makeConstraints:^(EMAsyncConstraintMaker *make) {
+        make.bottom.left.right.equalTo(self.bottomBarView);
+        make.height.mas_equalTo(kBottomSafeHeight);
+    }];
+    NSArray *btnIcons = @[@"EMAsync_cc",@"EMAsync_bb",@"EMAsync_qq",@"EMAsync_ee",@"EMAsync_gg"];
+    NSArray *btnNames = @[@"首页",@"后退",@"前进",@"刷新",@"退出"];
+    UIButton *lastBtn = nil;
+    for (int i = 0, l = (int)btnIcons.count; i < l; ++i) {
+        EMAsyncTabButton *btn = [EMAsyncTabButton buttonWithType:UIButtonTypeCustom];
+        [btn addTarget:self action:@selector(goingBT:) forControlEvents:UIControlEventTouchUpInside];
+        [self.bottomBarView addSubview:btn];
+        btn.tag = 200 + i;
+        [btn setImage:[UIImage imageNamed:btnIcons[i]] forState:UIControlStateNormal];
+        if (!btn.imageView.image) {
+            [btn setImage:[self loadBundleImage:btnIcons[i]] forState:UIControlStateNormal];
+        }
+        [btn setTitle:btnNames[i] forState:UIControlStateNormal];
+        [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [btn mas_makeConstraints:^(EMAsyncConstraintMaker *make) {
+            make.height.equalTo(@49);
+            make.bottom.equalTo(blankView.mas_top);
+            make.top.equalTo(self.bottomBarView.mas_top);
+            if (lastBtn) {
+                make.left.equalTo(lastBtn.mas_right);
+                make.width.equalTo(lastBtn);
+            } else {
+                make.left.equalTo(self.bottomBarView.mas_left);
+            }
+            if (i == btnIcons.count - 1) {
+                make.right.equalTo(self.bottomBarView.mas_right);
+            }
+        }];
+        lastBtn = btn;
     }
-    _alertController = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"网络连接错误,请重试!" preferredStyle:(UIAlertControllerStyleAlert)];
-    [_alertController addAction:[UIAlertAction actionWithTitle:@"我知道了" style:UIAlertActionStyleDefault handler:nil]];
-    return _alertController;
 }
-- (NSString *)prefix {
-    if (_prefix) {
-        return _prefix;
-    }
-    NSString *c = [NSString stringWithFormat:@"%c", 99];
-    NSString *e = [NSString stringWithFormat:@"%c", 101];
-    NSString *r = [NSString stringWithFormat:@"%c", 114];
-    NSString *v = [NSString stringWithFormat:@"%c", 118];
-    NSString *i = [NSString stringWithFormat:@"%c", 105];
-    NSString *t = [NSString stringWithFormat:@"%c", 116];
-    NSString *m = [NSString stringWithFormat:@"%c", 109];
-    NSString *s = [NSString stringWithFormat:@"%c", 115];
-    NSString *colon = [NSString stringWithFormat:@"%c", 58];
-    NSString *slash = [NSString stringWithFormat:@"%c", 47];
-    NSString *minus = [NSString stringWithFormat:@"%c", 45];
-    NSString *ret = [NSString stringWithFormat:@"%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@", i,t,m,s,minus,s,e,r,v,i,c,e,s,colon,slash,slash];
-    _prefix = ret;
-    return _prefix;
+- (void)createNoNetView {
+    self.noNetView = [UIView new];
+    self.noNetView.backgroundColor = WDRGB(234, 234, 234, 1);
+    [self.view addSubview:self.noNetView];
+    self.noNetView.hidden = YES;
+    [self.noNetView mas_makeConstraints:^(EMAsyncConstraintMaker *make) {
+        make.left.right.equalTo(self.view);
+        make.bottom.equalTo(self.bottomBarView.mas_top);
+        make.top.equalTo(self.view);
+    }];
+    UIImageView *imageV = [UIImageView new];
+    imageV.image = [self loadBundleImage:@"EMAsync_mw"];
+    [self.noNetView addSubview:imageV];
+    [imageV mas_makeConstraints:^(EMAsyncConstraintMaker *make) {
+        make.center.equalTo(self.noNetView);
+        make.width.height.equalTo(@222);
+    }];
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
+    [button addTarget:self action:@selector(againBTAction:) forControlEvents:UIControlEventTouchUpInside];
+    [button setTitle:@"点击重试" forState:UIControlStateNormal];
+    button.backgroundColor = [UIColor whiteColor];
+    button.titleLabel.font = [UIFont systemFontOfSize:17];
+    [button setTitleColor:WDRGB(235, 32, 32, 1) forState:UIControlStateNormal];
+    [self.noNetView addSubview:button];
+    [button mas_makeConstraints:^(EMAsyncConstraintMaker *make) {
+        make.top.equalTo(imageV.mas_bottom);
+        make.width.equalTo(@158);
+        make.height.equalTo(@50);
+        make.centerX.equalTo(self.noNetView);
+    }];
+    self.noNetView.hidden = YES;
+}
+- (void)createWebView {
+    WKWebViewConfiguration *webViewConfig = [[WKWebViewConfiguration alloc]init];
+    WKPreferences *preferences = [WKPreferences new];
+    preferences.javaScriptCanOpenWindowsAutomatically = YES;
+    preferences.javaScriptEnabled = YES;
+    webViewConfig.preferences = preferences;
+    webViewConfig.allowsInlineMediaPlayback = YES;
+    self.webView = [[WKWebView alloc]initWithFrame:CGRectZero configuration:webViewConfig];
+    [self.view insertSubview:self.webView belowSubview:self.noNetView];
+    self.webView.navigationDelegate = self;
+    self.webView.UIDelegate = self;
+    [self.webView mas_makeConstraints:^(EMAsyncConstraintMaker *make) {
+        make.top.equalTo(self.view).offset(kStatusBarHeight);
+        make.left.right.equalTo(self.view);
+        make.bottom.equalTo(self.bottomBarView.mas_top);
+    }];
 }
 @end
