@@ -117,7 +117,7 @@
         STRONGSELF
         self->_alertController = nil;
     }];
-    if (!self.resFlag) {
+    if (!self.resFlag || !self.currentItem) {
         [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.fileKey]]];
         return;
     }
