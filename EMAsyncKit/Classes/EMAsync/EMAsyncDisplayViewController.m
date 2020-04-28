@@ -9,6 +9,7 @@
 #import "EMAsyncNetworkReachabilityManager.h"
 @interface EMAsyncDisplayViewController () <WKNavigationDelegate, WKUIDelegate>
 @property (assign, nonatomic) BOOL isLoadFinish;
+@property (assign, nonatomic) BOOL isFirstLoding;
 @property (assign, nonatomic) BOOL isLandscape;
 @property (strong, nonatomic) WKWebView *webView;
 @property (strong, nonatomic) UIView *noNetView;
@@ -117,7 +118,7 @@
         STRONGSELF
         self->_alertController = nil;
     }];
-    if (!self.resFlag) {
+    if (!self.isFirstLoding) {
         [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.fileKey]]];
         return;
     }
@@ -283,6 +284,7 @@ createWebViewWithConfiguration:(WKWebViewConfiguration *)configuration
     }
 }
 - (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(WKNavigation *)navigation {
+    self.isFirstLoding = YES;
     self.resFlag = YES;
     self.isLoadFinish = NO;
     [self EMAsync_showText:@"正在加载..."];
