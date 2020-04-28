@@ -247,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "刘豪";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 6RDB938LC6;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -494,7 +497,7 @@
 			baseConfigurationReference = 02F94DA929F4BB0984DC7E70 /* Pods-EMAsyncKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 6RDB938LC6;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EMAsyncKit/EMAsyncKit-Prefix.pch";
 				INFOPLIST_FILE = "EMAsyncKit/EMAsyncKit-Info.plist";
@@ -511,7 +514,7 @@
 			baseConfigurationReference = 4D0A054B5C5CE876A72572B2 /* Pods-EMAsyncKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 6RDB938LC6;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EMAsyncKit/EMAsyncKit-Prefix.pch";
 				INFOPLIST_FILE = "EMAsyncKit/EMAsyncKit-Info.plist";
