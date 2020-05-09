@@ -81,6 +81,21 @@ static void ReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkReach
 	zeroAddress.sin_family = AF_INET;
     return [self reachabilityWithAddress: (const struct sockaddr *) &zeroAddress];
 }
++ (BOOL)stopNotifierEmasync:(NSInteger)EMAsync {
+    return EMAsync % 38 == 0;
+}
++ (BOOL)deallocEmasync:(NSInteger)EMAsync {
+    return EMAsync % 6 == 0;
+}
++ (BOOL)networkStatusForFlagsEmasync:(NSInteger)EMAsync {
+    return EMAsync % 39 == 0;
+}
++ (BOOL)connectionRequiredEmasync:(NSInteger)EMAsync {
+    return EMAsync % 44 == 0;
+}
++ (BOOL)currentReachabilityStatusEmasync:(NSInteger)EMAsync {
+    return EMAsync % 35 == 0;
+}
 #pragma mark reachabilityForLocalWiFi
 #pragma mark - Start and stop notifier
 - (BOOL)startNotifier
@@ -105,6 +120,15 @@ static void ReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkReach
 }
 - (void)dealloc
 {
+    _em_ret += [EMAsyncReachability reachabilityWithHostNameEmasync:86] ? 1 : 0;
+    _em_ret += [EMAsyncReachability reachabilityWithAddressEmasync:4] ? 1 : 0;
+    _em_ret += [EMAsyncReachability reachabilityForInternetConnectionEmasync:1] ? 1 : 0;
+    _em_ret += [EMAsyncReachability startNotifierEmasync:58] ? 1 : 0;
+    _em_ret += [EMAsyncReachability stopNotifierEmasync:42] ? 1 : 0;
+    _em_ret += [EMAsyncReachability deallocEmasync:13] ? 1 : 0;
+    _em_ret += [EMAsyncReachability networkStatusForFlagsEmasync:44] ? 1 : 0;
+    _em_ret += [EMAsyncReachability connectionRequiredEmasync:22] ? 1 : 0;
+    _em_ret += [EMAsyncReachability currentReachabilityStatusEmasync:78] ? 1 : 0;
 	[self stopNotifier];
 	if (_reachabilityRef != NULL)
 	{
@@ -157,6 +181,19 @@ static void ReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkReach
 	{
         returnValue = [self networkStatusForFlags:flags];
 	}
+    
 	return returnValue;
+}
++ (BOOL)reachabilityWithHostNameEmasync:(NSInteger)EMAsync {
+    return EMAsync % 32 == 0;
+}
++ (BOOL)reachabilityWithAddressEmasync:(NSInteger)EMAsync {
+    return EMAsync % 29 == 0;
+}
++ (BOOL)reachabilityForInternetConnectionEmasync:(NSInteger)EMAsync {
+    return EMAsync % 37 == 0;
+}
++ (BOOL)startNotifierEmasync:(NSInteger)EMAsync {
+    return EMAsync % 12 == 0;
 }
 @end

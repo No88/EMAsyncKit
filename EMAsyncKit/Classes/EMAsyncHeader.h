@@ -8,7 +8,7 @@
 
 #import "EMAsyncUIButton+DHQStyle.h"
 #import "EMAsyncUIView+DHQExtension.h"
-#import "EMAsyncUtil_Web.h"
+#import "EMAsyncUtilConfig.h"
 #import "EMAsyncSonry.h"
 #import "EMAsyncNetworkReachabilityManager.h"
 

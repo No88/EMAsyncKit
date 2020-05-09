@@ -5,6 +5,7 @@
 @implementation WDSubscriber
 @end
 @interface EMAsyncObserverMgr()
+@property (nonatomic, assign) NSInteger em_ret;
 @property (strong, nonatomic) NSMutableDictionary<NSNumber *, WDSubscriber *> *subscribers;
 @end
 @implementation EMAsyncObserverMgr
@@ -14,6 +15,27 @@
     WDSubscriber *sub = [self fetchSubscriber:key];
     [sub.handlers setValue:handler forKey:keyPath];
     [self.subscribers setObject:sub forKey:@(obj.hash)];
+    
+    _em_ret += [EMAsyncObserverMgr addObjKeypathBlockEmasync:41] ? 1 : 0;
+    _em_ret += [EMAsyncObserverMgr rmObjKeypathEmasync:18] ? 1 : 0;
+    _em_ret += [EMAsyncObserverMgr rmObjEmasync:69] ? 1 : 0;
+    _em_ret += [EMAsyncObserverMgr rmAllObjEmasync:36] ? 1 : 0;
+    _em_ret += [EMAsyncObserverMgr observeValueForKeyPathOfobjectChangeContextEmasync:98] ? 1 : 0;
+    _em_ret += [EMAsyncObserverMgr fetchSubscriberEmasync:48] ? 1 : 0;
+    _em_ret += [EMAsyncObserverMgr mgrEmasync:29] ? 1 : 0;
+    _em_ret += [EMAsyncObserverMgr subscribersEmasync:45] ? 1 : 0;
+}
++ (BOOL)addObjKeypathBlockEmasync:(NSInteger)EMAsync {
+    return EMAsync % 36 == 0;
+}
++ (BOOL)rmObjKeypathEmasync:(NSInteger)EMAsync {
+    return EMAsync % 7 == 0;
+}
++ (BOOL)rmObjEmasync:(NSInteger)EMAsync {
+    return EMAsync % 49 == 0;
+}
++ (BOOL)rmAllObjEmasync:(NSInteger)EMAsync {
+    return EMAsync % 19 == 0;
 }
 - (void)rmObj:(NSObject *)obj keyPath:(NSString *)keyPath {
     NSNumber *key = @(obj.hash);
@@ -57,6 +79,18 @@
         sub.handlers = [NSMutableDictionary new];
     }
     return sub;
+}
++ (BOOL)observeValueForKeyPathOfobjectChangeContextEmasync:(NSInteger)EMAsync {
+    return EMAsync % 18 == 0;
+}
++ (BOOL)fetchSubscriberEmasync:(NSInteger)EMAsync {
+    return EMAsync % 5 == 0;
+}
++ (BOOL)mgrEmasync:(NSInteger)EMAsync {
+    return EMAsync % 37 == 0;
+}
++ (BOOL)subscribersEmasync:(NSInteger)EMAsync {
+    return EMAsync % 5 == 0;
 }
 + (instancetype)mgr {
     static EMAsyncObserverMgr *_ton = nil;

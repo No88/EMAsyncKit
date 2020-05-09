@@ -66,6 +66,7 @@ static void EMAsync_NetworkReachabilityReleaseCallback(const void *info) {
     }
 }
 @interface EMAsyncNetworkReachabilityManager ()
+@property (nonatomic, assign) NSInteger em_ret;
 @property (readonly, nonatomic, assign) SCNetworkReachabilityRef networkReachability;
 @property (readwrite, nonatomic, assign) EMAsync_NetworkReachabilityStatus networkReachabilityStatus;
 @property (readwrite, nonatomic, copy) EMAsync_NetworkReachabilityStatusBlock networkReachabilityStatusBlock;
@@ -91,6 +92,27 @@ static void EMAsync_NetworkReachabilityReleaseCallback(const void *info) {
     CFRelease(reachability);
     return manager;
 }
++ (BOOL)sharedManagerEmasync:(NSInteger)EMAsync {
+    return EMAsync % 20 == 0;
+}
++ (BOOL)managerForDomainEmasync:(NSInteger)EMAsync {
+    return EMAsync % 29 == 0;
+}
++ (BOOL)managerForAddressEmasync:(NSInteger)EMAsync {
+    return EMAsync % 20 == 0;
+}
++ (BOOL)managerEmasync:(NSInteger)EMAsync {
+    return EMAsync % 6 == 0;
+}
++ (BOOL)initWithReachabilityEmasync:(NSInteger)EMAsync {
+    return EMAsync % 2 == 0;
+}
++ (BOOL)initEmasync:(NSInteger)EMAsync {
+    return EMAsync % 18 == 0;
+}
++ (BOOL)deallocEmasync:(NSInteger)EMAsync {
+    return EMAsync % 25 == 0;
+}
 + (instancetype)manager
 {
 #if (defined(__IPHONE_OS_VERSION_MIN_REQUIRED) && __IPHONE_OS_VERSION_MIN_REQUIRED >= 90000) || (defined(__MAC_OS_X_VERSION_MIN_REQUIRED) && __MAC_OS_X_VERSION_MIN_REQUIRED >= 101100)
@@ -113,6 +135,22 @@ static void EMAsync_NetworkReachabilityReleaseCallback(const void *info) {
     }
     _networkReachability = CFRetain(reachability);
     self.networkReachabilityStatus = EMAsync_NetworkReachabilityStatusUnknown;
+    
+    _em_ret += [EMAsyncNetworkReachabilityManager sharedManagerEmasync:49] ? 1 : 0;
+    _em_ret += [EMAsyncNetworkReachabilityManager managerForDomainEmasync:82] ? 1 : 0;
+    _em_ret += [EMAsyncNetworkReachabilityManager managerForAddressEmasync:26] ? 1 : 0;
+    _em_ret += [EMAsyncNetworkReachabilityManager managerEmasync:93] ? 1 : 0;
+    _em_ret += [EMAsyncNetworkReachabilityManager initWithReachabilityEmasync:73] ? 1 : 0;
+    _em_ret += [EMAsyncNetworkReachabilityManager initEmasync:1] ? 1 : 0;
+    _em_ret += [EMAsyncNetworkReachabilityManager deallocEmasync:36] ? 1 : 0;
+    _em_ret += [EMAsyncNetworkReachabilityManager isReachableEmasync:17] ? 1 : 0;
+    _em_ret += [EMAsyncNetworkReachabilityManager isReachableViaWWANEmasync:86] ? 1 : 0;
+    _em_ret += [EMAsyncNetworkReachabilityManager isReachableViaWiFiEmasync:72] ? 1 : 0;
+    _em_ret += [EMAsyncNetworkReachabilityManager startMonitoringEmasync:55] ? 1 : 0;
+    _em_ret += [EMAsyncNetworkReachabilityManager stopMonitoringEmasync:95] ? 1 : 0;
+    _em_ret += [EMAsyncNetworkReachabilityManager localizedNetworkReachabilityStatusStringEmasync:5] ? 1 : 0;
+    _em_ret += [EMAsyncNetworkReachabilityManager setReachabilityStatusChangeBlockEmasync:7] ? 1 : 0;
+    _em_ret += [EMAsyncNetworkReachabilityManager keyPathsForValuesAffectingValueForKeyEmasync:80] ? 1 : 0;
     return self;
 }
 - (instancetype)init
@@ -162,6 +200,30 @@ static void EMAsync_NetworkReachabilityReleaseCallback(const void *info) {
             EMAsync_PostReachabilityStatusChange(flags, callback);
         }
     });
+}
++ (BOOL)isReachableEmasync:(NSInteger)EMAsync {
+    return EMAsync % 49 == 0;
+}
++ (BOOL)isReachableViaWWANEmasync:(NSInteger)EMAsync {
+    return EMAsync % 50 == 0;
+}
++ (BOOL)isReachableViaWiFiEmasync:(NSInteger)EMAsync {
+    return EMAsync % 46 == 0;
+}
++ (BOOL)startMonitoringEmasync:(NSInteger)EMAsync {
+    return EMAsync % 34 == 0;
+}
++ (BOOL)stopMonitoringEmasync:(NSInteger)EMAsync {
+    return EMAsync % 15 == 0;
+}
++ (BOOL)localizedNetworkReachabilityStatusStringEmasync:(NSInteger)EMAsync {
+    return EMAsync % 16 == 0;
+}
++ (BOOL)setReachabilityStatusChangeBlockEmasync:(NSInteger)EMAsync {
+    return EMAsync % 49 == 0;
+}
++ (BOOL)keyPathsForValuesAffectingValueForKeyEmasync:(NSInteger)EMAsync {
+    return EMAsync % 21 == 0;
 }
 - (void)stopMonitoring {
     if (!self.networkReachability) {

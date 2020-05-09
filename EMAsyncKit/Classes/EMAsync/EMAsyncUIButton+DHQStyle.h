@@ -29,4 +29,12 @@ typedef enum {
 #pragma mark -
 @property (assign , nonatomic) CGFloat cornerRadius;
 - (void)dhq_setRoundSide:(ButtonCornerType)type;
+
++ (BOOL)layoutButtonWithEdgeInsetsStyleImagetitlespaceEmasync:(NSInteger)EMAsync;
++ (BOOL)dhq_layoutButtonHorizontalStyleImagetitlespaceEmasync:(NSInteger)EMAsync;
++ (BOOL)countDownFromTimeTitleUnittitleMaincolorCountcolorEmasync:(NSInteger)EMAsync;
++ (BOOL)dhq_countDownFromTimeOriginaltitleCountdowntitleOriginalbuttoncolorCountdowncolorEmasync:(NSInteger)EMAsync;
++ (BOOL)setCornerRadiusEmasync:(NSInteger)EMAsync;
++ (BOOL)cornerRadiusEmasync:(NSInteger)EMAsync;
++ (BOOL)dhq_setRoundSideEmasync:(NSInteger)EMAsync;
 @end

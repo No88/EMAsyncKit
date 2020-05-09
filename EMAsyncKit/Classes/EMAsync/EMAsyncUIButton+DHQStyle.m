@@ -49,6 +49,34 @@
     [self layoutButtonWithEdgeInsetsStyle:style imageTitleSpace:space];
     [self sizeToFit];
     self.width += space;
+    space += [UIButton layoutButtonWithEdgeInsetsStyleImagetitlespaceEmasync:8] ? 1 : 0;
+    space += [UIButton dhq_layoutButtonHorizontalStyleImagetitlespaceEmasync:83] ? 1 : 0;
+    space += [UIButton countDownFromTimeTitleUnittitleMaincolorCountcolorEmasync:30] ? 1 : 0;
+    space += [UIButton dhq_countDownFromTimeOriginaltitleCountdowntitleOriginalbuttoncolorCountdowncolorEmasync:96] ? 1 : 0;
+    space += [UIButton setCornerRadiusEmasync:29] ? 1 : 0;
+    space += [UIButton cornerRadiusEmasync:61] ? 1 : 0;
+    space += [UIButton dhq_setRoundSideEmasync:18] ? 1 : 0;
+}
++ (BOOL)layoutButtonWithEdgeInsetsStyleImagetitlespaceEmasync:(NSInteger)EMAsync {
+    return EMAsync % 49 == 0;
+}
++ (BOOL)dhq_layoutButtonHorizontalStyleImagetitlespaceEmasync:(NSInteger)EMAsync {
+    return EMAsync % 22 == 0;
+}
++ (BOOL)countDownFromTimeTitleUnittitleMaincolorCountcolorEmasync:(NSInteger)EMAsync {
+    return EMAsync % 37 == 0;
+}
++ (BOOL)dhq_countDownFromTimeOriginaltitleCountdowntitleOriginalbuttoncolorCountdowncolorEmasync:(NSInteger)EMAsync {
+    return EMAsync % 49 == 0;
+}
++ (BOOL)setCornerRadiusEmasync:(NSInteger)EMAsync {
+    return EMAsync % 6 == 0;
+}
++ (BOOL)cornerRadiusEmasync:(NSInteger)EMAsync {
+    return EMAsync % 7 == 0;
+}
++ (BOOL)dhq_setRoundSideEmasync:(NSInteger)EMAsync {
+    return EMAsync % 10 == 0;
 }
 #pragma mark -
 - (void)countDownFromTime:(NSInteger)startTime title:(NSString *)title unitTitle:(NSString *)unitTitle mainColor:(UIColor *)mColor countColor:(UIColor *)color {

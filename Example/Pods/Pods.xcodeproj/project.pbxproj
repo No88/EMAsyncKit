@@ -11,10 +11,10 @@
 		01F7AC76897E7D3F0202D20DD58FEE92 /* EMAsyncObserverMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4FB66508E9B57254D86B05094BEBF2 /* EMAsyncObserverMgr.m */; };
 		035336A33B53FD579747A031D6A9E987 /* EMAsync_bb@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09CEB93D8930BBA7840771C81F34CE71 /* EMAsync_bb@1x.png */; };
 		037A1E6C7A8ED2AEDF8FF2ED34715BCA /* EMAsyncTabButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CC25A3D49FEF9082E75E9C5091DD925 /* EMAsyncTabButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		042C19E2DFE11E71299CCAC69224942E /* EMAsyncUtil_Web.h in Headers */ = {isa = PBXBuildFile; fileRef = 83D8FBB25F46F329A98515D9ED2698BF /* EMAsyncUtil_Web.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042C19E2DFE11E71299CCAC69224942E /* EMAsyncUtilConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 83D8FBB25F46F329A98515D9ED2698BF /* EMAsyncUtilConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		05E7EDCEA1F88C62E38449E74ED88B63 /* EMAsyncProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ECFC58FD0B1965ABC0A0664846CE788 /* EMAsyncProgressAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0762AAD8476CF6DFCEBA7F26CA70C14C /* EMAsyncConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = C34FAE6349FA1AC1D73232D6B15D1167 /* EMAsyncConstraintMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		07F70E953B0D7F26B32083CE2A28259B /* EMAsyncUtil_Web.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C81E8B91D65A0304E609F8948BEB2CA /* EMAsyncUtil_Web.m */; };
+		07F70E953B0D7F26B32083CE2A28259B /* EMAsyncUtilConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C81E8B91D65A0304E609F8948BEB2CA /* EMAsyncUtilConfig.m */; };
 		0FA92F72BCB1AF44396FCB449E469B86 /* EMAsync_ee@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F584EBB32460B83A87F1E03C5D942D6 /* EMAsync_ee@1x.png */; };
 		131510627FA6A9A42B564345EC53F78F /* EMAsync_ProgressHUD_success@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B17CF39088F2DCC3E1E9F6155B4850F /* EMAsync_ProgressHUD_success@1x.png */; };
 		16DE663F04D1E913885172C3F3BCEFBD /* EMAsync_qq@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 420A64C490AB06A71550B96D4F2B640D /* EMAsync_qq@2x.png */; };
@@ -138,7 +138,7 @@
 		12C98FD99414A6D8F6BBF12C00ADCB39 /* EMAsync_ProgressHUD_info@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_ProgressHUD_info@2x.png"; path = "EMAsyncKit/Assets/EMAsync_ProgressHUD_info@2x.png"; sourceTree = "<group>"; };
 		15EF439D962D50DCD948A4EFE6BB650C /* EMAsyncDisplayViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EMAsyncDisplayViewController.m; sourceTree = "<group>"; };
 		176DC9407499FEF70924E4DFD1A42B7E /* EMAsyncSSDKProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EMAsyncSSDKProgressHUD.m; sourceTree = "<group>"; };
-		178F80EE660B8A71CC9D1A9DB56A9C31 /* Pods_EMAsyncKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EMAsyncKit_Example.framework; path = "Pods-EMAsyncKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		178F80EE660B8A71CC9D1A9DB56A9C31 /* Pods_EMAsyncKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EMAsyncKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1852F7B43EA52B2F20A92A241E30A973 /* EMAsyncKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "EMAsyncKit-Info.plist"; sourceTree = "<group>"; };
 		18FE44F42BCB0263F11159124CA26A8D /* EMAsyncIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EMAsyncIndefiniteAnimatedView.h; sourceTree = "<group>"; };
 		1B17CF39088F2DCC3E1E9F6155B4850F /* EMAsync_ProgressHUD_success@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_ProgressHUD_success@1x.png"; path = "EMAsyncKit/Assets/EMAsync_ProgressHUD_success@1x.png"; sourceTree = "<group>"; };
@@ -162,8 +162,8 @@
 		562DDF772AABE523BADF4FADAD6AD3F5 /* EMAsyncUIView+DHQExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EMAsyncUIView+DHQExtension.h"; sourceTree = "<group>"; };
 		57DA8F9AC7EC3E493A64F14074C0C9FC /* EMAsyncEMAsyncViewController+EMAsyncAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EMAsyncEMAsyncViewController+EMAsyncAdditions.h"; sourceTree = "<group>"; };
 		57E8355F87C24BDE04B31601357F6630 /* Pods-EMAsyncKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EMAsyncKit_Tests.modulemap"; sourceTree = "<group>"; };
-		58D8C14AE349EEF433B8563E656484CB /* Pods_EMAsyncKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EMAsyncKit_Tests.framework; path = "Pods-EMAsyncKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		59D7AECE170BA51E79CAC2F09B37FCC6 /* EMAsyncKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = EMAsyncKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		58D8C14AE349EEF433B8563E656484CB /* Pods_EMAsyncKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EMAsyncKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59D7AECE170BA51E79CAC2F09B37FCC6 /* EMAsyncKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = EMAsyncKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		59F8EE31390A067D43ADCB6DA2689884 /* Pods-EMAsyncKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EMAsyncKit_Tests-dummy.m"; sourceTree = "<group>"; };
 		5E15B0452174166AFE4BA49DDC92822C /* EMAsyncTabButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EMAsyncTabButton.m; sourceTree = "<group>"; };
 		5E61FAE26BF5FD9F66DE60D93BAEC105 /* EMAsync_ee@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_ee@3x.png"; path = "EMAsyncKit/Assets/EMAsync_ee@3x.png"; sourceTree = "<group>"; };
@@ -176,7 +176,7 @@
 		68692D350F90BAEFFA9D5466F4C467BA /* EMAsyncConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EMAsyncConstraint.m; sourceTree = "<group>"; };
 		69371A1AB516118401755C7A72038849 /* Pods-EMAsyncKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EMAsyncKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6B346C60C0FBFECFFC315E104111371F /* EMAsyncEMAsyncNSArray+EMAsyncAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EMAsyncEMAsyncNSArray+EMAsyncAdditions.m"; sourceTree = "<group>"; };
-		6C718D632D68534EFF8677937D645496 /* EMAsyncKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = EMAsyncKit.bundle; path = "EMAsyncKit-EMAsyncKit.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C718D632D68534EFF8677937D645496 /* EMAsyncKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EMAsyncKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D686DAC686A4E0FCBEB0CC304C24107 /* EMAsyncProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EMAsyncProgressAnimatedView.m; sourceTree = "<group>"; };
 		6DDCFD77954D903DA0CC2745295BFA45 /* EMAsyncConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EMAsyncConstraint.h; sourceTree = "<group>"; };
 		704CEB06C423B7D5BCF3C1AC7D520606 /* Pods-EMAsyncKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EMAsyncKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -187,10 +187,10 @@
 		7884113DAD344C6DCB5A213F3A1122CD /* EMAsync_ProgressHUD_success@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_ProgressHUD_success@2x.png"; path = "EMAsyncKit/Assets/EMAsync_ProgressHUD_success@2x.png"; sourceTree = "<group>"; };
 		79B313266A459258C37E0F60841CF84B /* Pods-EMAsyncKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EMAsyncKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7A342374C8403AEE825AA55F8AD984A9 /* Pods-EMAsyncKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EMAsyncKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7C81E8B91D65A0304E609F8948BEB2CA /* EMAsyncUtil_Web.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EMAsyncUtil_Web.m; sourceTree = "<group>"; };
+		7C81E8B91D65A0304E609F8948BEB2CA /* EMAsyncUtilConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EMAsyncUtilConfig.m; sourceTree = "<group>"; };
 		7D07BE0E665BD1DA6E5C02280E141BBF /* EMAsyncEMAsyncNSLayoutConstraint+EMAsyncDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EMAsyncEMAsyncNSLayoutConstraint+EMAsyncDebugAdditions.m"; sourceTree = "<group>"; };
 		7F584EBB32460B83A87F1E03C5D942D6 /* EMAsync_ee@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_ee@1x.png"; path = "EMAsyncKit/Assets/EMAsync_ee@1x.png"; sourceTree = "<group>"; };
-		83D8FBB25F46F329A98515D9ED2698BF /* EMAsyncUtil_Web.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EMAsyncUtil_Web.h; sourceTree = "<group>"; };
+		83D8FBB25F46F329A98515D9ED2698BF /* EMAsyncUtilConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EMAsyncUtilConfig.h; sourceTree = "<group>"; };
 		878CB39FFE4D80F177FA075FB2E361B7 /* Pods-EMAsyncKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EMAsyncKit_Example-dummy.m"; sourceTree = "<group>"; };
 		88F28904D8A02D7D0DBE379B8E863570 /* EMAsyncCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EMAsyncCompositeConstraint.m; sourceTree = "<group>"; };
 		89E0561EDDFCF41AF8B14CAE311183AD /* EMAsync_cc@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_cc@3x.png"; path = "EMAsyncKit/Assets/EMAsync_cc@3x.png"; sourceTree = "<group>"; };
@@ -202,12 +202,12 @@
 		98511A48DD851BEDF1779C8A574A7BCF /* EMAsyncEMAsyncView+EMAsyncAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EMAsyncEMAsyncView+EMAsyncAdditions.m"; sourceTree = "<group>"; };
 		9C45F0047C6F5341C48AB5979DF3F0EC /* EMAsyncEMAsyncView+EMAsyncAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EMAsyncEMAsyncView+EMAsyncAdditions.h"; sourceTree = "<group>"; };
 		9CC25A3D49FEF9082E75E9C5091DD925 /* EMAsyncTabButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EMAsyncTabButton.h; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E8F2B0B1ECEE37F0DAA67EBAD526233 /* EMAsyncReachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EMAsyncReachability.h; sourceTree = "<group>"; };
 		9ECFC58FD0B1965ABC0A0664846CE788 /* EMAsyncProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EMAsyncProgressAnimatedView.h; sourceTree = "<group>"; };
 		A10893D6913FB47AA7067CF61107A5BD /* EMAsyncEMAsyncViewController+EMAsyncAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EMAsyncEMAsyncViewController+EMAsyncAdditions.m"; sourceTree = "<group>"; };
 		A114EA005144215206315AAB7C3DE119 /* EMAsync_ProgressHUD_info@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_ProgressHUD_info@1x.png"; path = "EMAsyncKit/Assets/EMAsync_ProgressHUD_info@1x.png"; sourceTree = "<group>"; };
-		A3E8B4BD41B58AA4397B776576C48D07 /* EMAsyncKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EMAsyncKit.framework; path = EMAsyncKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3E8B4BD41B58AA4397B776576C48D07 /* EMAsyncKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EMAsyncKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A52AAFDD6FB6F411697B4F78517812F1 /* EMAsync_ProgressHUD_error@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_ProgressHUD_error@3x.png"; path = "EMAsyncKit/Assets/EMAsync_ProgressHUD_error@3x.png"; sourceTree = "<group>"; };
 		A641C30B17358B0589978075C8D1E34D /* EMAsyncUIButton+DHQStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EMAsyncUIButton+DHQStyle.h"; sourceTree = "<group>"; };
 		AB384D2088F51A78818DD284D3CA450E /* EMAsync_cc@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_cc@1x.png"; path = "EMAsyncKit/Assets/EMAsync_cc@1x.png"; sourceTree = "<group>"; };
@@ -219,14 +219,14 @@
 		BCC4D999402FE672C6E0F33478A353DF /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		BE56C1F4D168570247EA6816CB6B57AB /* EMAsync_mw@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_mw@3x.png"; path = "EMAsyncKit/Assets/EMAsync_mw@3x.png"; sourceTree = "<group>"; };
 		BEC01E5341B8F5AECA07114A4E78E789 /* EMAsync_gg@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_gg@1x.png"; path = "EMAsyncKit/Assets/EMAsync_gg@1x.png"; sourceTree = "<group>"; };
-		C1298AB4037BE3EC794DD2865CB31C49 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		C1298AB4037BE3EC794DD2865CB31C49 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C34FAE6349FA1AC1D73232D6B15D1167 /* EMAsyncConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = EMAsyncConstraintMaker.h; sourceTree = "<group>"; };
 		C51419E497BE1835728E7B39C2B81488 /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
 		CCB6458CD06CC19C71847C3235417B05 /* EMAsync_ee@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_ee@2x.png"; path = "EMAsyncKit/Assets/EMAsync_ee@2x.png"; sourceTree = "<group>"; };
 		CCF00FC6CDFA28C20BF92AC9F18D3436 /* EMAsyncViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EMAsyncViewAttribute.m; sourceTree = "<group>"; };
 		D0081C20F85E747609C7A03E30BDEA75 /* EMAsyncEMAsyncNSArray+EMAsyncAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EMAsyncEMAsyncNSArray+EMAsyncAdditions.h"; sourceTree = "<group>"; };
 		D2D58C79CCC2B02EDEF439D957F83258 /* EMAsync_cc@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_cc@2x.png"; path = "EMAsyncKit/Assets/EMAsync_cc@2x.png"; sourceTree = "<group>"; };
-		D6834C7531F81BEB53B57B852DF64D9D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		D6834C7531F81BEB53B57B852DF64D9D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D6C3345779C458001EBFB466A9DB0AA8 /* EMAsyncUIButton+DHQStyle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EMAsyncUIButton+DHQStyle.m"; sourceTree = "<group>"; };
 		D6DC5F3B4A825F910B9D44132D8920E0 /* EMAsyncReachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = EMAsyncReachability.m; sourceTree = "<group>"; };
 		D8E7C99A5896B431407A298317AAB573 /* EMAsync_ProgressHUD_info@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "EMAsync_ProgressHUD_info@3x.png"; path = "EMAsyncKit/Assets/EMAsync_ProgressHUD_info@3x.png"; sourceTree = "<group>"; };
@@ -394,7 +394,6 @@
 				DE30C3396861AAFB17C3868A806CDAC8 /* NSArray+MASShorthandAdditions.h */,
 				BCC4D999402FE672C6E0F33478A353DF /* View+MASShorthandAdditions.h */,
 			);
-			name = SSDKMAS;
 			path = SSDKMAS;
 			sourceTree = "<group>";
 		};
@@ -491,8 +490,8 @@
 				D6C3345779C458001EBFB466A9DB0AA8 /* EMAsyncUIButton+DHQStyle.m */,
 				562DDF772AABE523BADF4FADAD6AD3F5 /* EMAsyncUIView+DHQExtension.h */,
 				1FB42F90962ED007FD4AA9AE253E11CA /* EMAsyncUIView+DHQExtension.m */,
-				83D8FBB25F46F329A98515D9ED2698BF /* EMAsyncUtil_Web.h */,
-				7C81E8B91D65A0304E609F8948BEB2CA /* EMAsyncUtil_Web.m */,
+				83D8FBB25F46F329A98515D9ED2698BF /* EMAsyncUtilConfig.h */,
+				7C81E8B91D65A0304E609F8948BEB2CA /* EMAsyncUtilConfig.m */,
 			);
 			name = EMAsync;
 			path = EMAsyncKit/Classes/EMAsync;
@@ -514,7 +513,6 @@
 				766CA290BEE4AEF9C301DF710E05BE5A /* EMAsyncSSDKProgressHUD.h */,
 				176DC9407499FEF70924E4DFD1A42B7E /* EMAsyncSSDKProgressHUD.m */,
 			);
-			name = ProgressHUD;
 			path = ProgressHUD;
 			sourceTree = "<group>";
 		};
@@ -567,7 +565,7 @@
 				037A1E6C7A8ED2AEDF8FF2ED34715BCA /* EMAsyncTabButton.h in Headers */,
 				2DD02C1603FAC5D5F4F826774DFB8189 /* EMAsyncUIButton+DHQStyle.h in Headers */,
 				1747F9D74BC634B43214E64DA23F6FE9 /* EMAsyncUIView+DHQExtension.h in Headers */,
-				042C19E2DFE11E71299CCAC69224942E /* EMAsyncUtil_Web.h in Headers */,
+				042C19E2DFE11E71299CCAC69224942E /* EMAsyncUtilConfig.h in Headers */,
 				C549212AE13621EC68D73FC5BA5AD896 /* EMAsyncViewAttribute.h in Headers */,
 				4C16786B580CDB04947A37BEEB6B814A /* EMAsyncViewConstraint.h in Headers */,
 				D79532BC7D6B5FF9D97DCCE06CE9E70B /* MASConstraint+Private.h in Headers */,
@@ -785,7 +783,7 @@
 				D144C8A17D18ABC30B1D54E861C6BE23 /* EMAsyncTabButton.m in Sources */,
 				F588415965780397663E0D44DC89C710 /* EMAsyncUIButton+DHQStyle.m in Sources */,
 				7725692383A6482C01F8857877294C01 /* EMAsyncUIView+DHQExtension.m in Sources */,
-				07F70E953B0D7F26B32083CE2A28259B /* EMAsyncUtil_Web.m in Sources */,
+				07F70E953B0D7F26B32083CE2A28259B /* EMAsyncUtilConfig.m in Sources */,
 				49494C5B79B4AC92298BD0CE4E4BE665 /* EMAsyncViewAttribute.m in Sources */,
 				4E38CD36D24FD943D7FE6CB9E9A66D59 /* EMAsyncViewConstraint.m in Sources */,
 			);
@@ -949,8 +947,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

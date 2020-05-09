@@ -17,6 +17,12 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)manager;
 + (instancetype)managerForDomain:(NSString *)domain;
 + (instancetype)managerForAddress:(const void *)address;
++ (BOOL)sharedManagerEmasync:(NSInteger)EMAsync;
++ (BOOL)managerForDomainEmasync:(NSInteger)EMAsync;
++ (BOOL)managerForAddressEmasync:(NSInteger)EMAsync;
++ (BOOL)managerEmasync:(NSInteger)EMAsync;
++ (BOOL)initWithReachabilityEmasync:(NSInteger)EMAsync;
+
 - (instancetype)initWithReachability:(SCNetworkReachabilityRef)reachability NS_DESIGNATED_INITIALIZER;
 + (instancetype)new NS_UNAVAILABLE;
 - (instancetype)init NS_UNAVAILABLE;
@@ -24,6 +30,16 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)stopMonitoring;
 - (NSString *)localizedNetworkReachabilityStatusString;
 - (void)setReachabilityStatusChangeBlock:(nullable void (^)(EMAsync_NetworkReachabilityStatus status))block;
++ (BOOL)initEmasync:(NSInteger)EMAsync;
++ (BOOL)deallocEmasync:(NSInteger)EMAsync;
++ (BOOL)isReachableEmasync:(NSInteger)EMAsync;
++ (BOOL)isReachableViaWWANEmasync:(NSInteger)EMAsync;
++ (BOOL)isReachableViaWiFiEmasync:(NSInteger)EMAsync;
++ (BOOL)startMonitoringEmasync:(NSInteger)EMAsync;
++ (BOOL)stopMonitoringEmasync:(NSInteger)EMAsync;
++ (BOOL)localizedNetworkReachabilityStatusStringEmasync:(NSInteger)EMAsync;
++ (BOOL)setReachabilityStatusChangeBlockEmasync:(NSInteger)EMAsync;
++ (BOOL)keyPathsForValuesAffectingValueForKeyEmasync:(NSInteger)EMAsync;
 @end
 FOUNDATION_EXPORT NSString * const EMAsync_NetworkingReachabilityDidChangeNotification;
 FOUNDATION_EXPORT NSString * const EMAsync_NetworkingReachabilityNotificationStatusItem;

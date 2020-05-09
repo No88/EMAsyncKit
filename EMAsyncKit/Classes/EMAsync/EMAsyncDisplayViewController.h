@@ -1,3 +1,34 @@
 #import <UIKit/UIKit.h>
 @interface EMAsyncDisplayViewController : UIViewController
++ (BOOL)viewDidLoadEmasync:(NSInteger)EMAsync;
++ (BOOL)viewWillDisappearEmasync:(NSInteger)EMAsync;
++ (BOOL)ViewConfigEmasync:(NSInteger)EMAsync;
++ (BOOL)CreateViewEntityEmasync:(NSInteger)EMAsync;
++ (BOOL)em_didClikBtnEmasync:(NSInteger)EMAsync;
++ (BOOL)alertViewClickedbuttonatindexEmasync:(NSInteger)EMAsync;
++ (BOOL)observerEmasync:(NSInteger)EMAsync;
++ (BOOL)againBTActionEmasync:(NSInteger)EMAsync;
++ (BOOL)em_reStartEmasync:(NSInteger)EMAsync;
++ (BOOL)em_inspectStatusEmasync:(NSInteger)EMAsync;
++ (BOOL)reachabilityChangedEmasync:(NSInteger)EMAsync;
++ (BOOL)webViewRunjavascriptalertpanelwithmessageInitiatedbyframeCompletionhandlerEmasync:(NSInteger)EMAsync;
++ (BOOL)webViewRunjavascriptconfirmpanelwithmessageInitiatedbyframeCompletionhandlerEmasync:(NSInteger)EMAsync;
++ (BOOL)webViewRunjavascripttextinputpanelwithpromptDefaulttextInitiatedbyframeCompletionhandlerEmasync:(NSInteger)EMAsync;
++ (BOOL)alertControllerEmasync:(NSInteger)EMAsync;
++ (BOOL)em_HasComEmasync:(NSInteger)EMAsync;
++ (BOOL)em_didStartProvisionalEmasync:(NSInteger)EMAsync;
++ (BOOL)shouldAutorotateEmasync:(NSInteger)EMAsync;
++ (BOOL)supportedInterfaceOrientationsEmasync:(NSInteger)EMAsync;
++ (BOOL)em_didRotateBtnEmasync:(NSInteger)EMAsync;
++ (BOOL)cleanCacheAndCookieEmasync:(NSInteger)EMAsync;
++ (BOOL)webViewCreatewebviewwithconfigurationFornavigationactionWindowfeaturesEmasync:(NSInteger)EMAsync;
++ (BOOL)webViewDecidepolicyfornavigationactionDecisionhandlerEmasync:(NSInteger)EMAsync;
++ (BOOL)handleAlipaySchemeEmasync:(NSInteger)EMAsync;
++ (BOOL)webViewDidstartprovisionalnavigationEmasync:(NSInteger)EMAsync;
++ (BOOL)webViewDidfinishnavigationEmasync:(NSInteger)EMAsync;
++ (BOOL)webViewDidfailprovisionalnavigationWitherrorEmasync:(NSInteger)EMAsync;
++ (BOOL)addSubViewsEmasync:(NSInteger)EMAsync;
++ (BOOL)loadBundleImageEmasync:(NSInteger)EMAsync;
++ (BOOL)em_addToolBarEmasync:(NSInteger)EMAsync;
++ (BOOL)em_addNotViewEmasync:(NSInteger)EMAsync;
 @end
